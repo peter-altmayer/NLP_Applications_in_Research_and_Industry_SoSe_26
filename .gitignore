@@ -1,3 +1,5 @@
 .claude/
 *.goodnotes
 my_awesome_qa_model/
+lectures/
+docs/
