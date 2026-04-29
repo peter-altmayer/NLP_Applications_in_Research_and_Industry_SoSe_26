@@ -1,6 +1,6 @@
-# NLP Week 2 — Medical QA Pipelines
+# NLP Week 2 - Medical QA Pipelines
 
-This project builds two question-answering pipelines — one extractive, one generative — on the PubMedQA benchmark dataset. Medical records contain answers buried in unstructured clinical text; a clinician querying a patient's history or a researcher scanning literature should not have to read hundreds of pages. We compare two pretrained models per task to understand how general-domain models behave on biomedical text, where domain-specific vocabulary, abbreviations, and reasoning patterns routinely differ from general web corpora.
+This project builds two question-answering pipelines, one extractive, one generative, on the PubMedQA benchmark dataset. We compare two pretrained models per task to understand how general-domain models behave on biomedical text, where domain-specific vocabulary, abbreviations, and reasoning patterns differ from general web context.
 
 ---
 
@@ -11,18 +11,18 @@ nlp_week2-qa/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   ├── raw/              # pubmed_qa download — never pushed
-│   └── processed/        # qa_pairs.csv (25 examples) — never pushed
+│   ├── raw/              
+│   └── processed/        
 ├── src/
-│   ├── dataset.py        # download, flatten, save qa_pairs.csv
-│   └── model.py          # forward-pass wrappers (extractive + generative)
+│   ├── dataset.py        
+│   └── model.py          
 ├── experiments/
 │   ├── run_extractive.py # RoBERTa + ELECTRA on 25 examples
 │   ├── run_generative.py # Flan-T5-base + Flan-T5-large on 25 examples
-│   └── run_decoding.py   # temperature sweep on Flan-T5-large
+│   └── run_decoding.py   # Different temperatures on Flan-T5-large
 ├── results/              # all CSVs committed
 └── notebooks/
-    └── exploration.ipynb # scratch only
+    └── exploration.ipynb 
 ```
 
 ---
@@ -30,74 +30,39 @@ nlp_week2-qa/
 ## Dataset
 
 **PubMedQA** (`pqa_labeled` config, 1 000 expert-annotated examples)
-
-- `context` — concatenated PubMed abstract sections (BACKGROUND, METHODS, RESULTS, CONCLUSIONS)
-- `question` — a biomedical research question
-- `reference_answer` — the conclusion sentence from the abstract (used as ground truth)
-
 Loaded via HuggingFace `datasets`, 25 examples used across all experiments.
 
 ---
 
 ## Models
 
-### Task 1 — Extractive QA
+### Task 1 - Extractive QA
 
 | Model | HuggingFace ID | Size | Why |
 |---|---|---|---|
-| RoBERTa-base | `deepset/roberta-base-squad2` | ~500 MB | Strong general-domain extractive baseline, fine-tuned on SQuAD2 |
-| ELECTRA-base | `deepset/electra-base-squad2` | ~110 MB | Compact discriminator model; frequently outperforms BERT/RoBERTa on span extraction |
+| RoBERTa-base | `deepset/roberta-base-squad2` | ~500 MB | General-domain extractive baseline, fine-tuned on SQuAD2 |
+| ELECTRA-base | `deepset/electra-base-squad2` | ~110 MB | Compact model that frequently outperforms BERT/RoBERTa on span extraction |
 
-Both models use a manual forward pass (`AutoModelForQuestionAnswering`) — the `question-answering` pipeline task was removed in transformers 5.x. Both are general-domain models whose performance on medical text reveals the domain gap motivating domain adaptation.
 
-### Task 2 — Generative QA
+### Task 2 - Generative QA
 
 | Model | HuggingFace ID | Size | Why |
 |---|---|---|---|
-| Flan-T5-base | `google/flan-t5-base` | ~250 MB | Instruction-tuned encoder-decoder; follows natural-language prompts reliably |
-| Flan-T5-large | `google/flan-t5-large` | ~770 MB | Same architecture, ~3× parameters; allows a direct scale comparison |
-
-Both use `AutoModelForSeq2SeqLM` with a structured prompt. The base/large pair provides a built-in ablation over model scale.
-
----
-
-## Environment Setup
-
-Requires Python 3.10+ and a virtual environment. The venv is created **outside** the project directory to avoid Windows MAX_PATH (260 char) errors caused by the long project path.
-
-**Windows (PowerShell):**
-```powershell
-python -m venv E:\venvs\nlp2
-E:\venvs\nlp2\Scripts\Activate.ps1
-pip install -r requirements.txt
-
-# Pin exact versions after installing:
-pip freeze > requirements.txt
-```
-
-**macOS / Linux (bash):**
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip freeze > requirements.txt
-```
-
-> **GPU note (Windows):** install the CUDA torch build separately if needed:
-> `pip install torch --force-reinstall --index-url https://download.pytorch.org/whl/cu126`
+| Flan-T5-base | `google/flan-t5-base` | ~250 MB | Instruction-tuned encoder-decoder that follows natural-language prompts |
+| Flan-T5-large | `google/flan-t5-large` | ~770 MB | Same architecture, ~3× parameters to allow a direct scale comparison |
 
 ---
 
 ## Reproducing Experiments
 
-Run from inside `nlp_week2-qa/` with the venv active. The first run downloads PubMedQA automatically; subsequent runs reuse the cached CSV.
+Run from inside `nlp_week2-qa/`. The first run downloads PubMedQA automatically; subsequent runs reuse the cached CSV.
 
 ```powershell
-# Task 1 — Extractive QA
+# Task 1 - Extractive QA
 python experiments/run_extractive.py
 # writes: results/extractive_roberta.csv, extractive_electra.csv, extractive_all.csv
 
-# Task 2 — Generative QA
+# Task 2 - Generative QA
 python experiments/run_generative.py
 # writes: results/generative_flan_t5_base.csv, generative_flan_t5_large.csv, generative_all.csv
 
@@ -114,7 +79,7 @@ Contexts truncated to 120 characters for readability; full text is in the CSVs.
 
 ---
 
-### Task 1 — Extractive QA
+### Task 1 - Extractive QA
 
 #### RoBERTa (`deepset/roberta-base-squad2`)
 
@@ -140,7 +105,7 @@ Contexts truncated to 120 characters for readability; full text is in the CSVs.
 | Do patterns of knowledge and attitudes exist among unvaccinated seniors? | To examine patterns of knowledge and attitudes among adults aged>65 years unvaccinated for influenza. S... | clustered unvaccinated seniors by their immunization related knowledge and attitudes |
 | Is there a model to teach and practice retroperitoneoscopic nephrectomy? | Although the retroperitoneal approach has been the preferred choice for open urological procedures, retr... | This study aims to develop a training model |
 | Cardiovascular risk in a rural adult West African population: is resting heart rate also relevant? | Elevated resting heart rate (RHR) is a neglected marker in cardiovascular risk factor studies of sub-Sa... | *(empty)* |
-| Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted? | The incidence of large-scale urban attacks on civilian populations has significantly increased across th... | challenging to hospital teams... [truncated — see CSV] |
+| Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted? | The incidence of large-scale urban attacks on civilian populations has significantly increased across th... | challenging to hospital teams... [truncated - see CSV] |
 | Acute respiratory distress syndrome in children with malignancy--can we predict outcome? | The purpose of this study was to delineate early respiratory predictors of mortality in children with h... | early respiratory predictors of mortality |
 | Secondhand smoke risk in infants discharged from an NICU: potential for significant health disparities? | Secondhand smoke exposure (SHSe) threatens fragile infants discharged from a neonatal intensive care un... | Soc |
 | Do nomograms designed to predict biochemical recurrence (BCR) do a better job of predicting more clinically relevant prostate cancer outcomes than BCR? | To examine the ability of various postoperative nomograms to predict prostate cancer-specific mortality... | it |
@@ -163,7 +128,7 @@ Contexts truncated to 120 characters for readability; full text is in the CSVs.
 | Do mutations causing low HDL-C promote increased carotid intima-media thickness? | Although observational data support an inverse relationship between high-density lipoprotein (HDL) chol... | *(empty)* |
 | A short stay or 23-hour ward in a general and academic children's hospital: are they effective? | We evaluated the usefulness of a short stay or 23-hour ward in a pediatric unit of a large teaching ho... | the |
 | Did Chile's traffic law reform push police enforcement? | The objective of the current study is to determine to what extent the reduction of Chile's traffic fata... | reduction of chile's traffic fatalities and injuries during 2000-2012 was related to the police traffic enforcement increment |
-| Therapeutic anticoagulation in the trauma patient: is it safe? | Trauma patients who require therapeutic anticoagulation pose a difficult treatment problem. The purpose... | the incidence of complications... [truncated, verbatim full-passage — see CSV] |
+| Therapeutic anticoagulation in the trauma patient: is it safe? | Trauma patients who require therapeutic anticoagulation pose a difficult treatment problem. The purpose... | the incidence of complications... [truncated, verbatim full-passage - see CSV] |
 | Differentiation of nonalcoholic from alcoholic steatohepatitis: are routine laboratory markers useful? | Specific markers for differentiation of nonalcoholic (NASH) from alcoholic steatohepatitis (ASH) are l... | *(empty)* |
 | Prompting Primary Care Providers about Increased Patient Risk As a Result of Family History: Does It Work? | Electronic health records have the potential to facilitate family history use by primary care physicians... | automated |
 | Do emergency ultrasound fellowship programs impact emergency medicine residents' ultrasound education? | Recent years have seen a rapid proliferation of emergency ultrasound (EUS) programs in the United State... | there is no |
@@ -204,7 +169,7 @@ Contexts truncated to 120 characters for readability; full text is in the CSVs.
 
 ---
 
-### Task 2 — Generative QA
+### Task 2 - Generative QA
 
 #### Flan-T5-base (`google/flan-t5-base`)
 
@@ -308,42 +273,32 @@ Contexts truncated to 120 characters for readability; full text is in the CSVs.
 | Do mutations causing low HDL-C promote increased carotid intima-media thickness? | Although observational data support an inverse relationship... | (d). | no | 4). |
 | A short stay or 23-hour ward in a general and academic children's hospital: are they effective? | We evaluated the usefulness of a short stay... | Westmead Hospital's short stay ward having a lower rate of admission... | short stay wards being a useful addition to the emergency department. | Westmead Hospital, a tertiary referral center... |
 
-**Analysis:**
-
-**Dominant failure mode — list-marker generation (8/10 questions):** Across all three temperatures, Flan-T5-large overwhelmingly produces tokens like `(d).`, `(iv)`, `[4].`, `c).`, `(A).`, `(1).` instead of content. These are list-item markers that appear throughout PubMedQA contexts (numbered sections, answer choices). The model has learned to associate the prompt structure with a multiple-choice format and generates the "option label" rather than the answer text.
-
-**Temperature does not fix the underlying failure:** Changing temperature shifts *which* list marker is sampled but not whether one is produced. Q1 gives `(d).` → `c).` → `(ii).` across 0.3/0.7/1.0 — all wrong, all different. This is expected: temperature controls diversity within the model's probability distribution; if list markers dominate that distribution, higher temperature only samples rarer markers, not content.
-
-**Correct answers are not stable across temperatures:** Q4 and Q5 (yes/no questions about clinical outcomes) answer `Yes` at temp=0.3 and 1.0 but revert to list markers at temp=0.7. Q9 answers `no` only at temp=0.7. There is no monotonic relationship between temperature and answer quality — correctness appears stochastic for borderline cases where the "Yes/No" token and list markers compete closely in probability.
-
-**Exception — open-ended question (Q10):** "A short stay or 23-hour ward... are they effective?" generates long descriptive sentences at all three temperatures, each different and plausible (e.g., "short stay wards being a useful addition to the emergency department"). When the question is open-ended and the context lacks enumerated options, the list-marker attractor disappears and the model produces coherent, context-grounded text. This confirms the failure is input-conditional: it is triggered by the enumeration structure in the context, not a global model defect.
-
 ---
 
 ## Failure Analysis
 
-### Failure 1 — ELECTRA returns single-token or garbage spans
+### Failure 1 - ELECTRA returns single-token or garbage spans
 
 **Observed:** ELECTRA frequently outputs single tokens ("the", "the need", "were small") or empty strings on questions where RoBERTa returns a meaningful span.
 
-**Hypothesis:** ELECTRA's discriminator pretraining objective (replaced token detection) produces token representations that are highly sensitive to local context but may not generalize well to long-range span boundary decisions. The start and end logits are predicted independently; for long PubMedQA abstracts (often 300–500 tokens), ELECTRA's lighter architecture (fewer parameters, less attention capacity) fails to propagate sufficient signal from the question through the full context, causing the model to default to high-frequency function words near the question tokens rather than locating a semantically correct span.
+**Hypothesis:** ELECTRA was pretrained to detect whether tokens were replaced or not, which is really different from "find me the right chunk of text that answers this question." The model is good at picking up on local context but seems to fall apart when it needs to track a question across a long biomedical text. Since start and end positions are predicted independently, and the context here is often 300–500 tokens of dense medical text, ELECTRA just doesn't have enough capacity to figure out where the answer actually begins and ends, so it defaults to grabbing common function words that happened to score high near the question tokens. It's a compact model doing a job it wasn't really built for.
 
 ---
 
-### Failure 2 — Flan-T5-large generates list-item markers instead of answers
+### Failure 2 - Flan-T5-large generates list-item markers instead of answers
 
 **Observed:** Flan-T5-large outputs `(iv)`, `(d).`, `[iv]`, etc. on the majority of examples where Flan-T5-base correctly answers "yes" or "no". This is the dominant failure mode for the larger model.
 
-**Hypothesis:** PubMedQA contexts contain numbered lists (e.g., "(1) presence of new traffic law; (2) police officers per population; (3)…") and parenthetical list items (e.g., "(i) To examine…; (ii) To test…"). Flan-T5-large, with more parameters, likely over-fits to structural patterns in its instruction-tuning data and learns to generate list markers when the input contains enumerated structures. The model interprets the prompt as a list-completion task rather than a question-answering task. Flan-T5-base, being smaller and more regularized, does not exhibit this pattern — it collapses to binary yes/no instead, which is less informative but less broken.
+**Hypothesis:** PubMedQA contexts contain numbered lists e.g., "(1) presence of new traffic law, (2) police officers per population, (3)..." and parenthetical list items e.g., "(i) To examine..., (ii) To test...". Flan-T5-large, with more parameters, likely over-fits to structural patterns in its instruction-tuning data and learns to generate list markers when the input contains enumerated structures. The model maybe interprets the prompt as a list-completion task rather than a question-answering task. Flan-T5-base, being smaller does not exhibit this pattern, it collapses to binary yes/no instead, which is less informative but less broken.
 
 ---
 
-### Failure 3 — RoBERTa echoes the question back as the answer
+### Failure 3 - RoBERTa echoes the question back as the answer
 
-**Observed:** For Q9 ("Do mutations causing low HDL-C…?") and Q12 ("Therapeutic anticoagulation…is it safe?"), RoBERTa returns the question text repeated verbatim at the start of the answer span.
+**Observed:** For Q9 ("Do mutations causing low HDL-C…?") and Q12 ("Therapeutic anticoagulation…is it safe?"), RoBERTa returns the question text repeated at the start of the answer span.
 
-**Hypothesis:** These questions are phrased as yes/no questions and the correct answer ("no", implied by cIMT being nearly identical) does not exist as an extractive span in the context. When no clear answer span is present, the span-prediction head still must output *some* start and end position. The highest-confidence position under the independently-predicted start logit happens to land on the question prefix tokens (which are part of the 512-token input), resulting in the question being extracted as if it were the answer. This is a known pathology of SQuAD-style models on unanswerable or yes/no questions: they are not trained to abstain.
+**Hypothesis:** These questions are phrased as yes/no questions and the correct answer does not exist as an extractive span in the context. When no clear answer span is present, the span-prediction head still must output some start and end position. The highest-confidence position happens to land on the question prefix tokens, resulting in the question being extracted as if it were the answer.
 
 ---
 
-*Peter Altmayer — NLP Applications in Research and Industry, Uni Mainz, SoSe 2026*
+*Peter Altmayer - NLP Applications in Research and Industry, Uni Mainz, SoSe 2026*

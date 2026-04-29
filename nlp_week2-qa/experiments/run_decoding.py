@@ -1,5 +1,5 @@
 """
-Decoding experiment: temperature sweep on google/flan-t5-large.
+Decoding experiment: Different temperatures on google/flan-t5-large.
 Runs the same 10 examples at temperature 0.3, 0.7, and 1.0
 to demonstrate how generation behaviour changes with temperature.
 
