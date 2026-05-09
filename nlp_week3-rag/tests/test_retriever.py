@@ -45,3 +45,35 @@ def test_bm25_save_load_roundtrip():
     reloaded = loaded.get_scores("Paris".split())
     assert list(original) == list(reloaded)
     path.unlink()
+
+
+def test_dpr_embeddings_shape():
+    pytest.importorskip("transformers")
+    from src.retriever import build_dpr_embeddings
+    corpus = ["hello world", "foo bar baz"]
+    embeddings = build_dpr_embeddings(
+        corpus,
+        ctx_encoder_name="facebook/dpr-ctx_encoder-single-nq-base",
+        device="cpu",
+    )
+    assert embeddings.shape == (2, 768)
+
+
+def test_retrieve_dpr_returns_k_docs():
+    pytest.importorskip("transformers")
+    from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer
+    from src.retriever import build_dpr_embeddings, retrieve_dpr
+
+    corpus = [
+        "The capital of France is Paris.",
+        "Berlin is the capital of Germany.",
+        "Tokyo is the capital city of Japan.",
+    ]
+    embeddings = build_dpr_embeddings(
+        corpus, "facebook/dpr-ctx_encoder-single-nq-base", device="cpu"
+    )
+    q_enc = DPRQuestionEncoder.from_pretrained("facebook/dpr-question_encoder-single-nq-base")
+    q_tok = DPRQuestionEncoderTokenizer.from_pretrained("facebook/dpr-question_encoder-single-nq-base")
+    results = retrieve_dpr(embeddings, corpus, q_enc, q_tok, "capital France", k=2, device="cpu")
+    assert len(results) == 2
+    assert all(isinstance(r, str) for r in results)
