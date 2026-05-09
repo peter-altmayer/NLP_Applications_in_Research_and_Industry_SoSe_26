@@ -7,11 +7,11 @@ def load_dataset_records(hf_path: str, split: str, n: int = 1000, config: str | 
     else:
         ds = hf_load(hf_path, split=split)
     subset = ds.select(range(min(n, len(ds))))
-    if "trivia_qa" in hf_path:
+    if hf_path == "mandarjoshi/trivia_qa":
         return _load_trivia_qa(subset)
-    if "natural-questions" in hf_path:
+    if hf_path == "sentence-transformers/natural-questions":
         return _load_natural_questions(subset)
-    raise ValueError(f"Unknown dataset path: {hf_path}")
+    raise ValueError(f"Unknown dataset: {hf_path}")
 
 
 def _load_trivia_qa(subset) -> list[dict]:
