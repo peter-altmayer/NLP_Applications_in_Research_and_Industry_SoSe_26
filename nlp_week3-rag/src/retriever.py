@@ -76,7 +76,8 @@ def retrieve_dpr(
             query, return_tensors="pt", truncation=True, max_length=64
         ).to(device)
         q_vec = q_encoder(**enc).pooler_output.cpu().numpy()  # (1, 768)
-    norms = np.linalg.norm(embeddings, axis=1) * np.linalg.norm(q_vec) + 1e-8
-    scores = (embeddings @ q_vec.T).squeeze() / norms
+    emb_norms = np.linalg.norm(embeddings, axis=1)  # (n,)
+    q_norm = float(np.linalg.norm(q_vec))            # scalar
+    scores = (embeddings @ q_vec.T).squeeze() / (emb_norms * q_norm + 1e-8)
     top_k = np.argsort(scores)[::-1][:k]
     return [corpus[i] for i in top_k]
