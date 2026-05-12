@@ -2,17 +2,25 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-def load_generator(model_name: str):
+def load_generator(model_name: str, quantize_4bit: bool = False):
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    dtype = torch.float16 if device == "cuda" else torch.float32
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype=dtype,
-        device_map="auto",
-    )
+
+    kwargs: dict = {"device_map": "auto"}
+    if quantize_4bit and device == "cuda":
+        from transformers import BitsAndBytesConfig
+        kwargs["quantization_config"] = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=torch.float16,
+            bnb_4bit_use_double_quant=True,
+        )
+    else:
+        kwargs["torch_dtype"] = torch.float16 if device == "cuda" else torch.float32
+
+    model = AutoModelForCausalLM.from_pretrained(model_name, **kwargs)
     model.eval()
     return model, tokenizer
 

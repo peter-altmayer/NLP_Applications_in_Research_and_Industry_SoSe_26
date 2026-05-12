@@ -5,4 +5,5 @@ rank_bm25>=0.2.2
 numpy>=1.26
 pandas>=2.2
 accelerate>=0.30
+bitsandbytes>=0.43
 pytest>=8.0

@@ -18,8 +18,11 @@ RESULTS.mkdir(exist_ok=True)
 
 GENERATOR_MODELS = {
     "phi3": "microsoft/Phi-3-mini-4k-instruct",
-    "mistral": "mistralai/Mistral-7B-Instruct-v0.3",
+    "qwen": "Qwen/Qwen2.5-7B-Instruct",
 }
+
+# Models that need 4-bit quantization on 16 GB GPUs (Colab T4)
+QUANTIZE_4BIT = {"qwen"}
 
 DPR_Q_ENCODERS = {
     "dpr_nq": "facebook/dpr-question_encoder-single-nq-base",
@@ -75,7 +78,10 @@ def main():
         dpr_encoders[enc_key] = (enc, tok)
 
     print(f"Loading generator: {GENERATOR_MODELS[args.model]}")
-    gen_model, gen_tokenizer = load_generator(GENERATOR_MODELS[args.model])
+    gen_model, gen_tokenizer = load_generator(
+        GENERATOR_MODELS[args.model],
+        quantize_4bit=args.model in QUANTIZE_4BIT,
+    )
 
     # ── K=0: no context, run once ──────────────────────────────────────────
     k0_path = RESULTS / f"{args.model}_{args.dataset}_none_k0.csv"

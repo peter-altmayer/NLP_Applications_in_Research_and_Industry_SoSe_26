@@ -13,8 +13,8 @@ PROCESSED = Path(__file__).parent.parent / "data" / "processed"
 PROCESSED.mkdir(parents=True, exist_ok=True)
 
 DATASETS = {
-    "trivia_qa": ("mandarjoshi/trivia_qa", "rc.nocontext"),
-    "natural_questions": ("sentence-transformers/natural-questions", "train"),
+    "trivia_qa": ("mandarjoshi/trivia_qa", "rc.nocontext", "train"),
+    "natural_questions": ("sentence-transformers/natural-questions", None, "train"),
 }
 
 DPR_CTX_ENCODERS = {
@@ -27,9 +27,9 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Device: {device}")
 
-    for ds_key, (hf_path, split) in DATASETS.items():
+    for ds_key, (hf_path, config, split) in DATASETS.items():
         print(f"\n=== {ds_key} ===")
-        records = load_dataset_records(hf_path, split, n=1000)
+        records = load_dataset_records(hf_path, split, n=1000, config=config)
         corpus = extract_corpus(records)
         print(f"  {len(records)} records | {len(corpus)} unique corpus docs")
 
