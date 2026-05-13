@@ -1,0 +1,89 @@
+Loaded 25000 rows from 25 files
+Saved all_results.csv
+
+=== Results (mean EM / mean F1) ===
+model                            phi3                          qwen                  
+dataset             natural_questions      trivia_qa      trivia_qa natural_questions
+retrieval_method k                                                                   
+bm25             1      0.000 / 0.071  0.147 / 0.176  0.044 / 0.055               NaN
+                 5      0.000 / 0.097  0.100 / 0.118  0.046 / 0.058               NaN
+                 10     0.000 / 0.198  0.092 / 0.109  0.043 / 0.060               NaN
+dpr_multiset     1                NaN  0.083 / 0.110  0.015 / 0.026               NaN
+                 5                NaN  0.054 / 0.073            NaN               NaN
+                 10               NaN  0.065 / 0.085            NaN               NaN
+dpr_nq           1      0.000 / 0.044  0.100 / 0.129  0.008 / 0.019               NaN
+                 5      0.000 / 0.081  0.058 / 0.073  0.023 / 0.034               NaN
+                 10               NaN  0.051 / 0.066  0.022 / 0.035               NaN
+none             0      0.000 / 0.058  0.338 / 0.408  0.326 / 0.391     0.000 / 0.033
+
+=== Top 10 Failure Cases (EM=0, lowest F1) ===
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    what part of the country are you likely to find the majority of the mollisols
+  Gold: ["Mollisol Mollisols occur in savannahs and mountain valleys (such as Central Asia, or the North American Great Plains). These environments have historically been strongly influenced by fire and abundant pedoturbation from organisms such as ants and earthworms. It was estimated that in 2003, only 14 to 26 percent of grassland ecosystems still remained in a relatively natural state (that is, they were not used for agriculture due to the fertility of the A horizon). Globally, they represent ~7% of ice-free land area. As the world's most agriculturally productive soil order, the Mollisols represent one of the more economically important soil orders."]
+  Pred: I don't know.
+  Ret:  I Won't Give Up "I Won't Give Up" was written by Jason Mraz and Michael Natter, while production was handled by Joe Chic
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    when did 17 nam summit meet take place
+  Gold: ['16th Summit of the Non-Aligned Movement The summit consisted of two preceding events: a "Senior Officials Meeting" on 26 and 27 August 2012, and a "Ministerial Meeting" on 28 and 29 August 2012. The leaders summit took place on 30 and 31 August.[5][7] Egyptian President Mohammad Morsi officially handed the presidency of the Non-Aligned Movement (NAM) to Iranian President Mahmoud Ahmadinejad, during the inaugural ceremony of Leaders\' Meeting.[8] Iran will hold the NAM presidency for four years until the 17th summit in Venezuela in 2016.']
+  Pred: I don't know.
+  Ret:  16th Summit of the Non-Aligned Movement The summit consisted of two preceding events: a "Senior Officials Meeting" on 26
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    when did jack and the beanstalk take place
+  Gold: ["Jack and the Beanstalk According to researchers at the universities in Durham and Lisbon, the story originated more than 5,000 years ago, based on a widespread archaic story form which is now classified by folklorists as ATU 328 The Boy Who Stole Ogre's Treasure.[7]"]
+  Pred: I don't know.
+  Ret:  Jack and the Beanstalk According to researchers at the universities in Durham and Lisbon, the story originated more than
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    what is the meaning of mbbs and md
+  Gold: ["Doctor of Medicine Historically, Australian medical schools have followed the British tradition by conferring the degrees of Bachelor of Medicine and Bachelor of Surgery (MBBS) to its graduates whilst reserving the title of Doctor of Medicine (MD) for their research training degree, analogous to the PhD, or for their honorary doctorates. Although the majority of Australian MBBS degrees have been graduate programs since the 1990s, under the previous Australian Qualifications Framework (AQF) they remained categorized as Level 7 Bachelor's degrees together with other undergraduate programs."]
+  Pred: I don't know.
+  Ret:  Bald eagle Bald eagles are not actually bald; the name derives from an older meaning of the word, "white headed". The ad
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    when did the us military start using hummers
+  Gold: ['Humvee In 1979, the U.S. Army drafted final specifications for a High Mobility Multipurpose Wheeled Vehicle (HMMWV), which was to replace all the tactical vehicles in the 1/4 to 1 1/4-ton range,[8] namely the M151 quarter-ton jeep and M561 Gama Goat, as one "jack-of-all-trades" light tactical vehicle to perform the role of several existing trucks.[9][unreliable source?] The specification called for excellent on and off-road performance, the ability to carry a large payload, and improved survivability against indirect fire.[10] Compared to the jeep, it was larger and had a much wider track, with a 16\xa0in (410\xa0mm) ground clearance, double that of most sport-utility vehicles. The new truck was to climb a 60 percent incline and traverse a 40 percent slope. The air intake was to be mounted flush on top of the right fender (or to be raised on a stovepipe to roof level to ford 5\xa0ft (1.5\xa0m) of water[11] and electronics waterproofed to drive through 2.5\xa0ft (0.76\xa0m) of water were specified. The radiator was to be mounted high, sloping over the engine on a forward-hinged hood.']
+  Pred: I don't know.
+  Ret:  Five-star rank Five-star ranks were created in the US military during World War II because of the awkward situation crea
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    who is known as a father of indian cricket
+  Gold: ['M. Suryanarayan M. Suryanarayan (1930 â€“ 2010) was an Indian first-class cricketer who was born on February 1, 1930 during Madras presidency.[1][2] M. Suryanarayan is the first son of M.Baliah Naidu and the Grandson of Buchi Babu Naidu who is also known as the \'Father of South Indian Cricket\' the doyen of Madras Cricket. He was also a member of the First Ranji Trophy triumph team of Tamilnadu in 1954-1955, which the Madras team won against Holkar. He was a right-handed batsman and a right-arm medium bowler. The Hindu describing his Cricket, once said: " His batting resembles very closely that of his father -dashing and carefree -and his cover-drive, a joy to watch, has amazing impetus..."And it added that he had "enriched Madras sport as his father had". His only younger brother M.M Kumar represented in the Ranji Trophy.']
+  Pred: I don't know.
+  Ret:  M. Suryanarayan M. Suryanarayan (1930 â€“ 2010) was an Indian first-class cricketer who was born on February 1, 1930 dur
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    does kirby vacuum still sell door to door
+  Gold: ["Kirby Company The Kirby Company is a manufacturer of vacuum cleaners and home cleaning accessories, based in Cleveland, Ohio, United States. It is a division of The Scott Fetzer Company (also known as Scott & Fetzer) which in turn is part of Berkshire Hathaway. Dealers are located in over 50 countries throughout the world. Kirby's products are only sold via in-home door-to-door demonstrations[1] and the company is a member of the Direct Selling Association. All of the vacuum cleaners are built in either Ohio or Texas."]
+  Pred: I don't know.
+  Ret:  Kirby Company The Kirby Company is a manufacturer of vacuum cleaners and home cleaning accessories, based in Cleveland, 
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    who gave the motto back to the vedas
+  Gold: ['Dayananda Saraswati Dayananda\'s "back to the Vedas" message influenced many thinkers and philosophers the world over.[21]']
+  Pred: I don't know.
+  Ret:  Jarasandha Jarasandha's father king Brihadratha was married to the twin daughters of the King of Kashi. Brihadratha love
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    where does a hamster live in the wild
+  Gold: ['Hamster Hamsters are more crepuscular than nocturnal and, in the wild, remain underground during the day to avoid being caught by predators. They feed primarily on seeds, fruits, and vegetation, and will occasionally eat burrowing insects.[3] As one of their more prominent characteristics, they have elongated cheek pouches extending to their shoulders, which they use to carry food back to their burrows.']
+  Pred: I don't know.
+  Ret:  The Call of the Wild The Call of the Wild is a short adventure novel by Jack London published in 1903 and set in Yukon, 
+  EM=0  F1=0.000
+
+[natural_questions | phi3 | bm25 | K=1]
+  Q:    how many years can you be president in russia
+  Gold: ['President of Russia The president is elected directly through a popular vote to a six-year term. The law prohibits anyone from ever being elected to the presidency for a third consecutive term. In all, three individuals have served four presidencies spanning six full terms. On 7 May 2012, Vladimir Putin became the fourth and current president.']
+  Pred: I don't know.
+  Ret:  Valence electron The number of valence electrons of an element can be determined by the periodic table group (vertical c
+  EM=0  F1=0.000
