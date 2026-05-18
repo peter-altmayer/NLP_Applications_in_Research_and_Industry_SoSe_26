@@ -11,13 +11,13 @@ from pathlib import Path
 from typing import List, Optional
 
 import torch
+from torch.optim import AdamW
 from torch.utils.data import DataLoader, Dataset
 from transformers import (
     AutoTokenizer,
     BertConfig,
     BertForQuestionAnswering,
     AutoModelForQuestionAnswering,
-    AdamW,
     get_linear_schedule_with_warmup,
 )
 from tqdm import tqdm
@@ -223,7 +223,7 @@ class TrainableQAModel(BaseQAModel):
 
         loader = DataLoader(_QADataset(features), batch_size=batch_size, shuffle=True)
         total_steps = len(loader) * epochs
-        optimizer = AdamW(self.model.parameters(), lr=lr, no_deprecation_warning=True)
+        optimizer = AdamW(self.model.parameters(), lr=lr)
         scheduler = get_linear_schedule_with_warmup(
             optimizer,
             num_warmup_steps=max(1, total_steps // 10),
@@ -341,11 +341,20 @@ def load_model(variant: str, device: Optional[str] = None) -> BaseQAModel:
             f"Run:  python experiments/run_experiment.py --model {variant} --fine-tune"
         )
     dev = device or ("cuda" if torch.cuda.is_available() else "cpu")
-    m = TrainableQAModel(
-        model_name_or_config=None,
-        tokenizer_name=V1_TOKENIZER if variant == "v1" else V3_BASE,
-        from_scratch=False,  # weights loaded from checkpoint
-        device=dev,
-    )
+    if variant == "v1":
+        # Build tiny architecture first; load_checkpoint replaces weights from the saved ckpt
+        m = TrainableQAModel(
+            model_name_or_config=None,
+            tokenizer_name=V1_TOKENIZER,
+            from_scratch=True,
+            device=dev,
+        )
+    else:
+        m = TrainableQAModel(
+            model_name_or_config=V3_BASE,
+            tokenizer_name=V3_BASE,
+            from_scratch=False,
+            device=dev,
+        )
     m.load_checkpoint(ckpt)
     return m
