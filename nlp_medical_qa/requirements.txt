@@ -11,8 +11,6 @@ faiss-cpu>=1.7.4        # swap for faiss-gpu on Colab with GPU
 
 # Evaluation
 rouge-score>=0.1.2
-bert-score>=0.3.13
-scipy>=1.11             # indirect dep of bert-score
 
 # Utilities
 pandas>=2.1
