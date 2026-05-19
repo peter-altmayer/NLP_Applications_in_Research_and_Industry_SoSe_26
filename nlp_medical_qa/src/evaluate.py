@@ -50,15 +50,22 @@ def rouge_l(pred: str, gold: str) -> float:
 
 
 def bertscore_batch(preds: List[str], golds: List[str], lang: str = "en") -> List[float]:
-    """Batch BERTScore; returns F1 per sample. Runs on CPU to save VRAM."""
+    """Semantic similarity via sentence-transformers cosine similarity.
+
+    bert_score>=0.3.13 calls tokenizer.build_inputs_with_special_tokens() which was
+    removed from transformers>=4.40, making it unusable. We use all-MiniLM-L6-v2
+    (already required by the dense retriever) as a drop-in replacement.
+    """
     if not preds:
         return []
-    from bert_score import score as _bs
+    from sentence_transformers import SentenceTransformer
+    import numpy as np
 
-    # Use bert-base-uncased to avoid RobertaTokenizer incompatibility with transformers>=4.40
-    _, _, f1 = _bs(preds, golds, lang=lang, model_type="bert-base-uncased",
-                   verbose=False, device="cpu", batch_size=16)
-    return [round(v, 4) for v in f1.tolist()]
+    _model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    pred_embs = _model.encode(preds, convert_to_numpy=True, normalize_embeddings=True, show_progress_bar=False)
+    gold_embs = _model.encode(golds, convert_to_numpy=True, normalize_embeddings=True, show_progress_bar=False)
+    scores = (pred_embs * gold_embs).sum(axis=1)
+    return [round(float(s), 4) for s in scores.tolist()]
 
 
 def faithfulness(answer: str, context: str) -> Optional[float]:
