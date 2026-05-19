@@ -3,7 +3,7 @@
 V1  – 2-layer BERT from scratch, trained on SQuAD
 V2  – deepset/roberta-base-squad2  (pretrained general QA, eval-only)
 V3  – bert-base-uncased fine-tuned by us on biomedical QA data
-V4  – deepset/biobert-base-cased-v1.2-squad2 (BioBERT specialist, eval-only)
+V4  – dmis-lab/biobert-base-cased-v1.1-squad (BioBERT specialist, eval-only)
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ CHECKPOINT_DIR = Path(__file__).parent.parent / "data" / "processed" / "checkpoi
 # Model identifiers
 MODEL_NAMES = {
     "v2": "deepset/roberta-base-squad2",
-    "v4": "deepset/biobert-base-cased-v1.2-squad2",
+    "v4": "dmis-lab/biobert-base-cased-v1.1-squad",
 }
 V1_TOKENIZER = "bert-base-uncased"   # vocab reuse; encoder weights are random
 V3_BASE = "bert-base-uncased"
@@ -149,7 +149,7 @@ class PipelineQAModel(BaseQAModel):
                 question=question,
                 context=context,
                 max_answer_len=100,
-                handle_impossible_answer=True,
+                handle_impossible_answer=False,
             )
             return result.get("answer", "")
         except Exception:
@@ -272,21 +272,37 @@ class TrainableQAModel(BaseQAModel):
             padding="max_length",
             return_tensors="pt",
         )
-        enc = {k: v.to(self.device) for k, v in enc.items()
-               if k in ("input_ids", "attention_mask", "token_type_ids")}
+
+        # Restrict span selection to the context portion (sequence_id == 1).
+        # Without this, weak models (V1) pick subword tokens from the question
+        # and V3 picks the trailing "?" of the question instead of an answer span.
+        seq_ids = enc.sequence_ids(0)
+        ctx_positions = [i for i, s in enumerate(seq_ids) if s == 1]
+        ctx_start = ctx_positions[0] if ctx_positions else 0
+        ctx_end   = ctx_positions[-1] if ctx_positions else len(seq_ids) - 1
+
+        model_input = {k: v.to(self.device) for k, v in enc.items()
+                       if k in ("input_ids", "attention_mask", "token_type_ids")}
 
         with torch.no_grad():
-            outputs = self.model(**enc)
+            outputs = self.model(**model_input)
 
-        start = torch.argmax(outputs.start_logits, dim=1).item()
-        end = torch.argmax(outputs.end_logits, dim=1).item()
+        start_logits = outputs.start_logits[0]
+        end_logits   = outputs.end_logits[0]
 
+        # Mask positions outside the context window to -inf
+        mask = torch.full_like(start_logits, float("-inf"))
+        mask[ctx_start: ctx_end + 1] = 0.0
+        start_logits = start_logits + mask
+        end_logits   = end_logits   + mask
+
+        start = torch.argmax(start_logits).item()
+        end   = torch.argmax(end_logits).item()
         if end < start:
             end = start
 
         tokens = enc["input_ids"][0][start: end + 1]
-        answer = self.tokenizer.decode(tokens, skip_special_tokens=True).strip()
-        return answer
+        return self.tokenizer.decode(tokens, skip_special_tokens=True).strip()
 
 
 # ---------------------------------------------------------------------------
