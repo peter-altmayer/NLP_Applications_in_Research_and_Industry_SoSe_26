@@ -3,7 +3,7 @@
 V1  – 2-layer BERT from scratch, trained on SQuAD
 V2  – deepset/roberta-base-squad2  (pretrained general QA, eval-only)
 V3  – bert-base-uncased fine-tuned by us on biomedical QA data
-V4  – qiaojin/PubMedBERT-base-uncased-abstract-squads (specialist, eval-only)
+V4  – deepset/biobert-base-cased-v1.2-squad2 (BioBERT specialist, eval-only)
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ CHECKPOINT_DIR = Path(__file__).parent.parent / "data" / "processed" / "checkpoi
 # Model identifiers
 MODEL_NAMES = {
     "v2": "deepset/roberta-base-squad2",
-    "v4": "qiaojin/PubMedBERT-base-uncased-abstract-squads",
+    "v4": "deepset/biobert-base-cased-v1.2-squad2",
 }
 V1_TOKENIZER = "bert-base-uncased"   # vocab reuse; encoder weights are random
 V3_BASE = "bert-base-uncased"
@@ -349,12 +349,13 @@ def load_model(variant: str, device: Optional[str] = None) -> BaseQAModel:
             from_scratch=True,
             device=dev,
         )
+        m.load_checkpoint(ckpt)
     else:
+        # V3: load directly from the saved checkpoint — no redundant bert-base-uncased download
         m = TrainableQAModel(
-            model_name_or_config=V3_BASE,
-            tokenizer_name=V3_BASE,
+            model_name_or_config=str(ckpt),
+            tokenizer_name=str(ckpt),
             from_scratch=False,
             device=dev,
         )
-    m.load_checkpoint(ckpt)
     return m
