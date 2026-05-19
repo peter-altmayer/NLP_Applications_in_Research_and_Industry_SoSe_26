@@ -21,7 +21,6 @@ from src.dataset import (
     load_bioasq,
     load_pubmedqa,
     load_squad,
-    SUBSET,
 )
 from src.retriever import BM25Retriever, DenseRetriever
 
@@ -29,13 +28,26 @@ PROCESSED = Path(__file__).parent.parent / "data" / "processed"
 
 
 def _load(dataset: str) -> list:
+    """Load both train and test splits so every test-set passage is retrievable.
+
+    The corpus must contain the passages that are relevant to test questions;
+    using only the train split means test-set snippets/contexts are absent,
+    which causes P@k = R@k = 0 across the board.
+    """
     if dataset == "bioasq":
-        # Use full training split as our corpus
-        return load_bioasq(max_samples=None, split="train")
+        train = load_bioasq(max_samples=None, split="train")
+        test  = load_bioasq(max_samples=None, split="test")
+        return train + test
     elif dataset == "pubmedqa":
-        return load_pubmedqa(max_samples=None, split="train")
+        train = load_pubmedqa(max_samples=None, split="train")
+        test  = load_pubmedqa(max_samples=None, split="test")
+        return train + test
     elif dataset == "squad":
-        return load_squad(split="train", max_samples=5_000)
+        # Validation contexts must be in the index — answers are always spans
+        # within the exact context paragraph.
+        train = load_squad(split="train", max_samples=5_000)
+        val   = load_squad(split="validation", max_samples=None)
+        return train + val
     else:
         raise ValueError(f"Unknown dataset '{dataset}'")
 

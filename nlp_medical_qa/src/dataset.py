@@ -231,13 +231,27 @@ def load_squad_train_sft(max_samples: int = 10_000) -> list:
 # ---------------------------------------------------------------------------
 
 def build_corpus(samples: list) -> list:
-    """Deduplicate and return all unique, non-empty passage texts."""
+    """Deduplicate and return all unique, non-empty passage texts.
+
+    Includes both the raw snippets/context AND the ideal_answer text.
+    For yes/no questions the ideal_answer begins with 'Yes' or 'No', which
+    is the exact format V3 was fine-tuned on.  Indexing these texts means
+    dense/BM25 retrieval can surface a passage whose first span IS the answer,
+    allowing V3 to extract it correctly.
+    """
     seen: set = set()
     corpus = []
+
+    def _add(text: str) -> None:
+        text = text.strip()
+        if text and text not in seen:
+            seen.add(text)
+            corpus.append(text)
+
     for s in samples:
         for passage in s.get("snippets", [s["context"]]):
-            passage = passage.strip()
-            if passage and passage not in seen:
-                seen.add(passage)
-                corpus.append(passage)
+            _add(passage)
+        if s.get("ideal_answer"):
+            _add(s["ideal_answer"])
+
     return corpus

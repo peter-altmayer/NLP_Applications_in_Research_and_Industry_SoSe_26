@@ -82,9 +82,12 @@
     - **V4 — Already fine-tuned:** domain-specific model from HuggingFace evaluated
       directly; the ceiling — compare to V3: was your fine-tuning as good as the
       specialist?
-      > **→ Implemented as:** `qiaojin/PubMedBERT-base-uncased-abstract-squads` (~110M params) —
-      > PubMedBERT (pre-trained on PubMed abstracts) further fine-tuned on SQuAD. Evaluated
-      > on all three datasets without any additional training.
+      > **→ Implemented as:** `dmis-lab/biobert-base-cased-v1.1-squad` (~110M params) —
+      > BioBERT v1.1 (pre-trained on PubMed + PMC abstracts) further fine-tuned on SQuAD v1.1
+      > by the DMIS Lab. Evaluated on all three datasets without any additional training.
+      > *(Originally specified as `qiaojin/PubMedBERT-base-uncased-abstract-squads`; that
+      > identifier is not available on HuggingFace Hub, so BioBERT v1.1-SQuAD is used as the
+      > nearest equivalent domain-specialist.)*
 
 - **Are we in a research setting or an industry setting?**
 
@@ -570,7 +573,7 @@
   > | SQuAD v1.1 | CC BY-SA 4.0 |
   > | `deepset/roberta-base-squad2` (V2) | CC BY 4.0 |
   > | `bert-base-uncased` (V3 base) | Apache 2.0 |
-  > | `qiaojin/PubMedBERT-base-uncased-abstract-squads` (V4) | MIT |
+  > | `dmis-lab/biobert-base-cased-v1.1-squad` (V4) | Apache 2.0 |
   > | `all-MiniLM-L6-v2` (retriever) | Apache 2.0 |
   > | `cross-encoder/nli-MiniLM2-L6-H768` (faithfulness) | Apache 2.0 |
 
