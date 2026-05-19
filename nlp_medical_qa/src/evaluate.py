@@ -55,7 +55,9 @@ def bertscore_batch(preds: List[str], golds: List[str], lang: str = "en") -> Lis
         return []
     from bert_score import score as _bs
 
-    _, _, f1 = _bs(preds, golds, lang=lang, verbose=False, device="cpu", batch_size=16)
+    # Use bert-base-uncased to avoid RobertaTokenizer incompatibility with transformers>=4.40
+    _, _, f1 = _bs(preds, golds, lang=lang, model_type="bert-base-uncased",
+                   verbose=False, device="cpu", batch_size=16)
     return [round(v, 4) for v in f1.tolist()]
 
 
