@@ -1,0 +1,19 @@
+# Core ML / NLP
+torch>=2.0
+transformers>=4.40
+datasets>=2.18
+sentence-transformers>=2.7
+accelerate>=0.27        # required by transformers training loop
+
+# Retrieval
+rank-bm25>=0.2.2
+faiss-cpu>=1.7.4        # swap for faiss-gpu on Colab with GPU
+
+# Evaluation
+rouge-score>=0.1.2
+
+# Utilities
+pandas>=2.1
+numpy>=1.26
+tqdm>=4.66
+scikit-learn>=1.4       # utilities (stratified splits, etc.)
