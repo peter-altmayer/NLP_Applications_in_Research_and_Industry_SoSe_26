@@ -1,0 +1,12 @@
+cache/
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.ragatouille/
+results/raw/
+*.egg-info/
+.DS_Store
+desktop.ini
