@@ -10,7 +10,7 @@ An 8-method information-retrieval benchmark comparing BM25, TF-IDF, dense, hybri
 
 ```
 NLP Applications in Research and Industry/
-└── nlp_week4-retrieval-benchmark/    ← new subdirectory in course repo
+└── nlp_week6-retrieval-benchmark/    ← new subdirectory in course repo
     ├── README.md
     ├── requirements.txt
     ├── .gitignore
