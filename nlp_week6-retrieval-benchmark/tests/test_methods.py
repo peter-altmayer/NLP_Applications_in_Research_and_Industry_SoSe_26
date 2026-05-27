@@ -21,7 +21,8 @@ class _ConstantRetriever(Retriever):
         self._doc_ids = sorted(corpus.keys(), reverse=True)
 
     def search(self, query: str, k: int) -> list[tuple[str, float]]:
-        return [(did, float(i)) for i, did in enumerate(self._doc_ids[:k], start=1)]
+        ids = self._doc_ids[:k]
+        return [(did, float(len(ids) - i)) for i, did in enumerate(ids)]
 
 
 def test_retriever_abc_interface(tiny_corpus, cache_dir):
