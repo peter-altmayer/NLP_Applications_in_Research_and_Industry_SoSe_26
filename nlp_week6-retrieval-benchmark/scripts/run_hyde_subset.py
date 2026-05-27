@@ -38,6 +38,7 @@ DATASETS = {
 
 for dataset_name, data in DATASETS.items():
     all_qids = list(data["queries"].keys())
+    # Re-seed per dataset so subset selection is reproducible regardless of iteration order.
     random.seed(SEED)
     subset_qids = random.sample(all_qids, min(HYDE_SAMPLE_SIZE, len(all_qids)))
     queries = {qid: data["queries"][qid] for qid in subset_qids}

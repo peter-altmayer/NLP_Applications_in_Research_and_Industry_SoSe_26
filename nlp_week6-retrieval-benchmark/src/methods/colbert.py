@@ -32,11 +32,19 @@ class ColBERTRetriever(Retriever):
             split_documents=False,
         )
 
-        # Move index from ragatouille default location to our cache dir
+        # Move index from ragatouille default location to our cache dir.
+        # ragatouille saves relative to CWD; run scripts from nlp_week6-retrieval-benchmark/.
         default_path = _RAGATOUILLE_DEFAULT / self.dataset_name
         if default_path.exists():
             self.index_dir.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(str(default_path), str(self.index_dir))
+        elif not self.index_dir.exists():
+            raise RuntimeError(
+                f"ColBERT index not found at {self.index_dir} and ragatouille "
+                f"default path {default_path.resolve()} does not exist. "
+                "Run scripts from nlp_week6-retrieval-benchmark/ or manually move "
+                f"the index to {self.index_dir}."
+            )
 
         self._rag = RAGPretrainedModel.from_index(str(self.index_dir))
 

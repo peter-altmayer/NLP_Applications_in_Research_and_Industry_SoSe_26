@@ -35,5 +35,6 @@ def test_find_max_divergence():
     runs = {"BM25": BM25_RUN, "Dense": DENSE_RUN}
     df = find_max_divergence_queries(runs, QRELS, n=3)
     # q1: BM25=1, Dense=2 → spread=1. q2: BM25=2, Dense=1 → spread=1. q3: same
-    assert len(df) <= 3
+    assert len(df) == 3
     assert "spread" in df.columns
+    assert all(df["spread"] >= 1)  # every query has at least rank-1 divergence between methods

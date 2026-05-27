@@ -185,7 +185,6 @@ class _DenseStub(Retriever):
         from sklearn.metrics.pairwise import cosine_similarity
         q_vec = self._vec.transform([query])
         scores = cosine_similarity(q_vec, self._mat)[0]
-        top_k = int(np.argsort(-scores)[:k].tolist()[0] if k == 1 else len(scores))
         top_k_idx = list(np.argsort(-scores)[:k])
         return [(self._doc_ids[i], float(scores[i])) for i in top_k_idx]
 

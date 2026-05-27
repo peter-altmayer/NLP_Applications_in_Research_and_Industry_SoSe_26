@@ -16,7 +16,7 @@ class DenseRetriever(Retriever):
         self._doc_embeddings: np.ndarray | None = None
         self._doc_ids: list[str] | None = None
 
-    def _model_(self) -> SentenceTransformer:
+    def _get_model(self) -> SentenceTransformer:
         if self._model is None:
             self._model = SentenceTransformer(self.model_id)
         return self._model
@@ -29,7 +29,7 @@ class DenseRetriever(Retriever):
         cache_path = self.cache_dir / "embeddings" / f"{slug}__{self.dataset_name}__{ids_hash}.npy"
 
         def compute() -> np.ndarray:
-            return self._model_().encode(
+            return self._get_model().encode(
                 texts,
                 batch_size=64,
                 show_progress_bar=True,
@@ -39,7 +39,7 @@ class DenseRetriever(Retriever):
         self._doc_embeddings = load_or_compute(cache_path, compute)
 
     def search(self, query: str, k: int) -> list[tuple[str, float]]:
-        q_emb = self._model_().encode([query], normalize_embeddings=True)
+        q_emb = self._get_model().encode([query], normalize_embeddings=True)
         scores = (q_emb @ self._doc_embeddings.T)[0]
         top_k = np.argsort(-scores)[:k]
         return [(self._doc_ids[i], float(scores[i])) for i in top_k]

@@ -105,8 +105,6 @@ for dataset_name, data in DATASETS.items():
 
     # Build results DataFrame
     df = pd.DataFrame(rows).set_index("method")
-    metric_cols = [c for c in df.columns if c != "method"]
-    df = df[metric_cols]
 
     # Save CSV
     csv_path = RESULTS_DIR / f"{dataset_name}_results.csv"

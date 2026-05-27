@@ -18,7 +18,7 @@ class CrossEncoderRetriever(Retriever):
         self._model: CrossEncoder | None = None
         self._corpus: dict[str, str] | None = None
 
-    def _model_(self) -> CrossEncoder:
+    def _get_model(self) -> CrossEncoder:
         if self._model is None:
             self._model = CrossEncoder(self.model_id, max_length=512)
         return self._model
@@ -32,7 +32,7 @@ class CrossEncoderRetriever(Retriever):
         if not candidates:
             return []
         pairs = [(query, self._corpus[did][:_MAX_DOC_CHARS]) for did, _ in candidates]
-        scores = self._model_().predict(pairs)
+        scores = self._get_model().predict(pairs)
         ranked = sorted(
             zip([did for did, _ in candidates], scores.tolist()),
             key=lambda x: -x[1],

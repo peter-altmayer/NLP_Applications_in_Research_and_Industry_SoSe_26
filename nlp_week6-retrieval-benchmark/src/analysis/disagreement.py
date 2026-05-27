@@ -1,6 +1,4 @@
 """Find queries where methods disagree most on the gold document's rank."""
-from pathlib import Path
-
 import pandas as pd
 
 
