@@ -95,13 +95,17 @@ for dataset_name, data in DATASETS.items():
     rows.append(metrics)
     all_runs["CrossEncoder"] = run
 
-    # M6: ColBERT (last — slowest to index)
+    # M6: ColBERT (last — slowest to index; requires C++ compiler on Windows)
     print("\n[M6] ColBERT ...")
-    m6 = ColBERTRetriever(dataset_name=dataset_name, cache_dir=CACHE_DIR)
-    m6.index(corpus)
-    metrics, run = run_retriever("ColBERT", m6, queries, qrels)
-    rows.append(metrics)
-    all_runs["ColBERT"] = run
+    try:
+        m6 = ColBERTRetriever(dataset_name=dataset_name, cache_dir=CACHE_DIR)
+        m6.index(corpus)
+        metrics, run = run_retriever("ColBERT", m6, queries, qrels)
+        rows.append(metrics)
+        all_runs["ColBERT"] = run
+    except Exception as e:
+        print(f"  [M6] ColBERT skipped: {e}")
+        print("  Tip: run ColBERT on Colab (see README) and place the index under cache/colbert/")
 
     # Build results DataFrame
     df = pd.DataFrame(rows).set_index("method")

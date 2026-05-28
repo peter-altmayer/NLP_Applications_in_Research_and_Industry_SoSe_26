@@ -1,0 +1,1001 @@
+query_id,query_text,rank,doc_id,score,is_relevant
+q_59,how much does a lawyer charge to help me file for disability,1,msmarco_59_2,0.8441413640975952,0
+q_59,how much does a lawyer charge to help me file for disability,2,msmarco_59_3,0.8195550441741943,0
+q_59,how much does a lawyer charge to help me file for disability,3,msmarco_59_1,0.8082773685455322,0
+q_59,how much does a lawyer charge to help me file for disability,4,msmarco_59_0,0.761243462562561,1
+q_59,how much does a lawyer charge to help me file for disability,5,msmarco_59_4,0.5861672163009644,0
+q_59,how much does a lawyer charge to help me file for disability,6,msmarco_dist_2321_4,0.5092290639877319,0
+q_59,how much does a lawyer charge to help me file for disability,7,msmarco_98_5,0.4713178277015686,0
+q_59,how much does a lawyer charge to help me file for disability,8,msmarco_dist_2321_1,0.4369136095046997,0
+q_59,how much does a lawyer charge to help me file for disability,9,msmarco_44_2,0.42500409483909607,0
+q_59,how much does a lawyer charge to help me file for disability,10,msmarco_dist_2321_9,0.41913706064224243,0
+q_59,how much does a lawyer charge to help me file for disability,11,msmarco_98_1,0.41236409544944763,0
+q_59,how much does a lawyer charge to help me file for disability,12,msmarco_dist_4513_1,0.4092140197753906,0
+q_59,how much does a lawyer charge to help me file for disability,13,msmarco_250_6,0.39565378427505493,0
+q_59,how much does a lawyer charge to help me file for disability,14,msmarco_dist_2773_2,0.3889564871788025,0
+q_59,how much does a lawyer charge to help me file for disability,15,msmarco_dist_3943_2,0.3863695561885834,0
+q_59,how much does a lawyer charge to help me file for disability,16,msmarco_dist_4729_5,0.38532334566116333,0
+q_59,how much does a lawyer charge to help me file for disability,17,msmarco_dist_2773_0,0.3823483884334564,0
+q_59,how much does a lawyer charge to help me file for disability,18,msmarco_98_6,0.3784028887748718,0
+q_59,how much does a lawyer charge to help me file for disability,19,msmarco_dist_3943_1,0.3778269290924072,0
+q_59,how much does a lawyer charge to help me file for disability,20,msmarco_dist_4729_3,0.3751975893974304,0
+q_59,how much does a lawyer charge to help me file for disability,21,msmarco_dist_3826_5,0.3745192289352417,0
+q_59,how much does a lawyer charge to help me file for disability,22,msmarco_dist_3826_1,0.3718007206916809,0
+q_59,how much does a lawyer charge to help me file for disability,23,msmarco_98_2,0.371616929769516,0
+q_59,how much does a lawyer charge to help me file for disability,24,msmarco_98_7,0.3713533580303192,0
+q_59,how much does a lawyer charge to help me file for disability,25,msmarco_dist_3943_3,0.37051132321357727,0
+q_59,how much does a lawyer charge to help me file for disability,26,msmarco_dist_3826_3,0.36937180161476135,0
+q_59,how much does a lawyer charge to help me file for disability,27,msmarco_dist_3943_4,0.3656386137008667,0
+q_59,how much does a lawyer charge to help me file for disability,28,msmarco_44_3,0.36364614963531494,0
+q_59,how much does a lawyer charge to help me file for disability,29,msmarco_98_3,0.36253565549850464,0
+q_59,how much does a lawyer charge to help me file for disability,30,msmarco_dist_541_2,0.3624177575111389,0
+q_59,how much does a lawyer charge to help me file for disability,31,msmarco_dist_541_4,0.36192893981933594,0
+q_59,how much does a lawyer charge to help me file for disability,32,msmarco_dist_8131_1,0.361275851726532,0
+q_59,how much does a lawyer charge to help me file for disability,33,msmarco_dist_5346_2,0.3604530096054077,0
+q_59,how much does a lawyer charge to help me file for disability,34,msmarco_dist_4513_6,0.36032167077064514,0
+q_59,how much does a lawyer charge to help me file for disability,35,msmarco_dist_4513_3,0.35785818099975586,0
+q_59,how much does a lawyer charge to help me file for disability,36,msmarco_dist_4729_2,0.35613927245140076,0
+q_59,how much does a lawyer charge to help me file for disability,37,msmarco_dist_4065_1,0.35609644651412964,0
+q_59,how much does a lawyer charge to help me file for disability,38,msmarco_dist_3826_2,0.3548452854156494,0
+q_59,how much does a lawyer charge to help me file for disability,39,msmarco_dist_6792_5,0.3518614172935486,0
+q_59,how much does a lawyer charge to help me file for disability,40,msmarco_194_8,0.3508532643318176,0
+q_59,how much does a lawyer charge to help me file for disability,41,msmarco_dist_4513_5,0.34774965047836304,0
+q_59,how much does a lawyer charge to help me file for disability,42,msmarco_dist_7304_1,0.34750670194625854,0
+q_59,how much does a lawyer charge to help me file for disability,43,msmarco_dist_3826_0,0.3445430397987366,0
+q_59,how much does a lawyer charge to help me file for disability,44,msmarco_dist_2321_7,0.3435620963573456,0
+q_59,how much does a lawyer charge to help me file for disability,45,msmarco_dist_541_3,0.3430517315864563,0
+q_59,how much does a lawyer charge to help me file for disability,46,msmarco_250_3,0.34114518761634827,0
+q_59,how much does a lawyer charge to help me file for disability,47,msmarco_dist_5191_4,0.3407997488975525,0
+q_59,how much does a lawyer charge to help me file for disability,48,msmarco_dist_541_1,0.3392236828804016,0
+q_59,how much does a lawyer charge to help me file for disability,49,msmarco_dist_7304_6,0.33896833658218384,0
+q_59,how much does a lawyer charge to help me file for disability,50,msmarco_dist_4065_4,0.33845412731170654,0
+q_59,how much does a lawyer charge to help me file for disability,51,msmarco_dist_3943_5,0.3381880521774292,0
+q_59,how much does a lawyer charge to help me file for disability,52,msmarco_dist_541_9,0.3376031517982483,0
+q_59,how much does a lawyer charge to help me file for disability,53,msmarco_dist_7304_5,0.33726951479911804,0
+q_59,how much does a lawyer charge to help me file for disability,54,msmarco_dist_4065_6,0.33718401193618774,0
+q_59,how much does a lawyer charge to help me file for disability,55,msmarco_173_3,0.3365950286388397,0
+q_59,how much does a lawyer charge to help me file for disability,56,msmarco_dist_7304_8,0.3343026340007782,0
+q_59,how much does a lawyer charge to help me file for disability,57,msmarco_229_1,0.3339882493019104,0
+q_59,how much does a lawyer charge to help me file for disability,58,msmarco_dist_541_6,0.3331052362918854,0
+q_59,how much does a lawyer charge to help me file for disability,59,msmarco_dist_3826_7,0.332213819026947,0
+q_59,how much does a lawyer charge to help me file for disability,60,msmarco_dist_2321_3,0.33198535442352295,0
+q_59,how much does a lawyer charge to help me file for disability,61,msmarco_dist_7119_5,0.33147263526916504,0
+q_59,how much does a lawyer charge to help me file for disability,62,msmarco_dist_541_7,0.3312443494796753,0
+q_59,how much does a lawyer charge to help me file for disability,63,msmarco_dist_5346_1,0.331088125705719,0
+q_59,how much does a lawyer charge to help me file for disability,64,msmarco_44_0,0.33080756664276123,0
+q_59,how much does a lawyer charge to help me file for disability,65,msmarco_dist_8753_4,0.33008110523223877,0
+q_59,how much does a lawyer charge to help me file for disability,66,msmarco_dist_2830_0,0.3284202814102173,0
+q_59,how much does a lawyer charge to help me file for disability,67,msmarco_dist_4050_3,0.32749080657958984,0
+q_59,how much does a lawyer charge to help me file for disability,68,msmarco_67_0,0.32631272077560425,0
+q_59,how much does a lawyer charge to help me file for disability,69,msmarco_98_8,0.3252109885215759,0
+q_59,how much does a lawyer charge to help me file for disability,70,msmarco_dist_8611_5,0.3236866891384125,0
+q_59,how much does a lawyer charge to help me file for disability,71,msmarco_194_5,0.32320088148117065,0
+q_59,how much does a lawyer charge to help me file for disability,72,msmarco_dist_6792_3,0.3227764964103699,0
+q_59,how much does a lawyer charge to help me file for disability,73,msmarco_dist_2830_3,0.3222461938858032,0
+q_59,how much does a lawyer charge to help me file for disability,74,msmarco_dist_8753_1,0.32156646251678467,0
+q_59,how much does a lawyer charge to help me file for disability,75,msmarco_dist_3826_8,0.32121047377586365,0
+q_59,how much does a lawyer charge to help me file for disability,76,msmarco_dist_2773_4,0.32044851779937744,0
+q_59,how much does a lawyer charge to help me file for disability,77,msmarco_dist_8606_6,0.32002878189086914,0
+q_59,how much does a lawyer charge to help me file for disability,78,msmarco_229_6,0.31991255283355713,0
+q_59,how much does a lawyer charge to help me file for disability,79,msmarco_dist_7947_2,0.3196222186088562,0
+q_59,how much does a lawyer charge to help me file for disability,80,msmarco_dist_779_3,0.31867218017578125,0
+q_59,how much does a lawyer charge to help me file for disability,81,msmarco_252_4,0.3182530999183655,0
+q_59,how much does a lawyer charge to help me file for disability,82,msmarco_dist_5191_0,0.3173093795776367,0
+q_59,how much does a lawyer charge to help me file for disability,83,msmarco_dist_7304_7,0.3157171607017517,0
+q_59,how much does a lawyer charge to help me file for disability,84,msmarco_dist_4065_2,0.3156794309616089,0
+q_59,how much does a lawyer charge to help me file for disability,85,msmarco_173_5,0.31547313928604126,0
+q_59,how much does a lawyer charge to help me file for disability,86,msmarco_dist_4050_5,0.315341979265213,0
+q_59,how much does a lawyer charge to help me file for disability,87,msmarco_78_3,0.31525832414627075,0
+q_59,how much does a lawyer charge to help me file for disability,88,msmarco_dist_3826_6,0.3149208724498749,0
+q_59,how much does a lawyer charge to help me file for disability,89,msmarco_229_5,0.31397730112075806,0
+q_59,how much does a lawyer charge to help me file for disability,90,msmarco_dist_2773_3,0.31377798318862915,0
+q_59,how much does a lawyer charge to help me file for disability,91,msmarco_dist_6792_2,0.31312090158462524,0
+q_59,how much does a lawyer charge to help me file for disability,92,msmarco_49_7,0.31074631214141846,0
+q_59,how much does a lawyer charge to help me file for disability,93,msmarco_dist_4729_6,0.309723436832428,0
+q_59,how much does a lawyer charge to help me file for disability,94,msmarco_dist_4729_1,0.30958694219589233,0
+q_59,how much does a lawyer charge to help me file for disability,95,msmarco_44_4,0.30902066826820374,0
+q_59,how much does a lawyer charge to help me file for disability,96,msmarco_169_6,0.3086636960506439,0
+q_59,how much does a lawyer charge to help me file for disability,97,msmarco_dist_7119_7,0.3084225058555603,0
+q_59,how much does a lawyer charge to help me file for disability,98,msmarco_173_4,0.30810561776161194,0
+q_59,how much does a lawyer charge to help me file for disability,99,msmarco_250_4,0.3077036142349243,0
+q_59,how much does a lawyer charge to help me file for disability,100,msmarco_dist_4513_8,0.3071788251399994,0
+q_14,bhavin name meaning,1,msmarco_14_3,0.8167566061019897,1
+q_14,bhavin name meaning,2,msmarco_14_7,0.7466064691543579,0
+q_14,bhavin name meaning,3,msmarco_14_5,0.7135443687438965,0
+q_14,bhavin name meaning,4,msmarco_14_2,0.6965928077697754,0
+q_14,bhavin name meaning,5,msmarco_14_6,0.5996450781822205,0
+q_14,bhavin name meaning,6,msmarco_14_4,0.5351631045341492,0
+q_14,bhavin name meaning,7,msmarco_dist_6282_0,0.4852333068847656,0
+q_14,bhavin name meaning,8,msmarco_dist_8118_1,0.41649144887924194,0
+q_14,bhavin name meaning,9,msmarco_dist_7752_0,0.3979191780090332,0
+q_14,bhavin name meaning,10,msmarco_235_1,0.3896801471710205,0
+q_14,bhavin name meaning,11,msmarco_dist_1548_2,0.38723719120025635,0
+q_14,bhavin name meaning,12,msmarco_238_2,0.3822021782398224,0
+q_14,bhavin name meaning,13,msmarco_235_0,0.380864679813385,0
+q_14,bhavin name meaning,14,msmarco_dist_5828_6,0.3799377977848053,0
+q_14,bhavin name meaning,15,msmarco_14_0,0.36815282702445984,0
+q_14,bhavin name meaning,16,msmarco_234_1,0.3624568581581116,0
+q_14,bhavin name meaning,17,msmarco_235_2,0.36219269037246704,0
+q_14,bhavin name meaning,18,msmarco_238_6,0.35915082693099976,0
+q_14,bhavin name meaning,19,msmarco_dist_5828_7,0.3536005914211273,0
+q_14,bhavin name meaning,20,msmarco_14_1,0.3520103991031647,0
+q_14,bhavin name meaning,21,msmarco_dist_6876_8,0.3516961932182312,0
+q_14,bhavin name meaning,22,msmarco_dist_9670_2,0.3507617115974426,0
+q_14,bhavin name meaning,23,msmarco_238_4,0.3493119180202484,0
+q_14,bhavin name meaning,24,msmarco_dist_6876_1,0.34154677391052246,0
+q_14,bhavin name meaning,25,msmarco_dist_2827_7,0.3411635756492615,0
+q_14,bhavin name meaning,26,msmarco_234_4,0.3370485305786133,0
+q_14,bhavin name meaning,27,msmarco_238_0,0.3349446654319763,0
+q_14,bhavin name meaning,28,msmarco_dist_9670_3,0.33352625370025635,0
+q_14,bhavin name meaning,29,msmarco_dist_6876_6,0.332940936088562,0
+q_14,bhavin name meaning,30,msmarco_dist_7752_6,0.33286112546920776,0
+q_14,bhavin name meaning,31,msmarco_275_7,0.3306971490383148,0
+q_14,bhavin name meaning,32,msmarco_238_3,0.3305410146713257,0
+q_14,bhavin name meaning,33,msmarco_dist_7591_3,0.323110967874527,0
+q_14,bhavin name meaning,34,msmarco_dist_8208_2,0.32309257984161377,0
+q_14,bhavin name meaning,35,msmarco_dist_8208_3,0.31587469577789307,0
+q_14,bhavin name meaning,36,msmarco_dist_6876_9,0.31404557824134827,0
+q_14,bhavin name meaning,37,msmarco_dist_1548_1,0.31319111585617065,0
+q_14,bhavin name meaning,38,msmarco_dist_4074_6,0.31095239520072937,0
+q_14,bhavin name meaning,39,msmarco_dist_10040_6,0.30771970748901367,0
+q_14,bhavin name meaning,40,msmarco_dist_1548_7,0.30762356519699097,0
+q_14,bhavin name meaning,41,msmarco_dist_2827_1,0.3071269690990448,0
+q_14,bhavin name meaning,42,msmarco_dist_4074_0,0.30562543869018555,0
+q_14,bhavin name meaning,43,msmarco_258_2,0.3037765622138977,0
+q_14,bhavin name meaning,44,msmarco_dist_6876_0,0.303505003452301,0
+q_14,bhavin name meaning,45,msmarco_275_5,0.30348309874534607,0
+q_14,bhavin name meaning,46,msmarco_46_2,0.30284643173217773,0
+q_14,bhavin name meaning,47,msmarco_dist_6876_7,0.3023340106010437,0
+q_14,bhavin name meaning,48,msmarco_275_1,0.300823450088501,0
+q_14,bhavin name meaning,49,msmarco_dist_4074_4,0.2999074161052704,0
+q_14,bhavin name meaning,50,msmarco_275_2,0.2997885048389435,0
+q_14,bhavin name meaning,51,msmarco_dist_8208_6,0.29853805899620056,0
+q_14,bhavin name meaning,52,msmarco_234_5,0.2981226444244385,0
+q_14,bhavin name meaning,53,msmarco_dist_4074_3,0.2968483567237854,0
+q_14,bhavin name meaning,54,msmarco_234_7,0.295885294675827,0
+q_14,bhavin name meaning,55,msmarco_238_1,0.2947762608528137,0
+q_14,bhavin name meaning,56,msmarco_dist_6876_4,0.2942224144935608,0
+q_14,bhavin name meaning,57,msmarco_dist_6876_3,0.2931799292564392,0
+q_14,bhavin name meaning,58,msmarco_dist_6876_5,0.2924402356147766,0
+q_14,bhavin name meaning,59,msmarco_dist_9117_1,0.29177892208099365,0
+q_14,bhavin name meaning,60,msmarco_dist_4681_4,0.29039251804351807,0
+q_14,bhavin name meaning,61,msmarco_dist_1548_3,0.2894784212112427,0
+q_14,bhavin name meaning,62,msmarco_275_6,0.2846182584762573,0
+q_14,bhavin name meaning,63,msmarco_dist_10040_1,0.2843574583530426,0
+q_14,bhavin name meaning,64,msmarco_dist_2208_8,0.2838513255119324,0
+q_14,bhavin name meaning,65,msmarco_dist_6282_1,0.28287196159362793,0
+q_14,bhavin name meaning,66,msmarco_dist_8208_5,0.279929518699646,0
+q_14,bhavin name meaning,67,msmarco_dist_7752_4,0.2791125774383545,0
+q_14,bhavin name meaning,68,msmarco_dist_9117_3,0.27887776494026184,0
+q_14,bhavin name meaning,69,msmarco_dist_2770_3,0.2788737416267395,0
+q_14,bhavin name meaning,70,msmarco_dist_7864_6,0.27871474623680115,0
+q_14,bhavin name meaning,71,msmarco_dist_3465_7,0.2770801782608032,0
+q_14,bhavin name meaning,72,msmarco_dist_7752_5,0.2761108875274658,0
+q_14,bhavin name meaning,73,msmarco_dist_8208_4,0.2743794918060303,0
+q_14,bhavin name meaning,74,msmarco_dist_2770_1,0.27408546209335327,0
+q_14,bhavin name meaning,75,msmarco_172_7,0.27403002977371216,0
+q_14,bhavin name meaning,76,msmarco_dist_4178_7,0.27355441451072693,0
+q_14,bhavin name meaning,77,msmarco_dist_5828_8,0.2726883292198181,0
+q_14,bhavin name meaning,78,msmarco_dist_2770_8,0.27211225032806396,0
+q_14,bhavin name meaning,79,msmarco_dist_9670_1,0.2720431685447693,0
+q_14,bhavin name meaning,80,msmarco_142_6,0.2710977792739868,0
+q_14,bhavin name meaning,81,msmarco_dist_7141_0,0.2704799175262451,0
+q_14,bhavin name meaning,82,msmarco_dist_4074_8,0.27010858058929443,0
+q_14,bhavin name meaning,83,msmarco_20_0,0.2695673108100891,0
+q_14,bhavin name meaning,84,msmarco_dist_1548_4,0.268835186958313,0
+q_14,bhavin name meaning,85,msmarco_dist_4074_2,0.26834046840667725,0
+q_14,bhavin name meaning,86,msmarco_dist_10040_2,0.2682528793811798,0
+q_14,bhavin name meaning,87,msmarco_dist_5828_5,0.26820042729377747,0
+q_14,bhavin name meaning,88,msmarco_142_8,0.26676738262176514,0
+q_14,bhavin name meaning,89,msmarco_dist_6876_2,0.2662903666496277,0
+q_14,bhavin name meaning,90,msmarco_dist_7864_7,0.265899121761322,0
+q_14,bhavin name meaning,91,msmarco_dist_5459_2,0.26526546478271484,0
+q_14,bhavin name meaning,92,msmarco_46_1,0.2650609612464905,0
+q_14,bhavin name meaning,93,msmarco_46_6,0.2612901031970978,0
+q_14,bhavin name meaning,94,msmarco_234_2,0.26081857085227966,0
+q_14,bhavin name meaning,95,msmarco_dist_7_0,0.2599458694458008,0
+q_14,bhavin name meaning,96,msmarco_238_5,0.2598583400249481,0
+q_14,bhavin name meaning,97,msmarco_dist_3020_1,0.25942930579185486,0
+q_14,bhavin name meaning,98,msmarco_dist_5459_1,0.2582615613937378,0
+q_14,bhavin name meaning,99,msmarco_dist_2827_4,0.2573387026786804,0
+q_14,bhavin name meaning,100,msmarco_dist_4178_6,0.25676679611206055,0
+q_143,should we do space exploration,1,msmarco_143_1,0.7383923530578613,0
+q_143,should we do space exploration,2,msmarco_143_3,0.7374724745750427,0
+q_143,should we do space exploration,3,msmarco_143_5,0.7353560924530029,0
+q_143,should we do space exploration,4,msmarco_143_0,0.7258811593055725,0
+q_143,should we do space exploration,5,msmarco_143_6,0.708393931388855,0
+q_143,should we do space exploration,6,msmarco_143_7,0.7032091021537781,1
+q_143,should we do space exploration,7,msmarco_143_2,0.6533401012420654,0
+q_143,should we do space exploration,8,msmarco_143_9,0.6494759917259216,0
+q_143,should we do space exploration,9,msmarco_143_8,0.6454103589057922,0
+q_143,should we do space exploration,10,msmarco_143_4,0.5684955716133118,0
+q_143,should we do space exploration,11,msmarco_266_7,0.34870707988739014,0
+q_143,should we do space exploration,12,msmarco_dist_7693_0,0.3328438997268677,0
+q_143,should we do space exploration,13,msmarco_dist_7693_3,0.3187357783317566,0
+q_143,should we do space exploration,14,msmarco_dist_7693_8,0.31868860125541687,0
+q_143,should we do space exploration,15,msmarco_266_2,0.31328079104423523,0
+q_143,should we do space exploration,16,msmarco_dist_8054_5,0.30756837129592896,0
+q_143,should we do space exploration,17,msmarco_266_3,0.3035467267036438,0
+q_143,should we do space exploration,18,msmarco_266_0,0.30108577013015747,0
+q_143,should we do space exploration,19,msmarco_9_8,0.2957688271999359,0
+q_143,should we do space exploration,20,msmarco_dist_5716_0,0.2895627021789551,0
+q_143,should we do space exploration,21,msmarco_266_4,0.27778035402297974,0
+q_143,should we do space exploration,22,msmarco_266_9,0.2747669219970703,0
+q_143,should we do space exploration,23,msmarco_dist_5716_7,0.2743828594684601,0
+q_143,should we do space exploration,24,msmarco_dist_4249_3,0.2639343738555908,0
+q_143,should we do space exploration,25,msmarco_dist_4249_2,0.2599789798259735,0
+q_143,should we do space exploration,26,msmarco_dist_7693_6,0.25912773609161377,0
+q_143,should we do space exploration,27,msmarco_dist_2767_5,0.2578433156013489,0
+q_143,should we do space exploration,28,msmarco_dist_4249_1,0.257774293422699,0
+q_143,should we do space exploration,29,msmarco_129_8,0.25617748498916626,0
+q_143,should we do space exploration,30,msmarco_dist_5716_3,0.2545122504234314,0
+q_143,should we do space exploration,31,msmarco_dist_5716_9,0.2531985640525818,0
+q_143,should we do space exploration,32,msmarco_110_4,0.2489219307899475,0
+q_143,should we do space exploration,33,msmarco_dist_5716_8,0.24716880917549133,0
+q_143,should we do space exploration,34,msmarco_dist_2480_4,0.24404358863830566,0
+q_143,should we do space exploration,35,msmarco_dist_7815_0,0.24365277588367462,0
+q_143,should we do space exploration,36,msmarco_266_6,0.24252736568450928,0
+q_143,should we do space exploration,37,msmarco_110_7,0.242222398519516,0
+q_143,should we do space exploration,38,msmarco_dist_5937_2,0.24191880226135254,0
+q_143,should we do space exploration,39,msmarco_dist_4478_2,0.2394162267446518,0
+q_143,should we do space exploration,40,msmarco_129_2,0.2381163388490677,0
+q_143,should we do space exploration,41,msmarco_dist_2880_4,0.23477748036384583,0
+q_143,should we do space exploration,42,msmarco_dist_1744_8,0.23372940719127655,0
+q_143,should we do space exploration,43,msmarco_dist_7082_5,0.2328275889158249,0
+q_143,should we do space exploration,44,msmarco_dist_2880_6,0.23225240409374237,0
+q_143,should we do space exploration,45,msmarco_dist_5937_4,0.23189185559749603,0
+q_143,should we do space exploration,46,msmarco_dist_3522_7,0.23105905950069427,0
+q_143,should we do space exploration,47,msmarco_110_6,0.22881117463111877,0
+q_143,should we do space exploration,48,msmarco_dist_5937_5,0.22410701215267181,0
+q_143,should we do space exploration,49,msmarco_dist_4478_7,0.22267965972423553,0
+q_143,should we do space exploration,50,msmarco_dist_3522_8,0.222195565700531,0
+q_143,should we do space exploration,51,msmarco_55_6,0.22162415087223053,0
+q_143,should we do space exploration,52,msmarco_dist_4112_4,0.2216128259897232,0
+q_143,should we do space exploration,53,msmarco_29_7,0.22077327966690063,0
+q_143,should we do space exploration,54,msmarco_dist_4249_0,0.21912021934986115,0
+q_143,should we do space exploration,55,msmarco_dist_6463_7,0.2190578281879425,0
+q_143,should we do space exploration,56,msmarco_185_5,0.2190103977918625,0
+q_143,should we do space exploration,57,msmarco_129_5,0.21874305605888367,0
+q_143,should we do space exploration,58,msmarco_dist_600_4,0.21814867854118347,0
+q_143,should we do space exploration,59,msmarco_55_3,0.21690958738327026,0
+q_143,should we do space exploration,60,msmarco_dist_9793_1,0.21518699824810028,0
+q_143,should we do space exploration,61,msmarco_dist_392_1,0.21383534371852875,0
+q_143,should we do space exploration,62,msmarco_dist_5937_0,0.21357879042625427,0
+q_143,should we do space exploration,63,msmarco_dist_5716_5,0.2128497064113617,0
+q_143,should we do space exploration,64,msmarco_dist_5716_6,0.2107466161251068,0
+q_143,should we do space exploration,65,msmarco_dist_2767_3,0.2101871371269226,0
+q_143,should we do space exploration,66,msmarco_dist_3799_8,0.21010759472846985,0
+q_143,should we do space exploration,67,msmarco_dist_2870_3,0.2094554901123047,0
+q_143,should we do space exploration,68,msmarco_dist_4249_6,0.20926930010318756,0
+q_143,should we do space exploration,69,msmarco_41_2,0.20901964604854584,0
+q_143,should we do space exploration,70,msmarco_166_4,0.20785149931907654,0
+q_143,should we do space exploration,71,msmarco_110_5,0.20740492641925812,0
+q_143,should we do space exploration,72,msmarco_88_4,0.2071819007396698,0
+q_143,should we do space exploration,73,msmarco_dist_4249_8,0.20643949508666992,0
+q_143,should we do space exploration,74,msmarco_129_4,0.2053578495979309,0
+q_143,should we do space exploration,75,msmarco_dist_4412_6,0.2051512897014618,0
+q_143,should we do space exploration,76,msmarco_dist_4112_2,0.20484432578086853,0
+q_143,should we do space exploration,77,msmarco_195_7,0.20426544547080994,0
+q_143,should we do space exploration,78,msmarco_dist_8054_6,0.20188099145889282,0
+q_143,should we do space exploration,79,msmarco_dist_559_5,0.20137764513492584,0
+q_143,should we do space exploration,80,msmarco_41_4,0.19980736076831818,0
+q_143,should we do space exploration,81,msmarco_dist_6803_6,0.19971071183681488,0
+q_143,should we do space exploration,82,msmarco_dist_4249_4,0.19940495491027832,0
+q_143,should we do space exploration,83,msmarco_dist_4412_3,0.19930413365364075,0
+q_143,should we do space exploration,84,msmarco_dist_4412_7,0.19900107383728027,0
+q_143,should we do space exploration,85,msmarco_dist_392_3,0.198696106672287,0
+q_143,should we do space exploration,86,msmarco_dist_3799_7,0.19786766171455383,0
+q_143,should we do space exploration,87,msmarco_268_3,0.1976592242717743,0
+q_143,should we do space exploration,88,msmarco_dist_5716_1,0.19733047485351562,0
+q_143,should we do space exploration,89,msmarco_dist_2049_0,0.19654718041419983,0
+q_143,should we do space exploration,90,msmarco_5_2,0.19631700217723846,0
+q_143,should we do space exploration,91,msmarco_dist_9793_2,0.196050763130188,0
+q_143,should we do space exploration,92,msmarco_dist_7815_3,0.19588741660118103,0
+q_143,should we do space exploration,93,msmarco_dist_233_4,0.19386279582977295,0
+q_143,should we do space exploration,94,msmarco_185_6,0.19306746125221252,0
+q_143,should we do space exploration,95,msmarco_dist_1744_2,0.1927109807729721,0
+q_143,should we do space exploration,96,msmarco_124_7,0.1910354495048523,0
+q_143,should we do space exploration,97,msmarco_185_4,0.19096273183822632,0
+q_143,should we do space exploration,98,msmarco_dist_4112_9,0.18754145503044128,0
+q_143,should we do space exploration,99,msmarco_124_5,0.1867186427116394,0
+q_143,should we do space exploration,100,msmarco_285_0,0.1864878088235855,0
+q_127,where do zebras live,1,msmarco_127_0,0.8831015825271606,0
+q_127,where do zebras live,2,msmarco_127_2,0.8751670122146606,0
+q_127,where do zebras live,3,msmarco_127_7,0.7881109118461609,0
+q_127,where do zebras live,4,msmarco_127_6,0.783369779586792,0
+q_127,where do zebras live,5,msmarco_127_1,0.7709362506866455,0
+q_127,where do zebras live,6,msmarco_127_5,0.7577106952667236,1
+q_127,where do zebras live,7,msmarco_127_3,0.7577013969421387,0
+q_127,where do zebras live,8,msmarco_127_4,0.7265857458114624,0
+q_127,where do zebras live,9,msmarco_127_8,0.7224463820457458,0
+q_127,where do zebras live,10,msmarco_127_9,0.720068633556366,0
+q_127,where do zebras live,11,msmarco_97_4,0.43426668643951416,0
+q_127,where do zebras live,12,msmarco_dist_9907_2,0.4018174409866333,0
+q_127,where do zebras live,13,msmarco_dist_9907_1,0.39140886068344116,0
+q_127,where do zebras live,14,msmarco_dist_9907_5,0.3886592388153076,0
+q_127,where do zebras live,15,msmarco_97_6,0.38775962591171265,0
+q_127,where do zebras live,16,msmarco_97_2,0.3862178921699524,0
+q_127,where do zebras live,17,msmarco_97_5,0.3618522882461548,0
+q_127,where do zebras live,18,msmarco_97_1,0.361086905002594,0
+q_127,where do zebras live,19,msmarco_dist_9907_3,0.3603714108467102,0
+q_127,where do zebras live,20,msmarco_71_4,0.35853058099746704,0
+q_127,where do zebras live,21,msmarco_dist_398_7,0.35810887813568115,0
+q_127,where do zebras live,22,msmarco_97_3,0.3560834527015686,0
+q_127,where do zebras live,23,msmarco_dist_9907_6,0.35561758279800415,0
+q_127,where do zebras live,24,msmarco_97_0,0.35221126675605774,0
+q_127,where do zebras live,25,msmarco_dist_9907_0,0.3517110049724579,0
+q_127,where do zebras live,26,msmarco_dist_398_1,0.34599441289901733,0
+q_127,where do zebras live,27,msmarco_61_5,0.33469516038894653,0
+q_127,where do zebras live,28,msmarco_dist_398_0,0.3297383189201355,0
+q_127,where do zebras live,29,msmarco_61_1,0.32035762071609497,0
+q_127,where do zebras live,30,msmarco_dist_398_5,0.31285005807876587,0
+q_127,where do zebras live,31,msmarco_85_4,0.30809828639030457,0
+q_127,where do zebras live,32,msmarco_dist_5528_3,0.30315011739730835,0
+q_127,where do zebras live,33,msmarco_85_3,0.30235955119132996,0
+q_127,where do zebras live,34,msmarco_71_3,0.29821205139160156,0
+q_127,where do zebras live,35,msmarco_92_1,0.29554688930511475,0
+q_127,where do zebras live,36,msmarco_dist_4415_6,0.29514288902282715,0
+q_127,where do zebras live,37,msmarco_dist_397_2,0.2950461506843567,0
+q_127,where do zebras live,38,msmarco_85_8,0.2943309545516968,0
+q_127,where do zebras live,39,msmarco_dist_9907_4,0.2939055562019348,0
+q_127,where do zebras live,40,msmarco_dist_398_6,0.2919284701347351,0
+q_127,where do zebras live,41,msmarco_dist_4415_4,0.28866392374038696,0
+q_127,where do zebras live,42,msmarco_256_5,0.28698593378067017,0
+q_127,where do zebras live,43,msmarco_71_7,0.2867841124534607,0
+q_127,where do zebras live,44,msmarco_152_4,0.2805998921394348,0
+q_127,where do zebras live,45,msmarco_dist_468_3,0.2782449722290039,0
+q_127,where do zebras live,46,msmarco_dist_397_1,0.2752976417541504,0
+q_127,where do zebras live,47,msmarco_61_6,0.27269411087036133,0
+q_127,where do zebras live,48,msmarco_68_1,0.2710720896720886,0
+q_127,where do zebras live,49,msmarco_dist_398_3,0.27045485377311707,0
+q_127,where do zebras live,50,msmarco_71_0,0.2683010697364807,0
+q_127,where do zebras live,51,msmarco_222_0,0.2680618166923523,0
+q_127,where do zebras live,52,msmarco_222_1,0.266043484210968,0
+q_127,where do zebras live,53,msmarco_dist_7141_5,0.26458990573883057,0
+q_127,where do zebras live,54,msmarco_188_0,0.26378464698791504,0
+q_127,where do zebras live,55,msmarco_dist_4415_1,0.26348456740379333,0
+q_127,where do zebras live,56,msmarco_222_8,0.2617567777633667,0
+q_127,where do zebras live,57,msmarco_85_1,0.2616878151893616,0
+q_127,where do zebras live,58,msmarco_dist_4579_8,0.2562260925769806,0
+q_127,where do zebras live,59,msmarco_1_4,0.2556646168231964,0
+q_127,where do zebras live,60,msmarco_85_2,0.2551532983779907,0
+q_127,where do zebras live,61,msmarco_dist_288_1,0.2534541189670563,0
+q_127,where do zebras live,62,msmarco_71_1,0.25262531638145447,0
+q_127,where do zebras live,63,msmarco_71_2,0.252239853143692,0
+q_127,where do zebras live,64,msmarco_dist_8353_3,0.25089403986930847,0
+q_127,where do zebras live,65,msmarco_85_7,0.24964436888694763,0
+q_127,where do zebras live,66,msmarco_152_0,0.24773892760276794,0
+q_127,where do zebras live,67,msmarco_71_5,0.24664007127285004,0
+q_127,where do zebras live,68,msmarco_1_5,0.24649615585803986,0
+q_127,where do zebras live,69,msmarco_68_4,0.2448142170906067,0
+q_127,where do zebras live,70,msmarco_29_7,0.2435942143201828,0
+q_127,where do zebras live,71,msmarco_dist_397_8,0.2420421987771988,0
+q_127,where do zebras live,72,msmarco_dist_4415_3,0.24188685417175293,0
+q_127,where do zebras live,73,msmarco_222_5,0.24106381833553314,0
+q_127,where do zebras live,74,msmarco_dist_4910_1,0.24079042673110962,0
+q_127,where do zebras live,75,msmarco_188_3,0.24061572551727295,0
+q_127,where do zebras live,76,msmarco_1_2,0.2345217615365982,0
+q_127,where do zebras live,77,msmarco_dist_3630_3,0.23339633643627167,0
+q_127,where do zebras live,78,msmarco_dist_398_2,0.23323050141334534,0
+q_127,where do zebras live,79,msmarco_61_0,0.23292176425457,0
+q_127,where do zebras live,80,msmarco_dist_398_4,0.23291681706905365,0
+q_127,where do zebras live,81,msmarco_85_5,0.23064987361431122,0
+q_127,where do zebras live,82,msmarco_dist_8063_2,0.23040737211704254,0
+q_127,where do zebras live,83,msmarco_dist_6054_1,0.23034024238586426,0
+q_127,where do zebras live,84,msmarco_111_4,0.22834551334381104,0
+q_127,where do zebras live,85,msmarco_dist_8063_1,0.22597827017307281,0
+q_127,where do zebras live,86,msmarco_dist_8219_1,0.22562134265899658,0
+q_127,where do zebras live,87,msmarco_152_5,0.22490186989307404,0
+q_127,where do zebras live,88,msmarco_111_0,0.22405582666397095,0
+q_127,where do zebras live,89,msmarco_dist_6054_5,0.22278305888175964,0
+q_127,where do zebras live,90,msmarco_dist_7908_8,0.22262416779994965,0
+q_127,where do zebras live,91,msmarco_152_3,0.2213292270898819,0
+q_127,where do zebras live,92,msmarco_dist_1753_0,0.22071322798728943,0
+q_127,where do zebras live,93,msmarco_dist_3290_7,0.22017188370227814,0
+q_127,where do zebras live,94,msmarco_dist_8063_0,0.2188224047422409,0
+q_127,where do zebras live,95,msmarco_111_2,0.21854442358016968,0
+q_127,where do zebras live,96,msmarco_dist_8353_4,0.21621745824813843,0
+q_127,where do zebras live,97,msmarco_85_0,0.21619649231433868,0
+q_127,where do zebras live,98,msmarco_97_7,0.21567602455615997,0
+q_127,where do zebras live,99,msmarco_dist_656_5,0.21530774235725403,0
+q_127,where do zebras live,100,msmarco_186_0,0.21510660648345947,0
+q_116,will be amended to read shortages in area,1,msmarco_116_2,0.609142541885376,1
+q_116,will be amended to read shortages in area,2,msmarco_116_8,0.5325989723205566,0
+q_116,will be amended to read shortages in area,3,msmarco_116_5,0.39237651228904724,0
+q_116,will be amended to read shortages in area,4,msmarco_116_6,0.38300013542175293,0
+q_116,will be amended to read shortages in area,5,msmarco_116_0,0.3176688551902771,0
+q_116,will be amended to read shortages in area,6,msmarco_dist_9531_5,0.30409306287765503,0
+q_116,will be amended to read shortages in area,7,msmarco_181_0,0.2989184260368347,0
+q_116,will be amended to read shortages in area,8,msmarco_56_6,0.2981928288936615,0
+q_116,will be amended to read shortages in area,9,msmarco_dist_9729_7,0.2925986051559448,0
+q_116,will be amended to read shortages in area,10,msmarco_181_3,0.28689199686050415,0
+q_116,will be amended to read shortages in area,11,msmarco_dist_6681_5,0.28687259554862976,0
+q_116,will be amended to read shortages in area,12,msmarco_dist_2645_6,0.284491628408432,0
+q_116,will be amended to read shortages in area,13,msmarco_dist_6681_0,0.2774282693862915,0
+q_116,will be amended to read shortages in area,14,msmarco_dist_5063_7,0.2735500931739807,0
+q_116,will be amended to read shortages in area,15,msmarco_dist_7119_4,0.26221153140068054,0
+q_116,will be amended to read shortages in area,16,msmarco_dist_468_5,0.26215410232543945,0
+q_116,will be amended to read shortages in area,17,msmarco_178_1,0.26151636242866516,0
+q_116,will be amended to read shortages in area,18,msmarco_116_1,0.25805288553237915,0
+q_116,will be amended to read shortages in area,19,msmarco_dist_204_7,0.25679928064346313,0
+q_116,will be amended to read shortages in area,20,msmarco_dist_9531_7,0.2541375756263733,0
+q_116,will be amended to read shortages in area,21,msmarco_178_2,0.25407707691192627,0
+q_116,will be amended to read shortages in area,22,msmarco_dist_5063_3,0.25244924426078796,0
+q_116,will be amended to read shortages in area,23,msmarco_dist_9531_2,0.2506062984466553,0
+q_116,will be amended to read shortages in area,24,msmarco_dist_6831_5,0.24527716636657715,0
+q_116,will be amended to read shortages in area,25,msmarco_178_5,0.24161562323570251,0
+q_116,will be amended to read shortages in area,26,msmarco_dist_8196_0,0.23754988610744476,0
+q_116,will be amended to read shortages in area,27,msmarco_126_5,0.23698899149894714,0
+q_116,will be amended to read shortages in area,28,msmarco_dist_4437_6,0.23585301637649536,0
+q_116,will be amended to read shortages in area,29,msmarco_dist_7057_2,0.235691636800766,0
+q_116,will be amended to read shortages in area,30,msmarco_dist_5226_6,0.23559542000293732,0
+q_116,will be amended to read shortages in area,31,msmarco_dist_5279_6,0.23508168756961823,0
+q_116,will be amended to read shortages in area,32,msmarco_dist_7057_3,0.23494140803813934,0
+q_116,will be amended to read shortages in area,33,msmarco_dist_9531_9,0.23426850140094757,0
+q_116,will be amended to read shortages in area,34,msmarco_dist_2988_5,0.23391327261924744,0
+q_116,will be amended to read shortages in area,35,msmarco_dist_956_9,0.2333340346813202,0
+q_116,will be amended to read shortages in area,36,msmarco_dist_2413_2,0.23162008821964264,0
+q_116,will be amended to read shortages in area,37,msmarco_290_3,0.2304486185312271,0
+q_116,will be amended to read shortages in area,38,msmarco_dist_9729_4,0.22813306748867035,0
+q_116,will be amended to read shortages in area,39,msmarco_dist_5279_7,0.22618737816810608,0
+q_116,will be amended to read shortages in area,40,msmarco_dist_741_3,0.2249828577041626,0
+q_116,will be amended to read shortages in area,41,msmarco_dist_7827_1,0.22446390986442566,0
+q_116,will be amended to read shortages in area,42,msmarco_dist_8713_4,0.2232511341571808,0
+q_116,will be amended to read shortages in area,43,msmarco_dist_2413_0,0.22074854373931885,0
+q_116,will be amended to read shortages in area,44,msmarco_dist_7082_7,0.21927066147327423,0
+q_116,will be amended to read shortages in area,45,msmarco_dist_1826_2,0.21850444376468658,0
+q_116,will be amended to read shortages in area,46,msmarco_181_7,0.2183765172958374,0
+q_116,will be amended to read shortages in area,47,msmarco_dist_7827_5,0.2173531949520111,0
+q_116,will be amended to read shortages in area,48,msmarco_dist_7693_4,0.21687358617782593,0
+q_116,will be amended to read shortages in area,49,msmarco_dist_9531_4,0.21684789657592773,0
+q_116,will be amended to read shortages in area,50,msmarco_dist_7119_9,0.21669596433639526,0
+q_116,will be amended to read shortages in area,51,msmarco_55_6,0.2164393663406372,0
+q_116,will be amended to read shortages in area,52,msmarco_dist_6681_2,0.21605287492275238,0
+q_116,will be amended to read shortages in area,53,msmarco_178_6,0.21565237641334534,0
+q_116,will be amended to read shortages in area,54,msmarco_dist_9729_3,0.21482229232788086,0
+q_116,will be amended to read shortages in area,55,msmarco_dist_897_4,0.21460691094398499,0
+q_116,will be amended to read shortages in area,56,msmarco_135_5,0.21375668048858643,0
+q_116,will be amended to read shortages in area,57,msmarco_dist_5063_4,0.21359288692474365,0
+q_116,will be amended to read shortages in area,58,msmarco_dist_1178_3,0.21090441942214966,0
+q_116,will be amended to read shortages in area,59,msmarco_dist_1178_4,0.21050064265727997,0
+q_116,will be amended to read shortages in area,60,msmarco_dist_3847_5,0.21022933721542358,0
+q_116,will be amended to read shortages in area,61,msmarco_154_2,0.2101254165172577,0
+q_116,will be amended to read shortages in area,62,msmarco_dist_9729_8,0.20986531674861908,0
+q_116,will be amended to read shortages in area,63,msmarco_55_4,0.20938916504383087,0
+q_116,will be amended to read shortages in area,64,msmarco_dist_7119_1,0.2085113227367401,0
+q_116,will be amended to read shortages in area,65,msmarco_dist_7115_2,0.20798759162425995,0
+q_116,will be amended to read shortages in area,66,msmarco_dist_2413_3,0.2078527957201004,0
+q_116,will be amended to read shortages in area,67,msmarco_dist_152_1,0.20682860910892487,0
+q_116,will be amended to read shortages in area,68,msmarco_dist_468_6,0.2067081183195114,0
+q_116,will be amended to read shortages in area,69,msmarco_dist_152_3,0.2066863477230072,0
+q_116,will be amended to read shortages in area,70,msmarco_228_8,0.20668184757232666,0
+q_116,will be amended to read shortages in area,71,msmarco_56_7,0.20608311891555786,0
+q_116,will be amended to read shortages in area,72,msmarco_dist_830_1,0.2060304582118988,0
+q_116,will be amended to read shortages in area,73,msmarco_55_5,0.20582933723926544,0
+q_116,will be amended to read shortages in area,74,msmarco_dist_5226_2,0.20582443475723267,0
+q_116,will be amended to read shortages in area,75,msmarco_dist_204_3,0.20556429028511047,0
+q_116,will be amended to read shortages in area,76,msmarco_dist_7827_7,0.20405280590057373,0
+q_116,will be amended to read shortages in area,77,msmarco_8_7,0.2039174735546112,0
+q_116,will be amended to read shortages in area,78,msmarco_dist_5457_2,0.2026793360710144,0
+q_116,will be amended to read shortages in area,79,msmarco_143_9,0.20257169008255005,0
+q_116,will be amended to read shortages in area,80,msmarco_dist_5063_2,0.2025039792060852,0
+q_116,will be amended to read shortages in area,81,msmarco_dist_9729_0,0.2023646980524063,0
+q_116,will be amended to read shortages in area,82,msmarco_dist_7767_4,0.202053040266037,0
+q_116,will be amended to read shortages in area,83,msmarco_56_0,0.2017798274755478,0
+q_116,will be amended to read shortages in area,84,msmarco_dist_4431_1,0.20147360861301422,0
+q_116,will be amended to read shortages in area,85,msmarco_dist_7827_0,0.20140230655670166,0
+q_116,will be amended to read shortages in area,86,msmarco_178_8,0.20026367902755737,0
+q_116,will be amended to read shortages in area,87,msmarco_202_6,0.19968298077583313,0
+q_116,will be amended to read shortages in area,88,msmarco_dist_7827_2,0.1988251507282257,0
+q_116,will be amended to read shortages in area,89,msmarco_dist_2413_5,0.1975792795419693,0
+q_116,will be amended to read shortages in area,90,msmarco_dist_2645_1,0.1975710093975067,0
+q_116,will be amended to read shortages in area,91,msmarco_dist_2645_2,0.19689306616783142,0
+q_116,will be amended to read shortages in area,92,msmarco_dist_5136_3,0.19680562615394592,0
+q_116,will be amended to read shortages in area,93,msmarco_65_8,0.19677597284317017,0
+q_116,will be amended to read shortages in area,94,msmarco_dist_6831_1,0.19416111707687378,0
+q_116,will be amended to read shortages in area,95,msmarco_dist_6329_3,0.19396473467350006,0
+q_116,will be amended to read shortages in area,96,msmarco_dist_9729_6,0.19389933347702026,0
+q_116,will be amended to read shortages in area,97,msmarco_286_2,0.19331997632980347,0
+q_116,will be amended to read shortages in area,98,msmarco_dist_2988_0,0.1932983696460724,0
+q_116,will be amended to read shortages in area,99,msmarco_dist_3218_5,0.19318261742591858,0
+q_116,will be amended to read shortages in area,100,msmarco_dist_283_4,0.19153468310832977,0
+q_73,where is the good english spoken in dubai,1,msmarco_73_5,0.680829644203186,0
+q_73,where is the good english spoken in dubai,2,msmarco_73_4,0.6737689971923828,0
+q_73,where is the good english spoken in dubai,3,msmarco_73_2,0.6719141006469727,0
+q_73,where is the good english spoken in dubai,4,msmarco_73_3,0.6515780091285706,0
+q_73,where is the good english spoken in dubai,5,msmarco_73_0,0.6474320888519287,0
+q_73,where is the good english spoken in dubai,6,msmarco_73_7,0.6242928504943848,1
+q_73,where is the good english spoken in dubai,7,msmarco_73_8,0.6006003618240356,0
+q_73,where is the good english spoken in dubai,8,msmarco_73_1,0.5700951814651489,0
+q_73,where is the good english spoken in dubai,9,msmarco_73_6,0.5660692453384399,0
+q_73,where is the good english spoken in dubai,10,msmarco_dist_392_5,0.49855315685272217,0
+q_73,where is the good english spoken in dubai,11,msmarco_dist_392_1,0.4638713598251343,0
+q_73,where is the good english spoken in dubai,12,msmarco_dist_392_2,0.4495357275009155,0
+q_73,where is the good english spoken in dubai,13,msmarco_dist_392_4,0.41977304220199585,0
+q_73,where is the good english spoken in dubai,14,msmarco_dist_392_3,0.39387252926826477,0
+q_73,where is the good english spoken in dubai,15,msmarco_dist_4015_4,0.39044445753097534,0
+q_73,where is the good english spoken in dubai,16,msmarco_dist_4015_5,0.3628178834915161,0
+q_73,where is the good english spoken in dubai,17,msmarco_dist_8384_4,0.36243364214897156,0
+q_73,where is the good english spoken in dubai,18,msmarco_207_3,0.35300230979919434,0
+q_73,where is the good english spoken in dubai,19,msmarco_dist_8384_7,0.32047039270401,0
+q_73,where is the good english spoken in dubai,20,msmarco_dist_392_0,0.310978502035141,0
+q_73,where is the good english spoken in dubai,21,msmarco_dist_3522_1,0.30770599842071533,0
+q_73,where is the good english spoken in dubai,22,msmarco_207_0,0.3055446147918701,0
+q_73,where is the good english spoken in dubai,23,msmarco_207_2,0.3013573884963989,0
+q_73,where is the good english spoken in dubai,24,msmarco_34_4,0.29881274700164795,0
+q_73,where is the good english spoken in dubai,25,msmarco_dist_428_0,0.2878596782684326,0
+q_73,where is the good english spoken in dubai,26,msmarco_dist_8384_3,0.28572702407836914,0
+q_73,where is the good english spoken in dubai,27,msmarco_dist_9670_1,0.28135544061660767,0
+q_73,where is the good english spoken in dubai,28,msmarco_dist_5279_3,0.28061825037002563,0
+q_73,where is the good english spoken in dubai,29,msmarco_207_7,0.2760111093521118,0
+q_73,where is the good english spoken in dubai,30,msmarco_dist_4638_9,0.2725762128829956,0
+q_73,where is the good english spoken in dubai,31,msmarco_207_4,0.271390438079834,0
+q_73,where is the good english spoken in dubai,32,msmarco_191_0,0.26945510506629944,0
+q_73,where is the good english spoken in dubai,33,msmarco_207_1,0.2677871584892273,0
+q_73,where is the good english spoken in dubai,34,msmarco_dist_4015_7,0.266621470451355,0
+q_73,where is the good english spoken in dubai,35,msmarco_dist_5232_0,0.2636055052280426,0
+q_73,where is the good english spoken in dubai,36,msmarco_dist_428_7,0.2603946924209595,0
+q_73,where is the good english spoken in dubai,37,msmarco_114_5,0.258160799741745,0
+q_73,where is the good english spoken in dubai,38,msmarco_70_1,0.2570738196372986,0
+q_73,where is the good english spoken in dubai,39,msmarco_203_4,0.2506697177886963,0
+q_73,where is the good english spoken in dubai,40,msmarco_191_2,0.24939697980880737,0
+q_73,where is the good english spoken in dubai,41,msmarco_34_7,0.24642108380794525,0
+q_73,where is the good english spoken in dubai,42,msmarco_dist_3027_7,0.24444913864135742,0
+q_73,where is the good english spoken in dubai,43,msmarco_114_6,0.2441045492887497,0
+q_73,where is the good english spoken in dubai,44,msmarco_191_6,0.24082617461681366,0
+q_73,where is the good english spoken in dubai,45,msmarco_191_4,0.2382684350013733,0
+q_73,where is the good english spoken in dubai,46,msmarco_41_8,0.2368224561214447,0
+q_73,where is the good english spoken in dubai,47,msmarco_dist_428_8,0.23598015308380127,0
+q_73,where is the good english spoken in dubai,48,msmarco_191_9,0.23570981621742249,0
+q_73,where is the good english spoken in dubai,49,msmarco_114_2,0.23559904098510742,0
+q_73,where is the good english spoken in dubai,50,msmarco_185_3,0.2340974062681198,0
+q_73,where is the good english spoken in dubai,51,msmarco_dist_4478_0,0.23217037320137024,0
+q_73,where is the good english spoken in dubai,52,msmarco_dist_4015_8,0.2319837510585785,0
+q_73,where is the good english spoken in dubai,53,msmarco_114_0,0.23187319934368134,0
+q_73,where is the good english spoken in dubai,54,msmarco_dist_5741_4,0.23173430562019348,0
+q_73,where is the good english spoken in dubai,55,msmarco_235_3,0.23159678280353546,0
+q_73,where is the good english spoken in dubai,56,msmarco_41_1,0.2298334687948227,0
+q_73,where is the good english spoken in dubai,57,msmarco_dist_4015_0,0.22825774550437927,0
+q_73,where is the good english spoken in dubai,58,msmarco_dist_4188_8,0.22704550623893738,0
+q_73,where is the good english spoken in dubai,59,msmarco_191_3,0.22703036665916443,0
+q_73,where is the good english spoken in dubai,60,msmarco_70_2,0.2255285680294037,0
+q_73,where is the good english spoken in dubai,61,msmarco_dist_428_4,0.22538059949874878,0
+q_73,where is the good english spoken in dubai,62,msmarco_1_6,0.22532051801681519,0
+q_73,where is the good english spoken in dubai,63,msmarco_dist_4638_0,0.22446048259735107,0
+q_73,where is the good english spoken in dubai,64,msmarco_56_4,0.22361744940280914,0
+q_73,where is the good english spoken in dubai,65,msmarco_dist_5741_5,0.22328923642635345,0
+q_73,where is the good english spoken in dubai,66,msmarco_dist_5741_0,0.22248950600624084,0
+q_73,where is the good english spoken in dubai,67,msmarco_dist_3944_4,0.22221949696540833,0
+q_73,where is the good english spoken in dubai,68,msmarco_34_2,0.2221510410308838,0
+q_73,where is the good english spoken in dubai,69,msmarco_dist_3522_6,0.22171103954315186,0
+q_73,where is the good english spoken in dubai,70,msmarco_dist_6054_2,0.22156250476837158,0
+q_73,where is the good english spoken in dubai,71,msmarco_dist_8384_5,0.22079378366470337,0
+q_73,where is the good english spoken in dubai,72,msmarco_84_4,0.22062352299690247,0
+q_73,where is the good english spoken in dubai,73,msmarco_dist_1071_6,0.21941286325454712,0
+q_73,where is the good english spoken in dubai,74,msmarco_dist_1071_5,0.21941286325454712,0
+q_73,where is the good english spoken in dubai,75,msmarco_dist_6054_8,0.21899941563606262,0
+q_73,where is the good english spoken in dubai,76,msmarco_dist_2773_8,0.2188311517238617,0
+q_73,where is the good english spoken in dubai,77,msmarco_dist_3522_8,0.21837866306304932,0
+q_73,where is the good english spoken in dubai,78,msmarco_dist_4015_6,0.21811458468437195,0
+q_73,where is the good english spoken in dubai,79,msmarco_191_1,0.21783874928951263,0
+q_73,where is the good english spoken in dubai,80,msmarco_dist_9004_6,0.2177727222442627,0
+q_73,where is the good english spoken in dubai,81,msmarco_224_1,0.21776458621025085,0
+q_73,where is the good english spoken in dubai,82,msmarco_191_5,0.21706423163414001,0
+q_73,where is the good english spoken in dubai,83,msmarco_188_6,0.21570797264575958,0
+q_73,where is the good english spoken in dubai,84,msmarco_41_5,0.2152007520198822,0
+q_73,where is the good english spoken in dubai,85,msmarco_dist_6282_0,0.21460597217082977,0
+q_73,where is the good english spoken in dubai,86,msmarco_dist_4188_6,0.21295300126075745,0
+q_73,where is the good english spoken in dubai,87,msmarco_114_1,0.21172186732292175,0
+q_73,where is the good english spoken in dubai,88,msmarco_62_6,0.20864197611808777,0
+q_73,where is the good english spoken in dubai,89,msmarco_dist_9670_0,0.2083507627248764,0
+q_73,where is the good english spoken in dubai,90,msmarco_dist_1784_3,0.20779484510421753,0
+q_73,where is the good english spoken in dubai,91,msmarco_dist_3424_2,0.20687580108642578,0
+q_73,where is the good english spoken in dubai,92,msmarco_191_8,0.20636585354804993,0
+q_73,where is the good english spoken in dubai,93,msmarco_dist_741_5,0.20549333095550537,0
+q_73,where is the good english spoken in dubai,94,msmarco_207_8,0.2050621062517166,0
+q_73,where is the good english spoken in dubai,95,msmarco_161_5,0.20496515929698944,0
+q_73,where is the good english spoken in dubai,96,msmarco_114_4,0.20393694937229156,0
+q_73,where is the good english spoken in dubai,97,msmarco_dist_3027_3,0.20373085141181946,0
+q_73,where is the good english spoken in dubai,98,msmarco_dist_4478_8,0.20342892408370972,0
+q_73,where is the good english spoken in dubai,99,msmarco_dist_3522_0,0.20323598384857178,0
+q_73,where is the good english spoken in dubai,100,msmarco_dist_6803_6,0.20270070433616638,0
+q_54,where is amherstburg located,1,msmarco_54_2,0.7166422605514526,0
+q_54,where is amherstburg located,2,msmarco_54_1,0.6482410430908203,1
+q_54,where is amherstburg located,3,msmarco_54_0,0.5695548057556152,0
+q_54,where is amherstburg located,4,msmarco_54_4,0.5674370527267456,0
+q_54,where is amherstburg located,5,msmarco_54_3,0.47195619344711304,0
+q_54,where is amherstburg located,6,msmarco_dist_7145_0,0.3036753237247467,0
+q_54,where is amherstburg located,7,msmarco_dist_5928_0,0.2834552526473999,0
+q_54,where is amherstburg located,8,msmarco_dist_1773_0,0.28310906887054443,0
+q_54,where is amherstburg located,9,msmarco_dist_7145_6,0.27965104579925537,0
+q_54,where is amherstburg located,10,msmarco_dist_4720_2,0.27809029817581177,0
+q_54,where is amherstburg located,11,msmarco_dist_7145_5,0.25891411304473877,0
+q_54,where is amherstburg located,12,msmarco_dist_1773_3,0.25558456778526306,0
+q_54,where is amherstburg located,13,msmarco_92_3,0.2507271468639374,0
+q_54,where is amherstburg located,14,msmarco_92_4,0.24983900785446167,0
+q_54,where is amherstburg located,15,msmarco_149_2,0.2441047728061676,0
+q_54,where is amherstburg located,16,msmarco_dist_1773_4,0.24130898714065552,0
+q_54,where is amherstburg located,17,msmarco_dist_4512_9,0.23953869938850403,0
+q_54,where is amherstburg located,18,msmarco_dist_4720_7,0.23495551943778992,0
+q_54,where is amherstburg located,19,msmarco_dist_4720_5,0.2342652678489685,0
+q_54,where is amherstburg located,20,msmarco_36_1,0.23399993777275085,0
+q_54,where is amherstburg located,21,msmarco_dist_4572_4,0.2330097258090973,0
+q_54,where is amherstburg located,22,msmarco_30_5,0.23148711025714874,0
+q_54,where is amherstburg located,23,msmarco_dist_9474_3,0.23109428584575653,0
+q_54,where is amherstburg located,24,msmarco_dist_9474_6,0.22796735167503357,0
+q_54,where is amherstburg located,25,msmarco_199_5,0.22717753052711487,0
+q_54,where is amherstburg located,26,msmarco_dist_3624_9,0.22548875212669373,0
+q_54,where is amherstburg located,27,msmarco_dist_7145_7,0.22305482625961304,0
+q_54,where is amherstburg located,28,msmarco_50_0,0.22083505988121033,0
+q_54,where is amherstburg located,29,msmarco_276_2,0.21911121904850006,0
+q_54,where is amherstburg located,30,msmarco_dist_7145_2,0.21738387644290924,0
+q_54,where is amherstburg located,31,msmarco_dist_4203_1,0.21713247895240784,0
+q_54,where is amherstburg located,32,msmarco_dist_9474_1,0.21473345160484314,0
+q_54,where is amherstburg located,33,msmarco_dist_1713_3,0.21427962183952332,0
+q_54,where is amherstburg located,34,msmarco_dist_8733_6,0.21417056024074554,0
+q_54,where is amherstburg located,35,msmarco_dist_2924_5,0.21326780319213867,0
+q_54,where is amherstburg located,36,msmarco_92_8,0.21309590339660645,0
+q_54,where is amherstburg located,37,msmarco_92_2,0.20895889401435852,0
+q_54,where is amherstburg located,38,msmarco_3_1,0.20854857563972473,0
+q_54,where is amherstburg located,39,msmarco_dist_9899_5,0.20651930570602417,0
+q_54,where is amherstburg located,40,msmarco_188_2,0.20467232167720795,0
+q_54,where is amherstburg located,41,msmarco_dist_1713_2,0.2046465277671814,0
+q_54,where is amherstburg located,42,msmarco_199_4,0.20425064861774445,0
+q_54,where is amherstburg located,43,msmarco_dist_9474_7,0.20372319221496582,0
+q_54,where is amherstburg located,44,msmarco_dist_8219_5,0.20323728024959564,0
+q_54,where is amherstburg located,45,msmarco_dist_5928_3,0.2021467238664627,0
+q_54,where is amherstburg located,46,msmarco_dist_8523_6,0.20198842883110046,0
+q_54,where is amherstburg located,47,msmarco_dist_4285_0,0.2006448209285736,0
+q_54,where is amherstburg located,48,msmarco_dist_8523_2,0.19946199655532837,0
+q_54,where is amherstburg located,49,msmarco_157_2,0.1971939653158188,0
+q_54,where is amherstburg located,50,msmarco_dist_4285_7,0.19685295224189758,0
+q_54,where is amherstburg located,51,msmarco_30_6,0.19681645929813385,0
+q_54,where is amherstburg located,52,msmarco_30_1,0.19666440784931183,0
+q_54,where is amherstburg located,53,msmarco_30_4,0.19646400213241577,0
+q_54,where is amherstburg located,54,msmarco_dist_7145_4,0.1959514170885086,0
+q_54,where is amherstburg located,55,msmarco_dist_3290_6,0.19538551568984985,0
+q_54,where is amherstburg located,56,msmarco_153_1,0.19467909634113312,0
+q_54,where is amherstburg located,57,msmarco_dist_4572_9,0.19401907920837402,0
+q_54,where is amherstburg located,58,msmarco_dist_4720_3,0.19373051822185516,0
+q_54,where is amherstburg located,59,msmarco_dist_8143_1,0.1934114694595337,0
+q_54,where is amherstburg located,60,msmarco_dist_5530_5,0.19263072311878204,0
+q_54,where is amherstburg located,61,msmarco_dist_4720_6,0.19261226058006287,0
+q_54,where is amherstburg located,62,msmarco_dist_5279_1,0.19170059263706207,0
+q_54,where is amherstburg located,63,msmarco_dist_9474_5,0.19124121963977814,0
+q_54,where is amherstburg located,64,msmarco_dist_4512_6,0.19096457958221436,0
+q_54,where is amherstburg located,65,msmarco_149_0,0.19087737798690796,0
+q_54,where is amherstburg located,66,msmarco_dist_9474_2,0.1906052827835083,0
+q_54,where is amherstburg located,67,msmarco_dist_8356_6,0.19049032032489777,0
+q_54,where is amherstburg located,68,msmarco_dist_2645_4,0.18922170996665955,0
+q_54,where is amherstburg located,69,msmarco_dist_4720_0,0.1879425197839737,0
+q_54,where is amherstburg located,70,msmarco_3_4,0.1873142272233963,0
+q_54,where is amherstburg located,71,msmarco_273_7,0.1865423023700714,0
+q_54,where is amherstburg located,72,msmarco_dist_2645_0,0.18651315569877625,0
+q_54,where is amherstburg located,73,msmarco_dist_4285_6,0.18649345636367798,0
+q_54,where is amherstburg located,74,msmarco_50_7,0.18595167994499207,0
+q_54,where is amherstburg located,75,msmarco_50_4,0.1853078007698059,0
+q_54,where is amherstburg located,76,msmarco_dist_8143_8,0.18410927057266235,0
+q_54,where is amherstburg located,77,msmarco_dist_3290_0,0.18407198786735535,0
+q_54,where is amherstburg located,78,msmarco_276_3,0.18368813395500183,0
+q_54,where is amherstburg located,79,msmarco_dist_2303_8,0.18236063420772552,0
+q_54,where is amherstburg located,80,msmarco_dist_1713_7,0.182124063372612,0
+q_54,where is amherstburg located,81,msmarco_dist_8356_0,0.1817658245563507,0
+q_54,where is amherstburg located,82,msmarco_203_8,0.1804613471031189,0
+q_54,where is amherstburg located,83,msmarco_dist_3098_6,0.18042641878128052,0
+q_54,where is amherstburg located,84,msmarco_dist_1773_5,0.18041886389255524,0
+q_54,where is amherstburg located,85,msmarco_dist_8457_3,0.1803358793258667,0
+q_54,where is amherstburg located,86,msmarco_dist_5928_1,0.17954766750335693,0
+q_54,where is amherstburg located,87,msmarco_224_0,0.17943161725997925,0
+q_54,where is amherstburg located,88,msmarco_dist_2645_3,0.1791239082813263,0
+q_54,where is amherstburg located,89,msmarco_273_4,0.17845889925956726,0
+q_54,where is amherstburg located,90,msmarco_dist_8356_5,0.17823463678359985,0
+q_54,where is amherstburg located,91,msmarco_1_2,0.17785067856311798,0
+q_54,where is amherstburg located,92,msmarco_92_1,0.17713214457035065,0
+q_54,where is amherstburg located,93,msmarco_3_6,0.17638176679611206,0
+q_54,where is amherstburg located,94,msmarco_dist_5167_6,0.17540577054023743,0
+q_54,where is amherstburg located,95,msmarco_253_5,0.175058513879776,0
+q_54,where is amherstburg located,96,msmarco_30_0,0.17428115010261536,0
+q_54,where is amherstburg located,97,msmarco_dist_3944_5,0.174009770154953,0
+q_54,where is amherstburg located,98,msmarco_150_4,0.17392289638519287,0
+q_54,where is amherstburg located,99,msmarco_dist_2645_5,0.17371942102909088,0
+q_54,where is amherstburg located,100,msmarco_127_1,0.17359670996665955,0
+q_289,how much should a dog drink,1,msmarco_289_5,0.9067290425300598,0
+q_289,how much should a dog drink,2,msmarco_289_2,0.89277583360672,1
+q_289,how much should a dog drink,3,msmarco_289_4,0.8816732168197632,0
+q_289,how much should a dog drink,4,msmarco_289_6,0.8805168271064758,0
+q_289,how much should a dog drink,5,msmarco_289_8,0.880437970161438,0
+q_289,how much should a dog drink,6,msmarco_289_1,0.8794515132904053,0
+q_289,how much should a dog drink,7,msmarco_289_0,0.867363452911377,0
+q_289,how much should a dog drink,8,msmarco_289_7,0.8358115553855896,0
+q_289,how much should a dog drink,9,msmarco_289_3,0.6923323273658752,0
+q_289,how much should a dog drink,10,msmarco_15_2,0.6013226509094238,0
+q_289,how much should a dog drink,11,msmarco_15_8,0.5954442620277405,0
+q_289,how much should a dog drink,12,msmarco_15_1,0.5802187919616699,0
+q_289,how much should a dog drink,13,msmarco_15_5,0.5720813870429993,0
+q_289,how much should a dog drink,14,msmarco_15_6,0.5673233270645142,0
+q_289,how much should a dog drink,15,msmarco_15_0,0.5452451109886169,0
+q_289,how much should a dog drink,16,msmarco_15_3,0.5404022932052612,0
+q_289,how much should a dog drink,17,msmarco_15_7,0.5287716388702393,0
+q_289,how much should a dog drink,18,msmarco_dist_7538_0,0.5200073719024658,0
+q_289,how much should a dog drink,19,msmarco_dist_4050_7,0.49743521213531494,0
+q_289,how much should a dog drink,20,msmarco_15_4,0.49740922451019287,0
+q_289,how much should a dog drink,21,msmarco_dist_7538_3,0.45412126183509827,0
+q_289,how much should a dog drink,22,msmarco_dist_7538_6,0.45370781421661377,0
+q_289,how much should a dog drink,23,msmarco_dist_7538_1,0.45082157850265503,0
+q_289,how much should a dog drink,24,msmarco_dist_4050_9,0.4406163692474365,0
+q_289,how much should a dog drink,25,msmarco_dist_4050_6,0.43773362040519714,0
+q_289,how much should a dog drink,26,msmarco_dist_4050_5,0.4336390495300293,0
+q_289,how much should a dog drink,27,msmarco_dist_4050_2,0.42563700675964355,0
+q_289,how much should a dog drink,28,msmarco_dist_7538_4,0.4230320453643799,0
+q_289,how much should a dog drink,29,msmarco_dist_4050_1,0.42227858304977417,0
+q_289,how much should a dog drink,30,msmarco_dist_4412_5,0.41893383860588074,0
+q_289,how much should a dog drink,31,msmarco_dist_4050_0,0.41306382417678833,0
+q_289,how much should a dog drink,32,msmarco_dist_4050_3,0.41212671995162964,0
+q_289,how much should a dog drink,33,msmarco_dist_2647_7,0.4089183211326599,0
+q_289,how much should a dog drink,34,msmarco_dist_6792_2,0.4074065387248993,0
+q_289,how much should a dog drink,35,msmarco_dist_6792_5,0.4027213454246521,0
+q_289,how much should a dog drink,36,msmarco_dist_7538_2,0.3991800844669342,0
+q_289,how much should a dog drink,37,msmarco_dist_6792_1,0.3990733027458191,0
+q_289,how much should a dog drink,38,msmarco_dist_2647_6,0.3970787823200226,0
+q_289,how much should a dog drink,39,msmarco_dist_7538_5,0.38642996549606323,0
+q_289,how much should a dog drink,40,msmarco_dist_2647_2,0.36669427156448364,0
+q_289,how much should a dog drink,41,msmarco_209_3,0.3633163869380951,0
+q_289,how much should a dog drink,42,msmarco_dist_4050_4,0.3630508780479431,0
+q_289,how much should a dog drink,43,msmarco_40_1,0.35672953724861145,0
+q_289,how much should a dog drink,44,msmarco_dist_4050_8,0.3513122797012329,0
+q_289,how much should a dog drink,45,msmarco_173_3,0.3492293357849121,0
+q_289,how much should a dog drink,46,msmarco_dist_2647_4,0.3473200500011444,0
+q_289,how much should a dog drink,47,msmarco_dist_9000_7,0.3472703695297241,0
+q_289,how much should a dog drink,48,msmarco_dist_4412_4,0.33395132422447205,0
+q_289,how much should a dog drink,49,msmarco_dist_9000_1,0.32989439368247986,0
+q_289,how much should a dog drink,50,msmarco_dist_2647_0,0.32835015654563904,0
+q_289,how much should a dog drink,51,msmarco_40_7,0.3203449845314026,0
+q_289,how much should a dog drink,52,msmarco_dist_4412_0,0.31830263137817383,0
+q_289,how much should a dog drink,53,msmarco_dist_6792_3,0.31307336688041687,0
+q_289,how much should a dog drink,54,msmarco_dist_2647_5,0.31211763620376587,0
+q_289,how much should a dog drink,55,msmarco_dist_4412_2,0.30661317706108093,0
+q_289,how much should a dog drink,56,msmarco_115_0,0.30547139048576355,0
+q_289,how much should a dog drink,57,msmarco_209_5,0.30472785234451294,0
+q_289,how much should a dog drink,58,msmarco_dist_1753_5,0.303092896938324,0
+q_289,how much should a dog drink,59,msmarco_dist_4019_3,0.29404687881469727,0
+q_289,how much should a dog drink,60,msmarco_dist_9000_8,0.29304781556129456,0
+q_289,how much should a dog drink,61,msmarco_dist_5703_5,0.28419458866119385,0
+q_289,how much should a dog drink,62,msmarco_dist_9531_0,0.2835935354232788,0
+q_289,how much should a dog drink,63,msmarco_dist_834_4,0.2833601236343384,0
+q_289,how much should a dog drink,64,msmarco_32_2,0.27977052330970764,0
+q_289,how much should a dog drink,65,msmarco_dist_9484_3,0.27910101413726807,0
+q_289,how much should a dog drink,66,msmarco_dist_9000_4,0.27888765931129456,0
+q_289,how much should a dog drink,67,msmarco_dist_9484_1,0.2788091003894806,0
+q_289,how much should a dog drink,68,msmarco_dist_9484_6,0.27795296907424927,0
+q_289,how much should a dog drink,69,msmarco_36_0,0.2766851484775543,0
+q_289,how much should a dog drink,70,msmarco_dist_5703_6,0.2754341959953308,0
+q_289,how much should a dog drink,71,msmarco_32_7,0.2751066982746124,0
+q_289,how much should a dog drink,72,msmarco_dist_5703_8,0.2725539207458496,0
+q_289,how much should a dog drink,73,msmarco_dist_9000_6,0.27124470472335815,0
+q_289,how much should a dog drink,74,msmarco_dist_9484_4,0.27072399854660034,0
+q_289,how much should a dog drink,75,msmarco_dist_2647_3,0.27044811844825745,0
+q_289,how much should a dog drink,76,msmarco_dist_2760_8,0.26977968215942383,0
+q_289,how much should a dog drink,77,msmarco_dist_3454_3,0.2688327431678772,0
+q_289,how much should a dog drink,78,msmarco_dist_2880_5,0.2684815526008606,0
+q_289,how much should a dog drink,79,msmarco_223_1,0.2666171193122864,0
+q_289,how much should a dog drink,80,msmarco_223_2,0.26408684253692627,0
+q_289,how much should a dog drink,81,msmarco_223_0,0.2636527121067047,0
+q_289,how much should a dog drink,82,msmarco_dist_6003_3,0.26310205459594727,0
+q_289,how much should a dog drink,83,msmarco_dist_4412_3,0.2621126174926758,0
+q_289,how much should a dog drink,84,msmarco_dist_9484_2,0.2619200348854065,0
+q_289,how much should a dog drink,85,msmarco_dist_4397_8,0.26139014959335327,0
+q_289,how much should a dog drink,86,msmarco_167_2,0.2608077824115753,0
+q_289,how much should a dog drink,87,msmarco_dist_1508_7,0.26064789295196533,0
+q_289,how much should a dog drink,88,msmarco_167_1,0.26004618406295776,0
+q_289,how much should a dog drink,89,msmarco_209_1,0.25886332988739014,0
+q_289,how much should a dog drink,90,msmarco_dist_2647_1,0.25781553983688354,0
+q_289,how much should a dog drink,91,msmarco_dist_9484_0,0.25738194584846497,0
+q_289,how much should a dog drink,92,msmarco_dist_6040_6,0.25654444098472595,0
+q_289,how much should a dog drink,93,msmarco_6_7,0.2533637285232544,0
+q_289,how much should a dog drink,94,msmarco_dist_9531_3,0.2529439330101013,0
+q_289,how much should a dog drink,95,msmarco_dist_834_7,0.25160130858421326,0
+q_289,how much should a dog drink,96,msmarco_43_3,0.25118640065193176,0
+q_289,how much should a dog drink,97,msmarco_115_1,0.25027570128440857,0
+q_289,how much should a dog drink,98,msmarco_dist_7592_7,0.24854375422000885,0
+q_289,how much should a dog drink,99,msmarco_dist_9531_1,0.24780309200286865,0
+q_289,how much should a dog drink,100,msmarco_136_1,0.24677938222885132,0
+q_46,roman name definition,1,msmarco_46_5,0.632097065448761,1
+q_46,roman name definition,2,msmarco_46_7,0.56098473072052,0
+q_46,roman name definition,3,msmarco_46_2,0.5562114715576172,0
+q_46,roman name definition,4,msmarco_46_1,0.5494890809059143,0
+q_46,roman name definition,5,msmarco_46_6,0.4975496232509613,0
+q_46,roman name definition,6,msmarco_46_8,0.49657702445983887,0
+q_46,roman name definition,7,msmarco_46_4,0.49374574422836304,0
+q_46,roman name definition,8,msmarco_46_3,0.4936976432800293,1
+q_46,roman name definition,9,msmarco_46_0,0.46361857652664185,0
+q_46,roman name definition,10,msmarco_dist_2208_5,0.45419034361839294,0
+q_46,roman name definition,11,msmarco_dist_5828_6,0.4465751647949219,0
+q_46,roman name definition,12,msmarco_dist_9033_4,0.4262813925743103,0
+q_46,roman name definition,13,msmarco_248_2,0.40988093614578247,0
+q_46,roman name definition,14,msmarco_dist_1196_6,0.403648316860199,0
+q_46,roman name definition,15,msmarco_dist_7591_6,0.400482714176178,0
+q_46,roman name definition,16,msmarco_dist_4178_8,0.39694905281066895,0
+q_46,roman name definition,17,msmarco_275_8,0.3955628275871277,0
+q_46,roman name definition,18,msmarco_dist_1196_5,0.395318865776062,0
+q_46,roman name definition,19,msmarco_dist_9033_0,0.3878827691078186,0
+q_46,roman name definition,20,msmarco_dist_1107_3,0.38292521238327026,0
+q_46,roman name definition,21,msmarco_dist_6960_5,0.38067877292633057,0
+q_46,roman name definition,22,msmarco_dist_2208_2,0.3793942928314209,0
+q_46,roman name definition,23,msmarco_dist_4178_7,0.3745442032814026,0
+q_46,roman name definition,24,msmarco_dist_6960_0,0.3679560124874115,0
+q_46,roman name definition,25,msmarco_dist_6960_7,0.3670429289340973,0
+q_46,roman name definition,26,msmarco_161_1,0.3625222444534302,0
+q_46,roman name definition,27,msmarco_dist_6960_6,0.36084043979644775,0
+q_46,roman name definition,28,msmarco_275_2,0.3601224720478058,0
+q_46,roman name definition,29,msmarco_238_2,0.3594282269477844,0
+q_46,roman name definition,30,msmarco_248_3,0.3573800325393677,0
+q_46,roman name definition,31,msmarco_275_7,0.3568984568119049,0
+q_46,roman name definition,32,msmarco_235_1,0.35151010751724243,0
+q_46,roman name definition,33,msmarco_dist_4178_6,0.3513357639312744,0
+q_46,roman name definition,34,msmarco_235_0,0.3508955240249634,0
+q_46,roman name definition,35,msmarco_14_0,0.35005897283554077,0
+q_46,roman name definition,36,msmarco_146_4,0.3498625159263611,0
+q_46,roman name definition,37,msmarco_dist_10040_7,0.34661415219306946,0
+q_46,roman name definition,38,msmarco_dist_6960_4,0.3465726375579834,0
+q_46,roman name definition,39,msmarco_275_5,0.3433273434638977,0
+q_46,roman name definition,40,msmarco_dist_5828_2,0.34255921840667725,0
+q_46,roman name definition,41,msmarco_dist_6960_3,0.335959255695343,0
+q_46,roman name definition,42,msmarco_235_2,0.3356442451477051,0
+q_46,roman name definition,43,msmarco_dist_4074_8,0.3313756585121155,0
+q_46,roman name definition,44,msmarco_234_5,0.33058077096939087,0
+q_46,roman name definition,45,msmarco_161_6,0.3305697441101074,0
+q_46,roman name definition,46,msmarco_dist_6960_1,0.33029526472091675,0
+q_46,roman name definition,47,msmarco_238_0,0.3268929123878479,0
+q_46,roman name definition,48,msmarco_dist_9670_2,0.32617607712745667,0
+q_46,roman name definition,49,msmarco_dist_5549_7,0.32553160190582275,0
+q_46,roman name definition,50,msmarco_dist_9033_1,0.3248499035835266,0
+q_46,roman name definition,51,msmarco_dist_7591_7,0.32298028469085693,0
+q_46,roman name definition,52,msmarco_dist_4074_3,0.3227772116661072,0
+q_46,roman name definition,53,msmarco_234_6,0.32203638553619385,0
+q_46,roman name definition,54,msmarco_238_4,0.31642860174179077,0
+q_46,roman name definition,55,msmarco_275_0,0.3139425814151764,0
+q_46,roman name definition,56,msmarco_dist_9033_2,0.3131549656391144,0
+q_46,roman name definition,57,msmarco_dist_9033_7,0.3126586079597473,0
+q_46,roman name definition,58,msmarco_dist_9670_0,0.3110165596008301,0
+q_46,roman name definition,59,msmarco_161_2,0.3092907667160034,0
+q_46,roman name definition,60,msmarco_dist_4178_0,0.30897587537765503,0
+q_46,roman name definition,61,msmarco_dist_2208_8,0.30702418088912964,0
+q_46,roman name definition,62,msmarco_dist_7591_3,0.30584198236465454,0
+q_46,roman name definition,63,msmarco_dist_6960_2,0.3057982623577118,0
+q_46,roman name definition,64,msmarco_275_1,0.30519670248031616,0
+q_46,roman name definition,65,msmarco_dist_9033_5,0.3047563135623932,0
+q_46,roman name definition,66,msmarco_dist_1548_8,0.30462121963500977,0
+q_46,roman name definition,67,msmarco_dist_5549_8,0.3039746880531311,0
+q_46,roman name definition,68,msmarco_dist_1196_1,0.30271652340888977,0
+q_46,roman name definition,69,msmarco_dist_1548_7,0.30192938446998596,0
+q_46,roman name definition,70,msmarco_dist_2208_4,0.30146411061286926,0
+q_46,roman name definition,71,msmarco_dist_5828_0,0.2974860668182373,0
+q_46,roman name definition,72,msmarco_dist_8353_3,0.29446202516555786,0
+q_46,roman name definition,73,msmarco_275_6,0.29430484771728516,0
+q_46,roman name definition,74,msmarco_dist_4681_5,0.2931601405143738,0
+q_46,roman name definition,75,msmarco_161_3,0.29307669401168823,0
+q_46,roman name definition,76,msmarco_dist_6737_0,0.2927120327949524,0
+q_46,roman name definition,77,msmarco_dist_4074_2,0.2920244336128235,0
+q_46,roman name definition,78,msmarco_dist_4074_1,0.28892356157302856,0
+q_46,roman name definition,79,msmarco_240_3,0.2886071801185608,0
+q_46,roman name definition,80,msmarco_dist_8208_2,0.28770706057548523,0
+q_46,roman name definition,81,msmarco_240_0,0.28479278087615967,0
+q_46,roman name definition,82,msmarco_146_6,0.28350630402565,0
+q_46,roman name definition,83,msmarco_186_8,0.28261834383010864,0
+q_46,roman name definition,84,msmarco_238_6,0.28243353962898254,0
+q_46,roman name definition,85,msmarco_dist_9670_3,0.28242290019989014,0
+q_46,roman name definition,86,msmarco_dist_9033_8,0.2791355550289154,0
+q_46,roman name definition,87,msmarco_222_3,0.27652308344841003,0
+q_46,roman name definition,88,msmarco_dist_4074_0,0.2759247124195099,0
+q_46,roman name definition,89,msmarco_238_5,0.27581754326820374,0
+q_46,roman name definition,90,msmarco_161_5,0.273872971534729,0
+q_46,roman name definition,91,msmarco_dist_5828_5,0.2730516493320465,0
+q_46,roman name definition,92,msmarco_dist_4074_4,0.2722642421722412,0
+q_46,roman name definition,93,msmarco_240_2,0.27222561836242676,0
+q_46,roman name definition,94,msmarco_240_1,0.2721676826477051,0
+q_46,roman name definition,95,msmarco_dist_1548_2,0.27134567499160767,0
+q_46,roman name definition,96,msmarco_dist_3710_4,0.2695668637752533,0
+q_46,roman name definition,97,msmarco_161_4,0.2684319317340851,0
+q_46,roman name definition,98,msmarco_248_7,0.26635223627090454,0
+q_46,roman name definition,99,msmarco_275_4,0.2659657597541809,0
+q_46,roman name definition,100,msmarco_dist_3710_0,0.26581817865371704,0
+q_223,how much flaxseed per day,1,msmarco_223_1,0.8712018132209778,0
+q_223,how much flaxseed per day,2,msmarco_223_3,0.8365172147750854,0
+q_223,how much flaxseed per day,3,msmarco_223_0,0.8106722831726074,0
+q_223,how much flaxseed per day,4,msmarco_223_2,0.7541357278823853,1
+q_223,how much flaxseed per day,5,msmarco_66_6,0.4510030746459961,0
+q_223,how much flaxseed per day,6,msmarco_dist_1014_0,0.44331949949264526,0
+q_223,how much flaxseed per day,7,msmarco_136_1,0.44224369525909424,0
+q_223,how much flaxseed per day,8,msmarco_66_1,0.4371860921382904,0
+q_223,how much flaxseed per day,9,msmarco_66_3,0.4365158975124359,0
+q_223,how much flaxseed per day,10,msmarco_dist_7566_5,0.4198896884918213,0
+q_223,how much flaxseed per day,11,msmarco_66_8,0.4152853786945343,0
+q_223,how much flaxseed per day,12,msmarco_136_6,0.40959128737449646,0
+q_223,how much flaxseed per day,13,msmarco_136_7,0.4088878035545349,0
+q_223,how much flaxseed per day,14,msmarco_66_5,0.4074753224849701,0
+q_223,how much flaxseed per day,15,msmarco_66_0,0.4030420184135437,0
+q_223,how much flaxseed per day,16,msmarco_66_2,0.4002974033355713,0
+q_223,how much flaxseed per day,17,msmarco_dist_1014_2,0.386270135641098,0
+q_223,how much flaxseed per day,18,msmarco_136_0,0.3854256868362427,0
+q_223,how much flaxseed per day,19,msmarco_dist_2760_8,0.3842560648918152,0
+q_223,how much flaxseed per day,20,msmarco_dist_1014_4,0.38372859358787537,0
+q_223,how much flaxseed per day,21,msmarco_6_5,0.37653085589408875,0
+q_223,how much flaxseed per day,22,msmarco_dist_1014_5,0.3739643096923828,0
+q_223,how much flaxseed per day,23,msmarco_dist_1014_3,0.3722212314605713,0
+q_223,how much flaxseed per day,24,msmarco_6_6,0.3595151901245117,0
+q_223,how much flaxseed per day,25,msmarco_dist_7592_7,0.3567238450050354,0
+q_223,how much flaxseed per day,26,msmarco_dist_4110_7,0.35659587383270264,0
+q_223,how much flaxseed per day,27,msmarco_dist_1014_6,0.3542996644973755,0
+q_223,how much flaxseed per day,28,msmarco_66_4,0.3535173237323761,0
+q_223,how much flaxseed per day,29,msmarco_dist_4739_4,0.3522740602493286,0
+q_223,how much flaxseed per day,30,msmarco_dist_4019_5,0.3408803343772888,0
+q_223,how much flaxseed per day,31,msmarco_dist_5703_8,0.3387238383293152,0
+q_223,how much flaxseed per day,32,msmarco_dist_1014_1,0.336581826210022,0
+q_223,how much flaxseed per day,33,msmarco_dist_4110_6,0.33103862404823303,0
+q_223,how much flaxseed per day,34,msmarco_dist_3372_5,0.31785210967063904,0
+q_223,how much flaxseed per day,35,msmarco_dist_3262_8,0.3148699402809143,0
+q_223,how much flaxseed per day,36,msmarco_dist_1744_1,0.31430232524871826,0
+q_223,how much flaxseed per day,37,msmarco_dist_4019_1,0.3131183981895447,0
+q_223,how much flaxseed per day,38,msmarco_2_0,0.31228387355804443,0
+q_223,how much flaxseed per day,39,msmarco_dist_834_4,0.31187278032302856,0
+q_223,how much flaxseed per day,40,msmarco_167_2,0.30891725420951843,0
+q_223,how much flaxseed per day,41,msmarco_dist_4019_0,0.3086298108100891,0
+q_223,how much flaxseed per day,42,msmarco_dist_6473_0,0.3074127435684204,0
+q_223,how much flaxseed per day,43,msmarco_36_3,0.30370843410491943,0
+q_223,how much flaxseed per day,44,msmarco_dist_299_3,0.3029848635196686,0
+q_223,how much flaxseed per day,45,msmarco_15_1,0.3009617328643799,0
+q_223,how much flaxseed per day,46,msmarco_dist_4019_8,0.29920604825019836,0
+q_223,how much flaxseed per day,47,msmarco_66_7,0.298856258392334,0
+q_223,how much flaxseed per day,48,msmarco_131_3,0.2983156740665436,0
+q_223,how much flaxseed per day,49,msmarco_dist_6473_2,0.29648715257644653,0
+q_223,how much flaxseed per day,50,msmarco_dist_2647_7,0.29386433959007263,0
+q_223,how much flaxseed per day,51,msmarco_dist_4019_3,0.29365789890289307,0
+q_223,how much flaxseed per day,52,msmarco_dist_2647_6,0.29356181621551514,0
+q_223,how much flaxseed per day,53,msmarco_dist_3118_0,0.2932288348674774,0
+q_223,how much flaxseed per day,54,msmarco_dist_3670_0,0.2900960147380829,0
+q_223,how much flaxseed per day,55,msmarco_dist_4019_7,0.28973209857940674,0
+q_223,how much flaxseed per day,56,msmarco_6_2,0.28855758905410767,0
+q_223,how much flaxseed per day,57,msmarco_167_7,0.28715917468070984,0
+q_223,how much flaxseed per day,58,msmarco_dist_834_7,0.28657960891723633,0
+q_223,how much flaxseed per day,59,msmarco_dist_1508_7,0.2821166217327118,0
+q_223,how much flaxseed per day,60,msmarco_43_7,0.2815159857273102,0
+q_223,how much flaxseed per day,61,msmarco_dist_85_5,0.28035396337509155,0
+q_223,how much flaxseed per day,62,msmarco_167_1,0.27931326627731323,0
+q_223,how much flaxseed per day,63,msmarco_dist_8219_6,0.2792789041996002,0
+q_223,how much flaxseed per day,64,msmarco_43_8,0.27736783027648926,0
+q_223,how much flaxseed per day,65,msmarco_dist_3375_7,0.27680888772010803,0
+q_223,how much flaxseed per day,66,msmarco_dist_4019_4,0.27600574493408203,0
+q_223,how much flaxseed per day,67,msmarco_289_0,0.27367687225341797,0
+q_223,how much flaxseed per day,68,msmarco_dist_5703_6,0.2733002305030823,0
+q_223,how much flaxseed per day,69,msmarco_dist_3118_5,0.2727121114730835,0
+q_223,how much flaxseed per day,70,msmarco_dist_6003_3,0.27210989594459534,0
+q_223,how much flaxseed per day,71,msmarco_dist_85_0,0.27127477526664734,0
+q_223,how much flaxseed per day,72,msmarco_15_6,0.27110806107521057,0
+q_223,how much flaxseed per day,73,msmarco_136_4,0.2710627317428589,0
+q_223,how much flaxseed per day,74,msmarco_dist_3118_4,0.27079495787620544,0
+q_223,how much flaxseed per day,75,msmarco_dist_6037_8,0.26956847310066223,0
+q_223,how much flaxseed per day,76,msmarco_dist_3118_1,0.2694850265979767,0
+q_223,how much flaxseed per day,77,msmarco_dist_1508_4,0.269074022769928,0
+q_223,how much flaxseed per day,78,msmarco_dist_1744_9,0.26867595314979553,0
+q_223,how much flaxseed per day,79,msmarco_dist_1508_0,0.2683868408203125,0
+q_223,how much flaxseed per day,80,msmarco_58_5,0.2677989602088928,0
+q_223,how much flaxseed per day,81,msmarco_dist_9619_8,0.26765871047973633,0
+q_223,how much flaxseed per day,82,msmarco_dist_3118_3,0.2670370936393738,0
+q_223,how much flaxseed per day,83,msmarco_289_4,0.265525221824646,0
+q_223,how much flaxseed per day,84,msmarco_dist_3372_8,0.26520755887031555,0
+q_223,how much flaxseed per day,85,msmarco_289_8,0.26496422290802,0
+q_223,how much flaxseed per day,86,msmarco_dist_5703_4,0.2638082802295685,0
+q_223,how much flaxseed per day,87,msmarco_282_7,0.263704389333725,0
+q_223,how much flaxseed per day,88,msmarco_6_3,0.26317018270492554,0
+q_223,how much flaxseed per day,89,msmarco_dist_5703_5,0.26312071084976196,0
+q_223,how much flaxseed per day,90,msmarco_dist_3262_2,0.2619754374027252,0
+q_223,how much flaxseed per day,91,msmarco_dist_13_5,0.26146793365478516,0
+q_223,how much flaxseed per day,92,msmarco_167_3,0.2606557607650757,0
+q_223,how much flaxseed per day,93,msmarco_131_8,0.2597588896751404,0
+q_223,how much flaxseed per day,94,msmarco_4_2,0.2592242658138275,0
+q_223,how much flaxseed per day,95,msmarco_244_0,0.25870370864868164,0
+q_223,how much flaxseed per day,96,msmarco_36_0,0.25818681716918945,0
+q_223,how much flaxseed per day,97,msmarco_297_0,0.25748929381370544,0
+q_223,how much flaxseed per day,98,msmarco_212_4,0.25691306591033936,0
+q_223,how much flaxseed per day,99,msmarco_dist_5703_7,0.2569062411785126,0
+q_223,how much flaxseed per day,100,msmarco_dist_3372_2,0.2559099495410919,0

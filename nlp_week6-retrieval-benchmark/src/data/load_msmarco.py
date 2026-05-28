@@ -16,7 +16,7 @@ def load_msmarco(
     distractor_target: int = 5000,
 ) -> DataBundle:
     random.seed(seed)
-    ds = datasets.load_dataset("ms_marco", "v1.1", split="validation")
+    ds = datasets.load_dataset("microsoft/ms_marco", "v1.1", split="validation")
 
     all_indices = list(range(len(ds)))
     sampled_indices = random.sample(all_indices, min(sample_size, len(all_indices)))
