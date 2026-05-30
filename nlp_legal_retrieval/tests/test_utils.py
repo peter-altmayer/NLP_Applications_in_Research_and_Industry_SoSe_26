@@ -23,3 +23,14 @@ def test_save_cache_creates_file(tmp_path):
     save_cache(path, [{"a": 1}])
     assert path.exists()
     assert json.loads(path.read_text(encoding="utf-8")) == [{"a": 1}]
+
+
+def test_print_table_produces_output(capsys):
+    from utils import print_table
+    rows = [[0, 0.95, "hello"], [1, 0.42, "world"]]
+    headers = ["#", "score", "text"]
+    print_table(rows, headers)
+    captured = capsys.readouterr()
+    assert "#" in captured.out
+    assert "score" in captured.out
+    assert "hello" in captured.out
