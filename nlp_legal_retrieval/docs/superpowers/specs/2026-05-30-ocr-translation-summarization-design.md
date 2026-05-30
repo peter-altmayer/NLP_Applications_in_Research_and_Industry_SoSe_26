@@ -135,11 +135,3 @@ pandas>=2.0.0
 
 All inference on CUDA (RTX 2070 Super, 8GB VRAM). Models run sequentially. Peak VRAM usage: ~1.5GB (BART-large). No quantization needed.
 
----
-
-## Non-Goals
-
-- No hyperparameter tuning or model comparison
-- No web UI or interactive visualisation
-- No unit tests (evaluation scripts are the artifact)
-- No Jupyter notebooks
