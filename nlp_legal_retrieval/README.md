@@ -40,12 +40,24 @@ python part3_summarization.py # Summarization: CNN/DailyMail with BART-large
 | WER | 0.4614 |
 | F1  | 0.8131 |
 
+*Note: TrOCR-base-printed defaults to all-caps output; CER/WER are case-sensitive and therefore overestimate errors from capitalisation differences — F1 (case-insensitive) is the more informative metric here.*
+
+### Sample Results (first 5 examples)
+
+| # | CER | WER | F1 | OCR (40 chars) | Gold (40 chars) |
+|---|-----|-----|----|----------------|-----------------|
+| 0 | 0.1765 | 0.3333 | 0.9231 | 901016 -TICKET CP 2 60.000 60.000 TOTA | 901016 -TICKET CP 2 60.000 60.000 TOTA |
+| 1 | 0.0000 | 0.0000 | 1.0000 | J.STB PROMO 17500 Y.B.BAT 46000 Y.BASO | J.STB PROMO 17500 Y.B.BAT 46000 Y.BASO |
+| 2 | 0.2891 | 0.6296 | 0.5000 | 1 JASMINE MT (L) 24.000 DOCONUT JELLY ( | 1 JASMINE MT ( L ) 24,000 COCONUT JELLY |
+| 3 | 0.1392 | 0.3333 | 0.8571 | 1X @11000 DONAT GULA 11,000 1.00XITEMS | 1X @11000 DONAT GULA 11,000 1.00xITEMs |
+| 4 | 0.1224 | 0.4348 | 0.6809 | ICE BLACKCOFFE 2 82,000 AVOCADO COFFEE | ICE BLACKCOFFE 2 82,000 AVOCADO COFFEE |
+
 ### Failure Analysis
 
 **Example #30 (CER=0.82):**
 - Gold: `Kupon 3 28,636 Subtotal 28,636 PB1 (10%) 2,864 Dine In Total 31,500 Cash 50,000 Change 18,500`
 - OCR:  `KUPON 3 28,636 SUBTOTAL @6% P81 (10%) (RM) DINE IN TOTAL : 1/03 CASH REGULAR, COME AGAIN 5,000 CHANGE *** ********`
-- The model hallucinates `@6%`, reads `P81` instead of `PB1`, and replaces all numeric totals with garbage (`1/03`, `***`). The subtotal, total, cash, and change amounts are entirely wrong. This reflects a confusable glyph problem — receipt fonts with bleed or low contrast cause digit/letter confusion (1↔I, 8↔B) and the model fills gaps with plausible-looking but incorrect tokens.
+- The model hallucinates `@6%`, reads `P81` instead of `PB1`, and replaces all numeric totals with garbage (`1/03`, `***`). The subtotal, total, cash, and change amounts are entirely wrong.
 
 **Example #80 (CER=0.72):**
 - Gold: `1 Viet Milk Coffee 25,000 +Ice +M Subtotal 25.000 Total 25.000 CASH 25.000 Kembalian 0`
@@ -70,6 +82,16 @@ python part3_summarization.py # Summarization: CNN/DailyMail with BART-large
 | BLEU | 41.24 |
 | chrF | 67.86 |
 | BERTScore F1 | 0.8942 |
+
+### Sample Results (first 5 examples)
+
+| # | chrF | Hypothesis (60 chars) | Reference (60 chars) |
+|---|------|-----------------------|----------------------|
+| 0 | 97.80 | München 1856: Vier Karten, die Ihren Blick auf die Stadt ver | München 1856: Vier Karten, die Ihren Blick auf die Stadt ver |
+| 1 | 41.90 | Ein geistiges Asyl, wo sich heute junge Menschen treffen sol | Eine Irren-Anstalt, wo sich heute Jugendliche begegnen solle |
+| 2 | 45.40 | Eine Kryptakapelle, wo sie nun Tunnel für die S-Bahn graben. | Eine Gruftkapelle, wo nun für den S-Bahn-Tunnel gegraben wir |
+| 3 | 27.61 | Die Zuteilungsinhaber kultivieren den Boden ehemaliger Bauer | Kleingärtner bewirtschaften den einstigen Grund von Bauern.  |
+| 4 | 62.43 | Die älteste offizielle Karte von München bringt fesselnde Ge | Die älteste offizielle Karte Münchens fördert spannende Gesc |
 
 ### Failure Analysis
 
@@ -104,6 +126,16 @@ python part3_summarization.py # Summarization: CNN/DailyMail with BART-large
 | ROUGE-1 | 0.3689 |
 | ROUGE-2 | 0.1643 |
 | ROUGE-L | 0.2776 |
+
+### Sample Results (first 5 examples)
+
+| # | ROUGE-1 | ROUGE-2 | ROUGE-L | Summary (80 chars) |
+|---|---------|---------|---------|---------------------|
+| 0 | 0.5352 | 0.3768 | 0.4789 | The Palestinian Authority becomes the 123rd member of the International Criminal |
+| 1 | 0.4742 | 0.2316 | 0.3918 | Theia, a one-year-old bully breed mix, was hit by a car and buried in a field. F |
+| 2 | 0.4054 | 0.1944 | 0.2703 | Mohammad Javad Zarif is the Iranian foreign minister. He has been John Kerry's o |
+| 3 | 0.4524 | 0.2439 | 0.3333 | The five were exposed to Ebola in Sierra Leone in March, but none developed the  |
+| 4 | 0.4750 | 0.2564 | 0.3000 | Duke student admits to hanging a noose from a tree near a student union. The stu |
 
 ### Hallucination Analysis
 
