@@ -5,3 +5,6 @@ lectures/
 /docs/
 desktop.ini
 .Rhistory
+
+# AI planning/spec files (superpowers)
+**/docs/superpowers/

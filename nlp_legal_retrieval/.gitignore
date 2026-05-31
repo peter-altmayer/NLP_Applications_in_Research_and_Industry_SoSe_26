@@ -26,3 +26,6 @@ results/*.png
 
 # Secrets
 .env
+
+# AI planning/spec files (superpowers)
+docs/superpowers/
