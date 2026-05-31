@@ -30,8 +30,11 @@ python part3_summarization.py # Summarization: CNN/DailyMail with BART-large
 ## Part 1: OCR Results
 
 **Model:** `microsoft/trocr-base-printed`
+
 **Dataset:** `naver-clova-ix/cord-v2` (100 test examples)
+
 **Approach:** CORD-v2 provides per-word bounding box coordinates in its `valid_line` annotations. Each receipt image is cropped into individual text-line regions before being passed to TrOCR, which is designed for single-line input. Line OCR outputs are concatenated for document-level evaluation.
+
 **Metrics:** CER (lower = better), WER (lower = better), F1 token overlap (higher = better)
 
 | Metric | Mean Score |
@@ -83,7 +86,9 @@ python part3_summarization.py # Summarization: CNN/DailyMail with BART-large
 ## Part 2: Translation Results
 
 **Model:** `Helsinki-NLP/opus-mt-en-de`
+
 **Dataset:** `wmt/wmt19 de-en` validation (100 examples, EN->DE)
+
 **Metrics:** BLEU (higher = better), chrF (higher = better), BERTScore F1 (higher = better)
 
 | Metric | Score |
@@ -127,7 +132,9 @@ python part3_summarization.py # Summarization: CNN/DailyMail with BART-large
 ## Part 3: Summarization Results
 
 **Model:** `facebook/bart-large-cnn`
+
 **Dataset:** `abisee/cnn_dailymail 3.0.0` test (100 examples)
+
 **Metrics:** ROUGE-1, ROUGE-2, ROUGE-L (all higher = better)
 
 | Metric | Mean Score |
