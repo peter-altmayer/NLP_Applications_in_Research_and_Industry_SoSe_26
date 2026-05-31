@@ -1,0 +1,802 @@
+[
+  {
+    "index": 0,
+    "ocr_text": "901016 -TICKET CP 2 60.000 60.000 TOTAL DISC S -60.000 TAX 5.455 SUBTOTAL 60.000 TOTAL (QTY 2.00 60.000 (QTY 2.00 EDC CIMB NIAGA NO: XX7730 600.000",
+    "gold_text": "901016 -TICKET CP 2 60.000 60.000 TOTAL DISC $ -60.000 TAX 5.455 Subtotal 60.000 TOTAL 60.000 (Qty 2.00 EDC CIMB NIAGA No: xx7730 60.000",
+    "cer": 0.1765,
+    "wer": 0.3333,
+    "f1": 0.9231
+  },
+  {
+    "index": 1,
+    "ocr_text": "J.STB PROMO 17500 Y.B.BAT 46000 Y.BASO PROM 27500 TOTAL 91000 CASH 91000",
+    "gold_text": "J.STB PROMO 17500 Y.B.BAT 46000 Y.BASO PROM 27500 TOTAL 91000 CASH 91000",
+    "cer": 0.0,
+    "wer": 0.0,
+    "f1": 1.0
+  },
+  {
+    "index": 2,
+    "ocr_text": "1 JASMINE MT (L) 24.000 DOCONUT JELLY (L) 4.000 SUB TOTAL TOTAL SALES TOTAL ITEMS CASH CHANGE : 12.000",
+    "gold_text": "1 JASMINE MT ( L ) 24,000 COCONUT JELLY ( L ) 4,000 SUB TOTAL 28,000 TOTAL SAI S 28,000 TOTAL ITEMS 1 CASH 100,000 CHANGE 72,000",
+    "cer": 0.2891,
+    "wer": 0.6296,
+    "f1": 0.5
+  },
+  {
+    "index": 3,
+    "ocr_text": "1X @11000 DONAT GULA 11,000 1.00XITEMS SUBTOTAL !!!0001 1 1,000 TOTAL 11,000 CASH 11,000",
+    "gold_text": "1X @11000 DONAT GULA 11,000 1.00xITEMs SUBTOTAL 11,000 TOTAL 11,000 CASH 11,000",
+    "cer": 0.1392,
+    "wer": 0.3333,
+    "f1": 0.8571
+  },
+  {
+    "index": 4,
+    "ocr_text": "ICE BLACKCOFFE 2 82,000 AVOCADO COFFEE 1 61,000 CHIKEN KATSU FF 1 54,000 SUB_TOTAL 1 1%4,000 DISCOUNT 19,400 19TAN 1747600 9/A 9:4 20: 000 CHANGE / 25,400",
+    "gold_text": "ICE BLACKCOFFE 2 82,000 AVOCADO COFFEE 1 61,000 CHIKEN KATSU FF 1 51,000 SUB_TOTAL 194,000 DISCOUNT 19,400 TOTAL 174,600 CASH 200,000 CHANGE 25,400",
+    "cer": 0.1224,
+    "wer": 0.4348,
+    "f1": 0.6809
+  },
+  {
+    "index": 5,
+    "ocr_text": "TRAD KY TOAST CARTE 28.182 ITEMS 1.00 SUBTTL 28.82 PB-1 10% TOTAL 31.000 CASH 31.000",
+    "gold_text": "TRAD KY TOAST CARTE 28.182 ITEMS 1.00 SUBTTL 28.182 PB-1 10% 2.818 TOTAL 31.000 CASH 31.000",
+    "cer": 0.0769,
+    "wer": 0.125,
+    "f1": 0.9286
+  },
+  {
+    "index": 6,
+    "ocr_text": "1 EGG TART 13,000 2 CHOCO CUS ARD PASTRY 24,000 1 REDBEAN BREAD 9,000 TOTAL 46,000 CASH CHANGE 4,000",
+    "gold_text": "1 EGG TART 13,000 2 CHOCO CUS ARD PASTRY 24,000 1 REDBEAN BREAD 9,000 TOTAL 46,000 CASH 50,000 CHANGE 4,000",
+    "cer": 0.0654,
+    "wer": 0.05,
+    "f1": 0.973
+  },
+  {
+    "index": 7,
+    "ocr_text": "KUPON 15 100,000 ADD CHICKEN BOX 909 SUBTOTAL @ 100,909 PB1 (10%) (RM) TOTAL @ 11,000 CASH : 1 @ 1,11,000",
+    "gold_text": "Kupon 15 100,000 ADD CHICKEN BOX 909 Subtotal 100,909 PB1 (10%) 10,091 Total 111,000 Cash Rp. 111,000",
+    "cer": 0.3366,
+    "wer": 0.7059,
+    "f1": 0.7429
+  },
+  {
+    "index": 8,
+    "ocr_text": "1 [REG] BLACK SAKURA 45,455 1 COOKIE DOH SAUCES 0 1 NATA DE COCO 0 SUB TOTAL : 45,455 PB1 (10%) ROUNDING COME AGAINTS ON TOTAL 50,000 CARD PAYMENT",
+    "gold_text": "1 [REG] BLACK SAKURA 45,455 1 COOKIE DOH SAUCES 0 1 NATA DE COCO 0 Sub Total 45,455 PB1 (10%) 4,545 Rounding 0 Total 50,000 Card Payment 50,000",
+    "cer": 0.3497,
+    "wer": 0.3929,
+    "f1": 0.8889
+  },
+  {
+    "index": 9,
+    "ocr_text": "BUMBU KALBU AYAM 1 36000 36000 SUB TOTAL : 38000 DISCOUNT (0%) TUNAI 50000 KEMBALIAN 1 4000",
+    "gold_text": "Bumbu Kaldu Ayam 1 36000 36000 Sub Total 36000 Discount (0%) Tunai 50000 Kembalian 14000",
+    "cer": 0.4545,
+    "wer": 0.8,
+    "f1": 0.7857
+  },
+  {
+    "index": 10,
+    "ocr_text": "CINNAMON SUGAR 1 X 17,000 17,000 SUB TOTAL GRANDTOTAL CASHIER CHANGE DUE",
+    "gold_text": "CINNAMON SUGAR 1 x 17,000 17,000 SUB TOTAL 17,000 GRAND TOTAL 17,000 CASH IDR 20,000 CHANGE DUE 3,000",
+    "cer": 0.3069,
+    "wer": 0.5,
+    "f1": 0.72
+  },
+  {
+    "index": 11,
+    "ocr_text": "1 BANABERRY FRESH CREAM CAK 230,000 TOTAL 230.000 CASH ALL 230.00 CHANGE 0",
+    "gold_text": "1 BANABERRY FRESH CREAM CAK 230,000 TOTAL 230,000 CASH 230,000 CHANGE 0",
+    "cer": 0.0986,
+    "wer": 0.25,
+    "f1": 0.8696
+  },
+  {
+    "index": 12,
+    "ocr_text": "0571-1854 BLUS WANITA 1 @120.000 0% 120,000 1002-0060 SHOPPING BAG 1 8880 100% 0 TOTAL (2 ITEM) 120,000 (2 ITEM) CC.VISA.RCA 1204000 TOTAL KEMBALIAN",
+    "gold_text": "0571-1854 BLUS WANITA 1 @120,000 0% 120,000 1002-0060 SHOPPING BAG 1 @880 100% 0 TOTAL 120,000 (2 item) CC.Visa.BCA 120,000 Total Kembalian 0",
+    "cer": 0.2411,
+    "wer": 0.4348,
+    "f1": 0.8108
+  },
+  {
+    "index": 13,
+    "ocr_text": "BASO KUAH 1 43.636 43.636 A.MINERAL GELAS 1 3.000 3,000 TOTAL : 1 @ 6.68 DPP ID: 46,636 TAX 10.00 % GRAND TOTAL: TUNAI @ 5200 KEMBAILI (7.00)",
+    "gold_text": "BASO KUAH 1 43.636 43.636 A.MINERAL GELAS 1 3,000 3,000 TOTAL 46.636 DPP 46.636 TAX 10.00 % 4.664 GRAND TOTAL 51.300 TUNAI 52.000 KEMBALI 700",
+    "cer": 0.2482,
+    "wer": 0.56,
+    "f1": 0.6364
+  },
+  {
+    "index": 14,
+    "ocr_text": "1 REDVELVET CHEESE SIC 38,000 1 CHICKEN BAKED RICE 55,000 1 FISH N CHIPS 65,000 1 MUSHROOM SOUP 35,000 1 CHAMOMILE 25,000 1 ICED TEA 20,000 SUBTOTAL : 00000 SERVICE : 01 1 17,850 PB1 REGULAR: 25,585 TOTAL 281,435 COUPON TELLOWING IT 100,000 CASH RECEIPT NO: 00000 CHANGE COME AGAIN 18,565",
+    "gold_text": "1 RedVelvet Cheese Slc 38,000 1 Chicken Baked Rice 55,000 1 Fish n Chips 65,000 1 Mushroom Soup 35,000 1 Chamomile 25,000 1 Iced Tea 20,000 SUBTOTAL 238,000 Service 17,850 PB1 25,585 TOTAL 281,435 Coupon 100,000 CASH 200,000 Change 18,565",
+    "cer": 0.5504,
+    "wer": 0.75,
+    "f1": 0.8205
+  },
+  {
+    "index": 15,
+    "ocr_text": "1 LEMON TEA (L) 25.000 1 CARAMEL SMAIL 38.000 TOTAL 63.000 CASH CHANGED 7.000",
+    "gold_text": "1 Lemon Tea (L) 25.000 1 Caramel Small 38.000 TOTAL 63.000 CASH 70.000 CHANGED 7.000",
+    "cer": 0.2738,
+    "wer": 0.3333,
+    "f1": 0.8889
+  },
+  {
+    "index": 16,
+    "ocr_text": "1 [LG] BLACK SAKURA 59,091 1 LONGAN 0 1 ROASTED ALMOND 0 1 N ANGGO 0 1 MINERAL WATER (BUNDLING) 5K 4,545 SUB TOTAL : 63,636 PB1 (10%) ROUNDING ENTERING WITH RECEIPT @ TOTAL CASH PAYMENT COMELL CHANGE COME AGAINTS SOLD",
+    "gold_text": "1 [LG] BLACK SAKURA 59,091 1 LONGAN 0 1 ROASTED ALMOND 0 1 IVANGGO 0 1 IVINERAL WATER (bundling) 5k 4,545 Sub Total 63,636 PB1 (10%) 6,364 Rounding 0 Total 70,000 Cash Payment 100,000 Change 30,000",
+    "cer": 0.4721,
+    "wer": 0.5833,
+    "f1": 0.7097
+  },
+  {
+    "index": 17,
+    "ocr_text": "GOBIIN'S MACE 1 25,000 MOR-RELLA HOT 2 38,000 SHOPUEOPER 1 14,000 CHANGE 1 14,000 PLASTIK AMOOK 1 0 TAKE AWAY 1 0 SUBTOTAL : 1 DISCOUNT (RM) TOTAL RP.91,000 DEBIT ID: 01000",
+    "gold_text": "Goblin's Mace 1 25,000 Mozarella Hot Dog 2 38,000 Chili Pepper Croquette 1 14,000 Cheese Croquette 1 14,000 Plastik Amook 1 0 Plastik Putih Take Away 1 0 Subtotal 91,000 Discount (0) TOTAL Rp. 91,000 Debit 91,000",
+    "cer": 0.5802,
+    "wer": 0.6757,
+    "f1": 0.6154
+  },
+  {
+    "index": 18,
+    "ocr_text": "PROPOLIS CAIR 1 156000 156000 SUB TOTAL 156000 TUNAI 1 56800 KEMBALIAN",
+    "gold_text": "Propolis Cair 1 156000 156000 Sub Tofal 156000 Tunai 156000 Kembalian Rp. 0",
+    "cer": 0.48,
+    "wer": 0.6923,
+    "f1": 0.7368
+  },
+  {
+    "index": 19,
+    "ocr_text": "4 AMBUSH DBL CHS 60000 10 ANGUSH CHS BUR 100009 NET SALES 160000 TAX 11600 AMOUNT DUE 17600",
+    "gold_text": "4 AMBUSH DBL CHS 60000 10 AMBUSH CHS BUR 100000 NET SALES 160000 TAX 16000 AMOUNT DUE 176000",
+    "cer": 0.0652,
+    "wer": 0.2222,
+    "f1": 0.7879
+  },
+  {
+    "index": 20,
+    "ocr_text": "1 CASHEW NUTS CHKN 64,500 1 GARLIC PEPPER BEEF 79,500 1 FED CURRY BEET 69,500 1 PHAD THAI 64,500 4 STEAMED RICE 47,600 SUBTOTAL : 1/2018 SERVICE CHRG ID: 00000-117,908 10% PRICE - 1,00 TOTAL : 377,859",
+    "gold_text": "1 cashew nuts chkn 64,500 1 garlic pepper beef 79,500 1 red curry beef 69,500 1 phad thai 64,500 4 steamed rice 47,600 SUBTOTAL 325,600 Service chrg 17,908 10% PB1 34,351 TOTAL 377,859",
+    "cer": 0.5489,
+    "wer": 0.697,
+    "f1": 0.7667
+  },
+  {
+    "index": 21,
+    "ocr_text": "1 35.000 RP35.000 NASI GOR SFD TLR 1 3.000 RP3.000 ES TEH TAWAR ***TOTAL RP38.000 CASH RECEIP50.000 CHANGE RPL2.000",
+    "gold_text": "1 35.000 Rp 35.000 NASI GOR SFD TLR 1 3.000 Rp 3.000 ES TEH TAWAR ***TOTAL Rp 38.000 CASH Rp 50.000 CHANGE Rp 12.000",
+    "cer": 0.1207,
+    "wer": 0.4167,
+    "f1": 0.7429
+  },
+  {
+    "index": 22,
+    "ocr_text": "2 IMDI SOFT STEAMED CHEESEC 20,000 2 [MD] SOFT STEAMED CHOCOCA 20,000 TOTAL 40,000 CASH CHANGE 60,000",
+    "gold_text": "2 [MD] SOFT STEAMED CHEESEC 20,000 2 [MD] SOFT STEAMED CHOCOCA 20,000 TOTAL 40,000 CASH 100,000 CHANGE 60,000",
+    "cer": 0.0917,
+    "wer": 0.1111,
+    "f1": 0.9231
+  },
+  {
+    "index": 23,
+    "ocr_text": "6 TWIST DONUT 54,000 1 REDBEAN BREAD 9,000 TOTAL 63,000 CASH CHANGE TO,000 CHANGE 7,000",
+    "gold_text": "6 TWIST DONUT 54,000 1 REDBEAN BREAD 9,000 TOTAL 63,000 CASH 70,000 CHANGE 7,000",
+    "cer": 0.1125,
+    "wer": 0.1429,
+    "f1": 0.9286
+  },
+  {
+    "index": 24,
+    "ocr_text": "5001-CORN FLAKES COOKIES RP.56.000 X1 RP.56.000 5003-CHOKORETO COOKIES RP.62.000 X1 RP.62.000 6002-PLASTIC BAG MEDIUM RP.0 X1 RP.0 TOTAL ITEM: 3 TOTAL. DEGET CARD : 1 18.000",
+    "gold_text": "5001-Corn Flakes Cookies Rp.56.000 x1 Rp.56.000 5003-Chokoreto Cookies Rp.62.000 x1 Rp.62.000 6002-Plastic Bag Medium Rp.0 x1 Rp.0 Total Item: 3 Total, Rp.118.000 Debet Card 118.000",
+    "cer": 0.453,
+    "wer": 1.0,
+    "f1": 0.7692
+  },
+  {
+    "index": 25,
+    "ocr_text": "1 TWIST STRAWBERRY DONUT 10,000 1 TLJ CROQUETTE 17,000 1 POTATO PEPPER BAGEL 16,000 TOTAL 43,000 CASH CHANGE 7,000",
+    "gold_text": "1 TWIST STRAWBERRY DONUT 10,000 1 TLJ CROQUETTE 17,000 1 POTATO PEPPER BAGEL 16,000 TOTAL 43,000 CASH 50,000 CHANGE 7,000",
+    "cer": 0.0579,
+    "wer": 0.05,
+    "f1": 0.9714
+  },
+  {
+    "index": 26,
+    "ocr_text": "CAP CAY NASI CAP CAY PORSI B 1 65.000 65.000 MINUMAN TEH TAWAR 2 4.000 LAIN-LAIN FU YUNG HAI 1 65.000 65.000 SUBTOTAL RP 138.000 TOTAL RP 138.000 CASH RP 138.000 CHANGE",
+    "gold_text": "Cap Cay Nasi Cap Cay Porsi B esar 1 65.000 65.000 Minuman Teh Tawar 2 4.000 Lain-lain Fu Yung Hai 1 65.000 65.000 Subtotal Rp 138.000 Total Rp 138.000 Cash Rp 138.000 Change Rp 0",
+    "cer": 0.4045,
+    "wer": 0.6571,
+    "f1": 0.9565
+  },
+  {
+    "index": 27,
+    "ocr_text": "PKT AYAM 33,000 GULAI OTAK 23,000 2.00 ITEMS SUBTOTAL 56,000 TAX 10% 5,600 TOTAL : 61,600 CHARGE5 61,600",
+    "gold_text": "PKT AYAM 33,000 GULAI OTAK 23,000 2.00 ITEMS SUBTOTAL 56,000 TAX 10% 5,600 TOTAL 61,600 CHARGE5 61,600",
+    "cer": 0.0196,
+    "wer": 0.0588,
+    "f1": 0.9697
+  },
+  {
+    "index": 28,
+    "ocr_text": "SAMGYOPSAL 2 194,000 SUL LUNG TANG 1 75,000 MAKOLI 1 100,000 SUB TOTAL 369,000 SERVICE 18,450 VAT 38,745 DISCOUNT TOTAL 426,195",
+    "gold_text": "SAMGYOPSAL 2 194,000 SUL LUNG TANG 1 75,000 MAKOLI 1 100,000 Sub Total 369,000 Service 18,450 VAT 38,745 Discount 0 TOTAL 426,195",
+    "cer": 0.1628,
+    "wer": 0.2273,
+    "f1": 0.9744
+  },
+  {
+    "index": 29,
+    "ocr_text": "COLD OCHA 1 10,909 BCA PROMO 1 54,455 ABURA UDON SPICY 1 0 1 :-KAKE UDON 0 SKEWERED SHUMAI 1 12,727 SKEWERED TOFU ROLL 1 12,727 EBI TEMPURA 1 13,636 KITSUNE UDON (KIDS) 1 28,182 SUB. TOTAL 132,636 RESTAURANT TAX 13,264 GRANP45,90A] 145,900 ~BCA EDC . [145,900]",
+    "gold_text": "COLD OCHA 1 10,909 BCA PROMO 1 54,455 ABURA UDON SPICY 1 0 1 :-KAKE UDON 0 SKEWERED SHUMAI 1 12,727 SKEWERED TOFU ROLL 1 12,727 EBI TEMPURA 1 13,636 KITSUNE UDON (KIDS) 1 28,182 SUB, TOTAL 132,636 RESTAURANT TAX 13,264 GRAND TOTAL 145,900 ~ BCA EDC [145,900]",
+    "cer": 0.0426,
+    "wer": 0.125,
+    "f1": 0.8986
+  },
+  {
+    "index": 30,
+    "ocr_text": "KUPON 3 28,636 SUBTOTAL @6% P81 (10%) (RM) DINE IN TOTAL : 1/03 CASH REGULAR, COME AGAIN 5,000 CHANGE *** ********",
+    "gold_text": "Kupon 3 28,636 Subtotal 28,636 PB1 (10%) 2,864 Dine In Total 31,500 Cash 50,000 Change 18,500",
+    "cer": 0.8172,
+    "wer": 1.125,
+    "f1": 0.5556
+  },
+  {
+    "index": 31,
+    "ocr_text": "1 SALMON PESTO 85,500 1 SALMON PESTO 85,500 DISC -100%(ITM06) -85,500 SUBTTL 85,500 SVC CHG 6% PB1 10% TOTAL 113,886",
+    "gold_text": "1 SALMON PESTO 85,500 1 SALMON PESTO 85,500 Disc -100% (ITM06) -85,500 SUBTTL 85,500 SVC CHG 6% 10,260 PB1 10% 18,126 TOTAL 113,886",
+    "cer": 0.1374,
+    "wer": 0.2174,
+    "f1": 0.8485
+  },
+  {
+    "index": 32,
+    "ocr_text": "THAI ICED GREEN TEA 1 @24.000 24.000 SUB-TOTAL 24.000 GRANDTOTAL 24.000 CASH CHANGED",
+    "gold_text": "THAI ICED GREEN TEA 1 @24.000 24.000 SUB-TOTAL 24.000 GRANDTOTAL 24.000 CASH 50.000 CHANGED 26.000",
+    "cer": 0.1429,
+    "wer": 0.1333,
+    "f1": 0.9167
+  },
+  {
+    "index": 33,
+    "ocr_text": "1 GRILLED BABY POTATO (R 50,500 1 HOT TUNA 67,000 1 HOT TUNA 67,000 DISC -100%(ITM06) -67,000 SUBTTL SVC CHG 6% PB1 10% TOTAL 148.127",
+    "gold_text": "1 GRILLED BABY POTATO (R 50,500 1 HOT TUNA 67,000 1 HOT TUNA 67,000 Disc -100% (ITM06) -67,000 SUBTTL 117,500 SVC CHG 6% 11,070 PB1 10% 19,557 TOTAL 148,127",
+    "cer": 0.1731,
+    "wer": 0.2414,
+    "f1": 0.8182
+  },
+  {
+    "index": 34,
+    "ocr_text": "ASH CHICK SAMBAL MATER 5 75.000 JAMUR GORENG 2 10.000 SUBTOTAL PALAK (10%) TOTAL TOTAL : 100.000 KEMDAILI",
+    "gold_text": "Ash Chick Sambal Matah 5 75.000 Jamur Goreng 2 10.000 Subtotal 85.000 Pajak (10%) 8.500 Total 93.500 Tunai 100.000 Kembali 6.500",
+    "cer": 0.5859,
+    "wer": 0.7143,
+    "f1": 0.6842
+  },
+  {
+    "index": 35,
+    "ocr_text": "2 TWIST DONUT 18,000 1 BANANA DONUT 11,000 1 CREAMCHEESE BREAD 13,000 1 FRANKFRUT SAUSAGE ROLL 12,000 TOTAL 54,000 CASH 004,000 CHANGE 50 ,000",
+    "gold_text": "2 TWIST DONUT 18,000 1 BANANA DONUT 11,000 1 CREAMCHEESE BREAD 13,000 1 FRANKFRUT SAUSAGE ROLL 12,000 TOTAL 54,000 CASH 104,000 CHANGE 50,000",
+    "cer": 0.0142,
+    "wer": 0.1304,
+    "f1": 0.878
+  },
+  {
+    "index": 36,
+    "ocr_text": "1 XXL CHSPY CHICKEN 40.000 1 - SEDANG 0 ITEMS : 1 40.000 TOTAL....00 000 PAY CASH 100.000 CHANGE :60,000",
+    "gold_text": "1 XXL Crispy Chicken 40,000 1 - Sedang 0 ITEMS: 1 40,000 Total 40,000 Cash 100,000 Pay Change : 60,000",
+    "cer": 0.4608,
+    "wer": 0.75,
+    "f1": 0.6061
+  },
+  {
+    "index": 37,
+    "ocr_text": "POPCORN SALT (S) 1 20.000 TOTAL 20.000 CASHIER : 50.000 CHANGED COME AGAIN 3D.000",
+    "gold_text": "Popcorn Salt (S) 1 20.000 TOTAL 20.000 CASH 50.000 CHANGED 30.000",
+    "cer": 0.4,
+    "wer": 0.6364,
+    "f1": 0.6957
+  },
+  {
+    "index": 38,
+    "ocr_text": "1 XLB ORG PORK 10X 78,000 1 SICITO BABI 65,000 1 HOTPLATE TAHU 58,000 1 DF FISH FILLET GARIC 108,000 1 LM PORK BELLY 88,000 1 SIEW MAL 38,800 5 KWAN YIN CUP 50,000 1 HERBAL JELLY 38,000 1 ONDE-ONDE 38,000 561,800 ITEMS :13 SERVICE CHARGE @ 42,135 PB1 @ 60,394 TOTAL.... 664,329",
+    "gold_text": "1 XLB Org Pork 10x 78,000 1 Sicito Babi 65,000 1 Hotplate Tahu 58,000 1 DF Fish Fillet Garlc 108,000 1 LM Pork Belly 88,000 1 Siew Mai 38,800 5 Kwan Yin Cup 50,000 1 Herbal Jelly 38,000 1 Onde-Onde 38,000 561,800 ITEMS: 13 Service charge 42,135 PB1 60,394 Total 664,329",
+    "cer": 0.3569,
+    "wer": 0.5294,
+    "f1": 0.8706
+  },
+  {
+    "index": 39,
+    "ocr_text": "HPL754DR HPLT54HR LINCH BOX 3P SET W/RED BAG & SPOO 8 PCS 243.000 1,944,000 DISKON: (20%) 1,555.200 HPLSD RICE CASE 7L W/CUP 5 PCS 195.000 975,000 DISKON: (20%) 760.000 HPL754BB SR:15498 LUNCH BOX OR SET A/BLACK BAG & BP 4 PCS 243.000 972,000 DISKON: (20%) 777-600 TOTAL ITEM : TOTAL BY THE CHANGE OF BAYAR CREDIT CARD : 3:112,800",
+    "gold_text": "HPL754DR LUNCH BOX 3P SET W/RED BAG & SP00 N. 8 PCS 243,000 1,944,000 DISKON: (20%) 1,555,200 HPL500 RICE CASE 7L W/CUP 5 PCS 195,000 975,000 DISKON: (20%) 780,000 HPL754DB LUNCH BOX 3P SET W/BLACK BAG & SP OON 4 PCS 243,000 972,000 DISKON: (20%) 777,600 TOTAL ITEM 3 TOTAL QTY 17 BAYAR CREDIT CARD 3,112,800",
+    "cer": 0.1981,
+    "wer": 0.4286,
+    "f1": 0.5909
+  },
+  {
+    "index": 40,
+    "ocr_text": "SHACK LESTARI ALL 27,000 2 54,000 BELERY ANGINIA SHAIR,BANAS,PERS, JLAYOKO,KAR 7,000 2 14,000 TOTAL 6B,000 CASH : 1,000 CHANGE INCLUSIVE: 32,000",
+    "gold_text": "Snack Lestari All 27,000 2 54,000 Bakery Aneka Sisir Banana,Pizza,yoko,Mar mer,Daging,abon,keju,cokelat,dll 7,000 2 14,000 TOTAL 68,000 CASH 100,000 CHANGE 32,000",
+    "cer": 0.5617,
+    "wer": 0.6,
+    "f1": 0.5641
+  },
+  {
+    "index": 41,
+    "ocr_text": "CHICKEN MARYLAND 47619.00 CAPPUCINO (HOT/ICED) 30303.00 NAGA LYCHEE JUICE 34632.00 CAFE LATTE 30303.00 HOT CHOCOLATE MARSHMALLO 30303.00 CHICKEN CESAR SALAD 43290.00 MINERAL WATER 12987.00 MINERAL WATER 12987.00 LYCHEE/PEACH/LEMON/MANGO 25974.00 CHICKEN MARYLAND 47619.00 SUBTOTAL 316917.60 SERVICE CHARGE 5% + 48982.68 TOTAL 365000.00",
+    "gold_text": "Chicken Maryland 47619.00 Cappucino (Hot/Iced) 30303.00 Naga Lychee Juice 34632.00 Cafe Latte 30303.00 Hot Chocolate Marshmallo 30303.00 Chicken Cesar Salad 43290.00 Mineral Water 12987.00 Mineral Water 12987.00 Lychee/Peach/Lemon/Mango 25974.00 Chicken Maryland 47619.00 Subtotal 316017.00 Service Charge 5% + 48982.68 TOTAL 365000.00",
+    "cer": 0.4418,
+    "wer": 0.6341,
+    "f1": 0.9688
+  },
+  {
+    "index": 42,
+    "ocr_text": "1 CHICKEN HCC. 1PCS 15.000 SUB TOTAL 15,000 P. REST 10%: 1.500 TOTAL 16,500 CASH : 50,000 KEMBALI 33,500 1 ITEMS,",
+    "gold_text": "1 Chicken HCC. 1Pcs 15.000 Sub Total 15,000 P.Rest 10 % 1,500 Total 16,500 Cash 50,000 Kembali 33,500 1 Items,",
+    "cer": 0.3636,
+    "wer": 0.65,
+    "f1": 0.7568
+  },
+  {
+    "index": 43,
+    "ocr_text": "6 PCS CHEESE TART 165000.00 BOX OF 6 PP CARRIER SUBTOTAL: REG000.00 TOTAL TAX INCLUDED: R015000.00 TOTAL: REG000.00 CUSTOMER PAID CASH: RP200000.00 CUSTOMER CHANGE: R035000.00",
+    "gold_text": "6 Pcs Cheese Tart 165000.00 Box of 6 PP Carrier Subtotal: Rp 165000.00 Total Tax Included: Rp 15000.00 Total: Rp 165000.00 Customer Paid Cash: Rp 200000.00 Customer Change: Rp 35000.00",
+    "cer": 0.462,
+    "wer": 0.8667,
+    "f1": 0.8182
+  },
+  {
+    "index": 44,
+    "ocr_text": "1 COMBO 1 30.000 TOTAL 30.000 CASH CHANGED 20.00",
+    "gold_text": "1 Combo 1 30.000 TOTAL 30.000 CASH 50.000 CHANGED 20.000",
+    "cer": 0.2143,
+    "wer": 0.3,
+    "f1": 0.8
+  },
+  {
+    "index": 45,
+    "ocr_text": "1 LEMON TEA (L) : 25.000 1 MIKE & IKE ORIGINAL 28.000 1 MIKE & BERRY 28.000 1 ROTI KEJU MANIS. 7.000 TOTAL 88.000 CASH CHANGE: 8809 CASHGED",
+    "gold_text": "1 Lemon Tea (L). 25.000 1 Mike & Ike Original 28.000 1 Mike & Berry 28.000 1 Roti Keju Manis. 7.000 TOTAL 88,000 CASH 88.000 0 CHANGED",
+    "cer": 0.3806,
+    "wer": 0.5926,
+    "f1": 0.7907
+  },
+  {
+    "index": 46,
+    "ocr_text": "1X S-BUBBLE MILK TEA @20,000 20,000 100% 1X S-CARAMEL MILK TEA @20,000 20,000 100% TOTAL: 40,000 CASH: 40,000 CHANGE /",
+    "gold_text": "1X S-Bubble Milk Tea @20,000 20,000 100% 1X S-Caramel Milk Tea @20,000 20,000 100% Total: 40,000 Cash: 40,000 CHANGE 0",
+    "cer": 0.2458,
+    "wer": 0.45,
+    "f1": 0.9231
+  },
+  {
+    "index": 47,
+    "ocr_text": "COPIA 1 /GB 1 45,000.00 2100252000358 45,000.00 PLASTIC BAG RED CENTRAL SI 1 0.00 9100544260074 0.00 COPIA 1 /GB 1 18,000.00 2100252000358 18,000.00 TOTAL AMOUNTMENT WITHIN 637000.00 TOTAL DISCOUNT @ 0.00 TOTAL QUANTITY @6% CARD PAYMENT DEBIT CARD 6300.00",
+    "gold_text": "COPIA 1 /GB 1 45,000.00 2100252000358 45,000.00 PLASTIC BAG RED CENTRAL SI 1 0.00 9100544260074 0.00 COPIA 1 /GB 1 18,000.00 2100252000358 18,000.00 Total 63,000.00 Total discount 0.00 Total quantity 3 Card Payment DEBIT CARD 63,000.00",
+    "cer": 0.2681,
+    "wer": 0.3611,
+    "f1": 0.8261
+  },
+  {
+    "index": 48,
+    "ocr_text": "1X S-HAZELNUT KOI CAFE 25,000 @25,000 25% LESS ICE PB1: 2,272 SUBTOTAL: 22,728 TOTAL: 25,000 CASH: 100,000 CHANGE: 75,000",
+    "gold_text": "1X S-Hazelnut KOI Cafe 25,000 @25,000 25% Less Ice PB1: 2,272 Subtotal: 22,728 Total: 25,000 Cash: 100,000 CHANGE: 75,000",
+    "cer": 0.2397,
+    "wer": 0.3684,
+    "f1": 1.0
+  },
+  {
+    "index": 49,
+    "ocr_text": "1 PTGS EGGTART 12,000 1 CHOCO MELLE 11,000 SUBTOTAL 23,000 DUE : 23,000 CASH CHANGE 27,000 TOTAL QTY 2 ITEM 2 PCS 2 ITEM",
+    "gold_text": "1 Ptgs Eggtart 12,000 1 Choco Melt 11,000 SUBTOTAL 23,000 DUE 23,000 CASH 50,000 CHANGE 27,000 TOTAL QTY 2 PCS 2 ITEM",
+    "cer": 0.2821,
+    "wer": 0.3636,
+    "f1": 0.8947
+  },
+  {
+    "index": 50,
+    "ocr_text": "1 SPLPRICE CAUBURRY 17,727 SUBTOTAL: 17,727 FEL: 1,773 TOTAL: 19,500 LASH: 100,000 CHANGE: 60.500",
+    "gold_text": "1 Superice Cauburry 17,727 SubTulal: 17,727 PB1: 1,773 Total: 19,500 Lash: 100,000 Change: 80,500",
+    "cer": 0.3814,
+    "wer": 0.5714,
+    "f1": 0.6923
+  },
+  {
+    "index": 51,
+    "ocr_text": "MEDAN ORIG TERI 4 165,460 SEAFOOD GORENG 1 40,456 STRAM KWETIAW SEAFOOD 1 42,274 (TA) NASI GORENG 2 55,456 ITEMS:8 303,646 PM1 10% ROUNDING 334,011 ROUNDING @6% TOTAL : 1 DEBIT 8CA - 334,000",
+    "gold_text": "(TA) NASI GRG TERI MEDAN 4 165,460 (TA) BIHUN GORENG SEAFOOD 1 40,456 (TA) KWETIAW SEAFOOD SIRAM 1 42,274 (TA) NASI GORENG 2 55,456 ITEMS: 8 303,646 Pb1 10% 30,365 Rounding 334,011 Rounding -11 Total 334,000 DEBIT BCA 334,000",
+    "cer": 0.3644,
+    "wer": 0.5385,
+    "f1": 0.7119
+  },
+  {
+    "index": 52,
+    "ocr_text": "THAI ICED TEA 1 @20.000 20.000 THAI ICED TEA 1 @20.000 20.000 SUB-TOTAL 00.000 GRANDTOTAL 40.000 CASH 100.000 CHANGED 60.000",
+    "gold_text": "THAI ICED TEA 1 @20.000 20.000 THAI ICED TEA 1 @20.000 20.000 SUB-TOTAL 40.000 GRANDTOTAL 40.000 CASH 100.000 CHANGED 60.000",
+    "cer": 0.0081,
+    "wer": 0.05,
+    "f1": 0.963
+  },
+  {
+    "index": 53,
+    "ocr_text": "1 PECEL KOMPLIT + NASI 42.000 1 SOTO KUDUS 47.000 2 MINERAL WATER 18.000 SUBTOTAL 007 000 SERVI CHARGE 5% 5.350 PAJAK REST 10% 11.25 TOTAL 4",
+    "gold_text": "1 Pecel Komplit + Nasi 42.000 1 SOTO KUDUS 47.000 2 Mineral Water 18.000 Subtotal 107.000 Servi Charge 57 5.350 Pajak Rest 10% 11.235 Total 123.585 4",
+    "cer": 0.4161,
+    "wer": 0.5926,
+    "f1": 0.8462
+  },
+  {
+    "index": 54,
+    "ocr_text": "KACANG MERAH 10,000 SUBTOTAL 10.000 TOTAL 10.00 CASH 10,000",
+    "gold_text": "KACANG MERAH 10,000 SUBTOTAL 10,000 TOTAL 10,000 CASH 10,000",
+    "cer": 0.05,
+    "wer": 0.2222,
+    "f1": 0.8571
+  },
+  {
+    "index": 55,
+    "ocr_text": "1 APPLE CINNAMON PASTRY 22,000 2 ROYAL CHEESE TART 32,000 TOTAL 54,000 CARD 54,000",
+    "gold_text": "1 APPLE CINNAMON PASTRY 22,000 2 ROYAL CHEESE TART 32,000 TOTAL 54,000 CARD 54,000",
+    "cer": 0.0,
+    "wer": 0.0,
+    "f1": 1.0
+  },
+  {
+    "index": 56,
+    "ocr_text": "AIR MINERAL 8,181 SUBTOTAL 8,181 TAX 818 TL 8,999 CASH : 100 CG CASH : 1,001",
+    "gold_text": "AIR MINERAL 8,181 SUBTOTAL 8,181 TAX 818 TL 8,999 CASH 10,000 CG 1,001",
+    "cer": 0.1571,
+    "wer": 0.3077,
+    "f1": 0.88
+  },
+  {
+    "index": 57,
+    "ocr_text": "ICED TT 20.000 ICED GT 22.000 CASH : 4 2.000",
+    "gold_text": "ICED TT 20,000 ICED GT 22,000 CASH 42,000",
+    "cer": 0.1463,
+    "wer": 0.625,
+    "f1": 0.5
+  },
+  {
+    "index": 58,
+    "ocr_text": "1 PHO BO TAI 55,000 CASH SUB TOTAL: 5,000 PB1 TOTAL: 60,500 PAY: 00,000 CHANGE DUE: 39,500",
+    "gold_text": "1 PHO BO TAI 55,000 CASH 100,000 Sub Total: 55,000 PB1 5,500 Total: 60,500 Pay: 100,000 Change Due: 39,500",
+    "cer": 0.3302,
+    "wer": 0.5263,
+    "f1": 0.875
+  },
+  {
+    "index": 59,
+    "ocr_text": "TAHU ISI 2 78,000 TEA 5 30,000 KEPTING 7-8.40MS - CHILLY D.7 1 297,490 UDANG TELUR ASIN - REGULAR. 1 47,500 KAILAN 2 RASA 1 45,000 MANTAU - 2 PCS 1 25,000 SWEET TEA 2 16,000 NASI PUTIH 7 42,000 MANTAU - 3 PCS 1 37,500 TOTAL ITEM 9 TOTAL QTY 21 SUBTOTAL: 1 V V V V V V 618,490 TAX: 1,00 TOTAL 680,500",
+    "gold_text": "Tahu Isi 2 78,000 Tea 5 30,000 Kepiting 7-8.4ons - Chilly 0.7 1 1 297,490 Udang Telur Asin - Regular 1 47,500 Kailan 2 Rasa 1 45,000 Mantau - 2 pcs 1 25,000 Sweet Tea 2 16,000 Nasi Putih 7 42,000 Mantau - 3 pcs 1 37,500 Total Item 9 Total Qty 21 Subtotal 618,490 Tax 61,849 Total 680,500",
+    "cer": 0.439,
+    "wer": 0.6271,
+    "f1": 0.8276
+  },
+  {
+    "index": 60,
+    "ocr_text": "TOPPING MILO SPARKLE (UNTUR 1 PO 1X 1.250 1.250 BOLA UBI MINI ORIGINAL (14 PCS 2X 12.500 25.000 SUBTOTAL 26 250 PAJAK SUMMARY ME OR TOTAL 26.250 PEMBAYARAN G0-PAY",
+    "gold_text": "Topping Milo Sparkle (untuk 1 Po rsi) 1x 1.250 1.250 Bola Ubi Mini Original (14 Pcs ) 2x 12.500 25.000 Subtotal 26.250 Pajak - Total 26.250 Pembayaran GO-PAY",
+    "cer": 0.5478,
+    "wer": 0.8571,
+    "f1": 0.7778
+  },
+  {
+    "index": 61,
+    "ocr_text": "1X 5500 TALAM UNGU 6.500 AMOUNT TEM -40.000 1X 3000 AREM - AREM 8.000 AMOUNT TEM -40.00% 2X 9000 LEMPER 18.000 AMOUNT TEM -497.99% 1X D MIKA SEDANG 0 1X 0 PLASTIK KECIL 0 1X 5000 TEH KOTAK 5.000 7.00 ITEMS SUBTOTAL 24.500 TOTAL 24.50 CARD 24.500",
+    "gold_text": "1x 6500 TALAM UNGU 6,500 DISC ITEM -40.000% AMOUNT -2 600 1X 8000 AREM - AREM 8,000 DISC ITEM -40.000% AMOUNT -3,200 2X 9000 LEMPER 18,000 DISC ITEM -40.000% AMOUNT -7.200 1X 0 MIKA SEDANG 0 1X 0 PLASTIK KECIL 0 1X 5000 TEH KOTAK 5,000 7.00 ITEMs SUBTOTAL 24,500 TOTAL 24,500 CARD 24,500",
+    "cer": 0.2857,
+    "wer": 0.5,
+    "f1": 0.6197
+  },
+  {
+    "index": 62,
+    "ocr_text": "1 XXI JAYA TEA (M) 18.000 1 COMBO 2 30.000 TOTAL 48.000 CASHIER CHANGED 2.000",
+    "gold_text": "1 XXI Java Tea (M) 18.000 1 Combo 2 30.000 TOTAL 48.000 CASH 50.000 CHANGED 2,000",
+    "cer": 0.2099,
+    "wer": 0.375,
+    "f1": 0.7586
+  },
+  {
+    "index": 63,
+    "ocr_text": "KOPI SUSU KAMPUNG. X1 19.000 ICE KOPI SUSU KAMPUNG LESS ICE 0 KOPI SUSU KAMPUNG. X2 38.000 ICE SUBTOTAL : 57.000 TOTAL : 5.00 CASH : 00.000 CHANGE : 3.000",
+    "gold_text": "Kopi Susu Kampung. x1 19.000 Ice Kopi Susu Kampung Less Ice 0 Kopi Susu Kampung. x2 38.000 Ice Subtotal 57.000 Total 57.000 Cash 60.000 Change 3.000",
+    "cer": 0.5203,
+    "wer": 0.9615,
+    "f1": 0.8947
+  },
+  {
+    "index": 64,
+    "ocr_text": "SINGLE SCOOP 16.000 TOTAL 16.000 CATEND 50.000 CHANGE 34.000",
+    "gold_text": "SINGLE SCOOP 16.000 TOTAL 16.000 CATEND 50.000 CHANGE 34.000",
+    "cer": 0.0,
+    "wer": 0.0,
+    "f1": 1.0
+  },
+  {
+    "index": 65,
+    "ocr_text": "SUBUR POLOS + TELUR 5 13.000 13.000 SUBTOTAL 13.000 PAJAK SUMMARY TOTAL : 13.000",
+    "gold_text": "Bubur Polos + Telur 1 13.000 13.000 Subtotal 13.000 Pajak - Total 13.000",
+    "cer": 0.5278,
+    "wer": 0.6923,
+    "f1": 0.6667
+  },
+  {
+    "index": 66,
+    "ocr_text": "PILLOW DURIA 36,364 PLASTIK 25 0 SUBTOTAL 36,364 AMOUNT ~~ 13.00% TOTAL 40,000 CASH 50.000 CHANGE 10,000",
+    "gold_text": "PILLOW DURIA 36,364 PLASTIK 25 0 SUBTOTAL 36,364 PD1 10% 10.000Z AMOUNT 3,636 TOTAL 40,000 CASH 50,000 CHANGE 10,000",
+    "cer": 0.2155,
+    "wer": 0.3158,
+    "f1": 0.7647
+  },
+  {
+    "index": 67,
+    "ocr_text": "2005-0 CHEESE JOHN 9.500.00 *1 9.500.00 TOTAL ITEM: 1 TOTAL. CASHIERED:",
+    "gold_text": "2005- CHEESE JOHN 9.500,00 x1 9.500,00 Total Item: 1 Total. 9.500,00 Cash Tendered: 9.500,00",
+    "cer": 0.4891,
+    "wer": 0.7857,
+    "f1": 0.5714
+  },
+  {
+    "index": 68,
+    "ocr_text": "ICED TT -20.000 TOTAL : 20.000 CASH : 58.000 CHANGE : 30.000",
+    "gold_text": "ICED TT 20,000 TOTAL 20,000 CASH 50,000 CHANGE 30,000",
+    "cer": 0.2264,
+    "wer": 0.7778,
+    "f1": 0.5556
+  },
+  {
+    "index": 69,
+    "ocr_text": "1 [MD] SOFT MORNING ROLL 18,000 2 REAL HONEY PANCAKE BREAD 20,000 4 CUSTARD BRIOCHE 36,000 TOTAL 74,000 CASH 100,000 CHANGE 26,000",
+    "gold_text": "1 [MD] SOFT MORNING ROLL 18,000 2 REAL HONEY PANCAKE BREAD 20,000 4 CUSTARD BRIOCHE 36,000 TOTAL 74,000 CASH 100,000 CHANGE 26,000",
+    "cer": 0.0,
+    "wer": 0.0,
+    "f1": 1.0
+  },
+  {
+    "index": 70,
+    "ocr_text": "2 UDANG RE 216,000 432,000 2 =*LARGE*== 1 AYM GR JUN NJAN 108,000 =*MEDIUM*= 1 SAPO TH SEAFOOD 172,000 =*LARGE*== 2 POCAI 3 111,000 222,000 2 =*MEDIUM*= 1 GURAME FILLET M 163,000 ASAM MANIS 1 BIHUN GORENG JJ 116,000 =*LARGE*== 5 ICED TEA 12,000 60,000 7 NASI PUTIH 10,000 70,000 FOOD 11,213,000 BEVERAGES OTHERS 707000 SUBTOTAL 1,343,000 SERVICE CHARGE 80,580 TAX 10% 12 142,358 DU 1,565,938",
+    "gold_text": "2 UDANG RE 216,000 432,000 2 =*LARGE*== 1 AYM GR JUN NJAN 108,000 =*MEDIUM*= 1 SAPO TH SEAFOOD 172,000 =*LARGE*== 2 POCAI 3 111,000 222.000 2 =*MEDIUM*= 1 GURAME FILLET M 163,000 ASAM MANIS 1 BIHUN GORENG JJ 116,000 =*LARGE*== 5 ICED TEA 12,000 60,000 7 NASI PUTIH 10,000 70,000 FOOD 1,213,000 BEVERAGES 60,000 OTHERS 70,000 SUBTOTAL 1,343,000 SERVICE CHARGE 80,580 Tax 10% 142,358 DU 1,565,938",
+    "cer": 0.0381,
+    "wer": 0.0909,
+    "f1": 0.9464
+  },
+  {
+    "index": 71,
+    "ocr_text": "CULKA APEL TEFES 1 198000 198000 SUB TOTAL !!! !!! !!! !!! !!! TUNAI : 200200 KEMBALIAN 22000",
+    "gold_text": "Cuka Apel Tetes 1 198000 198000 Sub Total 198000 Tunai 200200 Kembalian 22000",
+    "cer": 0.6494,
+    "wer": 1.0,
+    "f1": 0.75
+  },
+  {
+    "index": 72,
+    "ocr_text": "1 CHOCO DEVIL 15,909 SUBTOTAL: 15,909 PB1: 1,591 TOTAL: 17,500 NAME: 20,000 CHANGE: 2,500",
+    "gold_text": "1 Choco Devil 15,909 SubTotal: 15,909 PB1: 1,591 Total: 17,500 cash: 20,000 Change: 2,500",
+    "cer": 0.3034,
+    "wer": 0.4286,
+    "f1": 0.9231
+  },
+  {
+    "index": 73,
+    "ocr_text": "1001-CHOCO BUN 22.000 X1 22.000 6001-PLASTIC BAG SMAIL 0 X1 0 TOTAL ITEM: 2 TOTAL. 22.000 CASHIERED: CHANGE:",
+    "gold_text": "1001-Choco Bun 22.000 x1 22.000 6001-Plastic Bag Small 0 x1 0 Total Item: 2 22.000 Total. Cash 25.000 Tendered: 3.000 Change:",
+    "cer": 0.512,
+    "wer": 0.7619,
+    "f1": 0.7742
+  },
+  {
+    "index": 74,
+    "ocr_text": "1 BLACKCURRANT 32,000 1 SPRITE 32,000 BEVERAGE 64,000 1 GRILLED CALAMARI 85,000 1 DINE FOR 2 129,000 * DANISH FISH & CHIPS DF * NEW YORK FISH & CHIPS FOOD 214,000 SUBTTL : 278,000 SERVICE CHARGE 22,240 TAX 30,024 TOTAL 330,264",
+    "gold_text": "1 BLACKCURRANT 32,000 1 SPRITE 32,000 BEVERAGE 64,000 1 GRILLED CALAMARI 85,000 1 DINE FOR 2 129,000 * DANISH FISH & CHIPS DF * NEW YORK FISH & CHIPS FOOD 214,000 SUBTTL 278,000 Service Charge 22,240 TAX 30,024 TOTAL 330,264",
+    "cer": 0.058,
+    "wer": 0.075,
+    "f1": 0.9846
+  },
+  {
+    "index": 75,
+    "ocr_text": "1 CHOCO PUFF 29,091 1 CREAMY BEEF CLS FTC 42,727 1 NEW ORIENTAL CHK RICE 34,545 1 LIPTON PITCHER 54,545 1 SC/P SUPER SUPREME 47,273 1 CB/P BLACK PEPP BEEF 48,182 SUBTOTAL 256,363 TAX 25,637 TOTAL 282,000",
+    "gold_text": "1 CHOCO PUFF 29,091 1 CREAMY BEEF CLS FTC 42,727 1 NEW ORIENTAL CHK RICE 34,545 1 LIPTON PITCHER 54,545 1 SC/P SUPER SUPREME 47,273 1 CB/P BLACK PEPP BEEF 48,182 SUBTOTAL 256,363 TAX 25,637 TOTAL 282,000",
+    "cer": 0.0,
+    "wer": 0.0,
+    "f1": 1.0
+  },
+  {
+    "index": 76,
+    "ocr_text": "BASO TAHU *46000 NASI PUTIH *6000 BASO TAHU *46000 2X 6000 NASI PUTIH *12000 TEMS 50- ASH *110000",
+    "gold_text": "BASO TAHU *46000 NASI PUTIH *6000 BASO TAHU *46000 2x 6000 NASI PUTIH *12000 TEMS 50 - ASH *110000",
+    "cer": 0.0204,
+    "wer": 0.1579,
+    "f1": 0.8889
+  },
+  {
+    "index": 77,
+    "ocr_text": "TRIPPLE CHEESE 1 X 17,000 17,000 SUB TOTAL GRAND TOTAL CASHIER CHANGE DUE",
+    "gold_text": "TRIPPLE CHEESE 1 x 17,000 17,000 SUB TOTAL 17,000 GRAND TOTAL 17,000 CASH IDR 22,000 CHANGE DUE 5,000",
+    "cer": 0.297,
+    "wer": 0.3889,
+    "f1": 0.8
+  },
+  {
+    "index": 78,
+    "ocr_text": "1 LEMON TEA (L) 25.000 1 EXTRA JELLY LYCHEE 5.000 TOTAL 30.000 CASH CHANGED",
+    "gold_text": "1 Lemon Tea (L) 25.000 1 Extra Jelly Lychee 5.000 TOTAL 30.000 CASH 30.000 CHANGED 0",
+    "cer": 0.3333,
+    "wer": 0.4375,
+    "f1": 0.963
+  },
+  {
+    "index": 79,
+    "ocr_text": "1001-CHOCO BUN 22.000 X1 22.000 6001-PLASTIC BAG SMAIL 0 X1 0 TOTAL ITEM: 2 22.000 22.000",
+    "gold_text": "1001-Choco Bun 22.000 x1 22.000 6001-Plastic Bag Small 0 x1 0 Total Item: 2 22.000 22.000",
+    "cer": 0.3034,
+    "wer": 0.5625,
+    "f1": 0.9091
+  },
+  {
+    "index": 80,
+    "ocr_text": "1 VIFT MILK COFFEE 25.000 +ICE +M SUBTOTAL : 1 SUBTOTAL !!!: CASH CHANGE 25.000 KEMBALIAN PERMAS NO",
+    "gold_text": "1 Viet Milk Coffee 25,000 +Ice +M Subtotal 25.000 Total 25.000 CASH 25.000 Kembalian 0",
+    "cer": 0.7209,
+    "wer": 0.9333,
+    "f1": 0.6429
+  },
+  {
+    "index": 81,
+    "ocr_text": "3002-KYOTO CHOCO MOCHI X2 14.000 28.000 1001-CHOCO BUN X1 22.000 22.000 6001-PLASTIC BAG SMAIL X1 0 0 TOTAL ITEM: 4 TOTAL.",
+    "gold_text": "3002-Kyoto Choco Mochi x2 14.000 28.000 1001-Choco Bun x1 22.000 22.000 6001-Plastic Bag Small x1 0 0 Total Item: 4 Total. 50.000",
+    "cer": 0.3953,
+    "wer": 0.6818,
+    "f1": 0.9189
+  },
+  {
+    "index": 82,
+    "ocr_text": "CHOCOLATE LOG CAKE 1X 115,000 115,000 SNOWNAN CAKE CHOCOLATE 1X 60,000 60,000 STRAWBERRY LOG CAKE 2X 105,000 210,000 SUB TOTAL : 1 @ 5, 000 GRAND TOTAL 385,000 VISA MASTER 8213 CHANGE",
+    "gold_text": "Chocolate Log Cake 1x 115,000 115,000 Snowman Cake Chocolate 1x 60,000 60,000 Strawberry Log Cake 2x 105,000 210,000 Sub Total 385,000 GRAND TOTAL 385,000 VISA MASTER 385,000 8213 CHANGE 0",
+    "cer": 0.3723,
+    "wer": 0.7,
+    "f1": 0.8182
+  },
+  {
+    "index": 83,
+    "ocr_text": "1 COOKIES AND CREAM 20.909 SUBTOTAL. 20.909 PAJAK 10% TOTAL : 23.000 1 TENDERED 25.000 KEMBALI 2.000",
+    "gold_text": "1 COOKIES AND CREAM 20,909 Subtotal 20,909 PAJAK 10% 2,091 Total 23,000 1 Tendered 25.000 Kembali 2.000",
+    "cer": 0.3301,
+    "wer": 0.4706,
+    "f1": 0.7333
+  },
+  {
+    "index": 84,
+    "ocr_text": "KROKET @12.000 1X 12.000 AREM AREM @12.000 2X 24.000 SUBTOTAL RP 36.000 TAX (10.0%) RP 3.600 TOTAL RP 39.600 OTHER RP 39.600",
+    "gold_text": "Kroket @ 12.000 1x 12.000 Arem Arem @ 12.000 2x 24.000 Subtotal Rp 36.000 Tax (10.0%) Rp 3.600 Total Rp 39.600 Other Rp 39.600",
+    "cer": 0.2857,
+    "wer": 0.7083,
+    "f1": 0.9375
+  },
+  {
+    "index": 85,
+    "ocr_text": "3 NASI PUTIH 30.000 1 NASI TAMBAH 7.000 2 AYAM POP 40.000 1 SAMABAL SP 11.000 1 SAMBAL GABUS ASIN CB 18.000 1 KERUPUK KUAH 15.000 1 IKAN BAWAL BESA 28.500 1 TELUR DADAR 10.000 1 TEH ES 7.000 1 TEH MANIS 9.000 1 ES BATU 4.000 SUBTOTAL 10: 179.500 PAJAK REST 10% 17:958 TOTAL: 197 450 14 TEL MAKAMAN 159 500 TEL MINUMAN 20.888 CASH 197.450",
+    "gold_text": "3 Nasi Putih 30.000 1 Nasi Tambah 7.000 2 Ayam Pop 40.000 1 Samabal SP 11.000 1 Sambal Gabus Asin Cb 18.000 1 Kerupuk Kuah 15.000 1 Ikan Bawal Besa 28.500 1 Telur Dadar 10.000 1 Teh Es 7.000 1 Teh Manis 9.000 1 Es Batu 4.000 Subtotal 179.500 Pajak Rest. 10% 17.950 Total 197.450 14 Ttl Makanan 159.500 Ttl Minuman 20.000 Cash 197.450",
+    "cer": 0.3874,
+    "wer": 0.625,
+    "f1": 0.8269
+  },
+  {
+    "index": 86,
+    "ocr_text": "1 CHOEZEMANIA 9,500 1 MAMAMIA 12,500 SUBTOTAL : 22,000 DUE WITH: 22,000 CASH CHANGE 30,000 2 ITEM TOTAL QTY 2 ITEM 2 PCS",
+    "gold_text": "1 Cheezemania 9,500 1 Mamamia 12,500 SUBTOTAL 22,000 DUE 22,000 CASH 52,000 CHANGE 30,000 2 ITEM TOTAL QTY 2 PCS",
+    "cer": 0.3393,
+    "wer": 0.35,
+    "f1": 0.8571
+  },
+  {
+    "index": 87,
+    "ocr_text": "1 PHO TAI CHIN 36,500 SUB TOTAL : 36.500 : PB1 10.0% : 3,650 : GRAND TOTAL : 40,150 5183230101CREDIT CARD 40.150",
+    "gold_text": "1 PHOTAI CHIN 36,500 Sub Total 36,500 : PB1 10.0% 3,650 : Grand Total 40,150 5183230101 CREDIT CARD 40,150",
+    "cer": 0.2264,
+    "wer": 0.6842,
+    "f1": 0.75
+  },
+  {
+    "index": 88,
+    "ocr_text": "STIX ECLAIRS 1 X 19,000 19,000 ALMOND CREAM CHEESE 1 X 28,000 28,000 SUB TOTAL 47,000 GRANDTOTAL AMOUNT 47,000 VISA 8945 CHANGE DUE",
+    "gold_text": "STIX ECLAIRS 1 x 19,000 19,000 ALMOND CREAM CHEESE 1 x 28,000 28,000 SUB TOTAL 47,000 GRAND TOTAL 47,000 VISA 8945 47,000 CHANGE DUE 0",
+    "cer": 0.1418,
+    "wer": 0.24,
+    "f1": 0.8889
+  },
+  {
+    "index": 89,
+    "ocr_text": "1 XXL CHSPY CHICKEN 40.000 1 PEDAS SEDIKIT 0 ITEMS:1 40.000 TOTAL: 56 000 PAY CASH 50.000 CHANGE :10.000",
+    "gold_text": "1 XXL Crispy Chicken 40,000 1 Pedas sedikit 0 ITEMS: 1 40,000 Total 40,000 Pay Cash 50,000 Change : 10,000",
+    "cer": 0.434,
+    "wer": 0.8,
+    "f1": 0.5455
+  },
+  {
+    "index": 90,
+    "ocr_text": "1 CIRENG PANDAWA 26,818 SUBTOTAL 26,818 PB1 2,681 TOTAL 29,500 CASH 29,500 TOTAL ITEM TOTAL QTY",
+    "gold_text": "1 CIRENG PANDAWA 26,818 Subtotal 26,818 Pb1 2,681 Total 29,500 CASH 29,500 Total Item 1 Total Qty 1",
+    "cer": 0.2929,
+    "wer": 0.5,
+    "f1": 1.0
+  },
+  {
+    "index": 91,
+    "ocr_text": "1 BAKSO BNGKS 15.000 6 GORENGAN 6.000 IL 21,000 CASH 30.000 CG 8.000",
+    "gold_text": "1 BAKSO BNGKS 15.000 6 GORENGAN 6.000 TL 21.000 CASH 30.000 CG 9.000",
+    "cer": 0.0441,
+    "wer": 0.2308,
+    "f1": 0.7692
+  },
+  {
+    "index": 92,
+    "ocr_text": "901016 -TICKET CP 4 60.000 240.000 (QTY=4.00) TOTAL (QTY=4.00)240.000 CASH CHANGE @ 10.000",
+    "gold_text": "901016 - TICKET CP 4 60.000 240,000 (Qty=4.00) TOTAL 240.000 CASH 250.000 CHANGE 10,000",
+    "cer": 0.2874,
+    "wer": 0.5714,
+    "f1": 0.6667
+  },
+  {
+    "index": 93,
+    "ocr_text": "THAI ICED TEA (L) 1 X 16,363 16,363 JUMLAH ITEM SUB TOTAL : 1,00 PAJAK RESTO !!! GRAND TOTAL !!! : 17,999",
+    "gold_text": "THAI ICED TEA (L) 1 X 16,363 16,363 Jumlah Item 1 Sub Total 16,363 Pajak Resto 1,636 Grand Total 17,999",
+    "cer": 0.4757,
+    "wer": 0.65,
+    "f1": 0.8824
+  },
+  {
+    "index": 94,
+    "ocr_text": "1 TAHU GORENG 28,000 1 CAKWE 17,000 1 PHO TAI CHIN (R) 63,000 1 TEA 11,000 SUB TOTAL !!! 119,000 SERV. 7.0% 8,330 PB1 10.0% 12,733 GRAND TOTAL 140,063 CREDIT CAR: 140,063",
+    "gold_text": "1 TAHU GORENG 28,000 1 CAKWE 17,000 1 PHO TAI CHIN(R) 63,000 1 TEA 11,000 Sub Total 119,000 Serv. 7.0% 8,330 PB1 10.0% 12,733 Grand Total 140,063 CREDIT CAR: 140,063",
+    "cer": 0.1333,
+    "wer": 0.2667,
+    "f1": 0.9231
+  },
+  {
+    "index": 95,
+    "ocr_text": "BASO TAHU 1 43,181 43,181 ES JERUK 1 13,000 13,000 TOTAL : 1 5,81 TAX 10.00 % GRAND TOTAL 6179 TINAL 62,000 KEMILI (RM) 201",
+    "gold_text": "BASO TAHU 1 43,181 43,181 ES JERUK 1 13,000 13,000 TOTAL 56,181 TAX 10.00 % 5,618 GRAND TOTAL 61,799 TUNAI 62,000 KEMBALI 201",
+    "cer": 0.184,
+    "wer": 0.3478,
+    "f1": 0.7179
+  },
+  {
+    "index": 96,
+    "ocr_text": "1 BBQ CHICKEN 41,000 0 1 - TIDAK PEDAS ITEMS :1 ITEMS:1 CHANGE :941000 41.000 PAY CASH 50,000 CHANGE : 9,000",
+    "gold_text": "1 BBQ Chicken 41,000 0 1 - Tidak Pedas ITEMS: 1 41,000 Total. 41,000 Pay Cash 50,000 Change: 9,000",
+    "cer": 0.4796,
+    "wer": 0.6842,
+    "f1": 0.7059
+  },
+  {
+    "index": 97,
+    "ocr_text": "2 20.000 BUBUR GO 40.000 PUYUH GO 6.000 3 3.000 SATECATIZGO 9.000 6.00XITEMS TOTAL 55.000 CASH 55.000",
+    "gold_text": "2 20.000 BUBUR GO 40.000 PUYUH GO 6.000 3 3.000 SATE ATI GO 9.000 6.00xITEMS TOTAL 55.000 CASH 55.000",
+    "cer": 0.0297,
+    "wer": 0.2105,
+    "f1": 0.9032
+  },
+  {
+    "index": 98,
+    "ocr_text": "1 BLACK PEPPER MEATBALL PAS 79.000 1 TRUFFLE CREAM 77,000 1 EARL GREY MILK TEA 59,000 SARTL GRAY MILK TEA 2215,000 SUBVICE CHARGE 6% 22,990 SAX 10% CHARGE 6% 22,790 TOTAL 250,690",
+    "gold_text": "1 BLACK PAPPER MEATBALL PAS 79,000 1 TRUFFLE CREAM 77,000 1 EARL GREY MILK TEA 59,000 SUBTTL 215,000 Service Charge 6% 12,900 TAX 10% 22,790 TOTAL 250,690",
+    "cer": 0.2792,
+    "wer": 0.4815,
+    "f1": 0.7059
+  },
+  {
+    "index": 99,
+    "ocr_text": "1 FL-XMAS 30 OFF 68.180 1 PAKET SLICES 0 1 VANIA SLC - FRENCH 0 1 PAKET SLICES 0 1 TEA SLCAKE - GREEN 0 1 PAKET SLICES 0 1 CHOCO SLC - BELGIUM 0 SUBTOTAL 68,180 DISKON BIAYA TAMBAHAN PAJAK PPN 10% 6,818 PAJAK 0% BIAYA CC SUMMARY 0 PEMBULATAN 2 TOTAL 75,000 TUNAI NON TUNAI 75,000 KEMBALL",
+    "gold_text": "1 FL-Xmas 30 Off 68,180 1 PAKET SLICES 0 1 FL Cake - French Vanilla SLC 0 1 PAKET SLICES 0 1 FL Cake - Green Tea SLC 0 1 PAKET SLICES 0 1 FL Cake - Belgium Choco SLC 0 SUBTOTAL 68,180 DISKON 0 BIAYA TAMBAHAN 0 PAJAK PPN 10 % 6,818 PAJAK 0% 0 BIAYA CC 0 PEMBULATAN 2 TOTAL 75,000 TUNAI 0 NON TUNAI 75,000 KEMBALI 0",
+    "cer": 0.3067,
+    "wer": 0.3857,
+    "f1": 0.8333
+  }
+]

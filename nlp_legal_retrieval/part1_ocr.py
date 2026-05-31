@@ -3,7 +3,6 @@ from pathlib import Path
 
 import torch
 from datasets import load_dataset
-from PIL import Image
 from tqdm import tqdm
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 import jiwer
@@ -15,26 +14,28 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 N = 100
 
 
-def extract_gold_text(ground_truth_str: str) -> str:
-    """Recursively collect all string values from the CORD-v2 gt_parse dict."""
+def extract_lines_with_boxes(ground_truth_str: str) -> list:
+    """Extract (bounding_box, gold_text) pairs from CORD-v2 valid_line annotations."""
     gt = json.loads(ground_truth_str)
-
-    def collect(obj):
-        if isinstance(obj, str):
-            return [obj]
-        if isinstance(obj, dict):
-            out = []
-            for v in obj.values():
-                out.extend(collect(v))
-            return out
-        if isinstance(obj, list):
-            out = []
-            for item in obj:
-                out.extend(collect(item))
-            return out
-        return []
-
-    return " ".join(collect(gt.get("gt_parse", gt)))
+    lines = []
+    for line in gt.get("valid_line", []):
+        words = line.get("words", [])
+        if not words:
+            continue
+        all_x, all_y, texts = [], [], []
+        for word in words:
+            q = word.get("quad", {})
+            all_x += [q.get("x1", 0), q.get("x2", 0), q.get("x3", 0), q.get("x4", 0)]
+            all_y += [q.get("y1", 0), q.get("y2", 0), q.get("y3", 0), q.get("y4", 0)]
+            t = word.get("text", "").strip()
+            if t:
+                texts.append(t)
+        if all_x and all_y and texts:
+            lines.append({
+                "box": (min(all_x), min(all_y), max(all_x), max(all_y)),
+                "text": " ".join(texts),
+            })
+    return lines
 
 
 def token_f1(pred: str, gold: str) -> float:
@@ -60,24 +61,35 @@ def run_ocr(examples):
     results = []
     for i, ex in enumerate(tqdm(examples, desc="OCR")):
         image = ex["image"].convert("RGB")
-        gold = extract_gold_text(ex["ground_truth"])
+        lines = extract_lines_with_boxes(ex["ground_truth"])
+        if not lines:
+            continue
 
-        pixel_values = processor(
-            images=image, return_tensors="pt"
-        ).pixel_values.to(DEVICE)
+        ocr_parts = []
+        for line_info in lines:
+            x1, y1, x2, y2 = line_info["box"]
+            # Small padding so characters at the crop edge aren't cut off
+            pad = 4
+            crop = image.crop((
+                max(0, x1 - pad), max(0, y1 - pad),
+                min(image.width, x2 + pad), min(image.height, y2 + pad),
+            ))
+            pixel_values = processor(images=crop, return_tensors="pt").pixel_values.to(DEVICE)
+            with torch.no_grad():
+                ids = model.generate(pixel_values, max_new_tokens=128)
+            ocr_parts.append(processor.batch_decode(ids, skip_special_tokens=True)[0])
 
-        with torch.no_grad():
-            ids = model.generate(pixel_values)
-        ocr_text = processor.batch_decode(ids, skip_special_tokens=True)[0]
+        ocr_text = " ".join(ocr_parts)
+        gold_text = " ".join(line["text"] for line in lines)
 
-        cer = jiwer.cer(gold, ocr_text)
-        wer = jiwer.wer(gold, ocr_text)
-        f1 = token_f1(ocr_text, gold)
+        cer = jiwer.cer(gold_text, ocr_text)
+        wer = jiwer.wer(gold_text, ocr_text)
+        f1 = token_f1(ocr_text, gold_text)
 
         results.append({
             "index": i,
             "ocr_text": ocr_text,
-            "gold_text": gold,
+            "gold_text": gold_text,
             "cer": round(cer, 4),
             "wer": round(wer, 4),
             "f1": round(f1, 4),
@@ -95,7 +107,6 @@ def main():
             "naver-clova-ix/cord-v2",
             split="test",
             streaming=True,
-            trust_remote_code=True,
         )
         examples = list(ds.take(N))
         results = run_ocr(examples)

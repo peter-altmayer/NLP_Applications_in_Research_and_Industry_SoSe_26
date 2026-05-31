@@ -3,30 +3,35 @@ from pathlib import Path
 import torch
 from datasets import load_dataset
 from tqdm import tqdm
-from transformers import pipeline as hf_pipeline
+from transformers import MarianMTModel, MarianTokenizer
 import sacrebleu
 from bert_score import score as bert_score_fn
 
 from utils import save_cache, load_cache, print_table
 
 CACHE_PATH = Path("results/translation_results.json")
-DEVICE = 0 if torch.cuda.is_available() else -1
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 N = 100
 
 
 def run_translation(examples):
-    translator = hf_pipeline(
-        "translation_en_to_de",
-        model="Helsinki-NLP/opus-mt-en-de",
-        device=DEVICE,
-    )
+    tokenizer = MarianTokenizer.from_pretrained("Helsinki-NLP/opus-mt-en-de")
+    model = MarianMTModel.from_pretrained("Helsinki-NLP/opus-mt-en-de").to(DEVICE)
+    model.eval()
 
     results = []
     for i, ex in enumerate(tqdm(examples, desc="Translation")):
         src = ex["translation"]["en"]
         ref = ex["translation"]["de"]
 
-        hyp = translator(src, max_length=512)[0]["translation_text"]
+        inputs = tokenizer(
+            src, return_tensors="pt", padding=True, truncation=True, max_length=512
+        )
+        inputs = {k: v.to(DEVICE) for k, v in inputs.items()}
+        with torch.no_grad():
+            translated = model.generate(**inputs)
+        hyp = tokenizer.decode(translated[0], skip_special_tokens=True)
+
         chrf_sent = sacrebleu.sentence_chrf(hyp, [ref]).score
 
         results.append({
@@ -50,7 +55,6 @@ def main():
             "de-en",
             split="validation",
             streaming=True,
-            trust_remote_code=True,
         )
         examples = list(ds.take(N))
         results = run_translation(examples)

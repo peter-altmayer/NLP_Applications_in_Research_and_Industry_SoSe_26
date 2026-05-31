@@ -3,22 +3,20 @@ from pathlib import Path
 import torch
 from datasets import load_dataset
 from tqdm import tqdm
-from transformers import pipeline as hf_pipeline
+from transformers import BartForConditionalGeneration, BartTokenizer
 from rouge_score import rouge_scorer
 
 from utils import save_cache, load_cache, print_table
 
 CACHE_PATH = Path("results/summarization_results.json")
-DEVICE = 0 if torch.cuda.is_available() else -1
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 N = 100
 
 
 def run_summarization(examples):
-    summarizer = hf_pipeline(
-        "summarization",
-        model="facebook/bart-large-cnn",
-        device=DEVICE,
-    )
+    tokenizer = BartTokenizer.from_pretrained("facebook/bart-large-cnn")
+    model = BartForConditionalGeneration.from_pretrained("facebook/bart-large-cnn").to(DEVICE)
+    model.eval()
     scorer = rouge_scorer.RougeScorer(
         ["rouge1", "rouge2", "rougeL"], use_stemmer=True
     )
@@ -29,9 +27,14 @@ def run_summarization(examples):
         reference = ex["highlights"]
 
         # BART max input is 1024 tokens; 3000 chars is a safe character-level cutoff
-        summary = summarizer(
-            article[:3000], max_length=130, min_length=30, do_sample=False
-        )[0]["summary_text"]
+        inputs = tokenizer(
+            article[:3000], return_tensors="pt", truncation=True, max_length=1024
+        ).to(DEVICE)
+        with torch.no_grad():
+            summary_ids = model.generate(
+                **inputs, max_new_tokens=130, min_new_tokens=30, num_beams=4, early_stopping=True
+            )
+        summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 
         scores = scorer.score(reference, summary)
 
@@ -54,7 +57,7 @@ def main():
     results = load_cache(CACHE_PATH)
     if results is None:
         ds = load_dataset(
-            "cnn_dailymail",
+            "abisee/cnn_dailymail",
             "3.0.0",
             split="test",
             streaming=True,
